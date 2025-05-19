@@ -4,7 +4,9 @@ import hashlib
 import json
 from urllib.parse import unquote, parse_qs
 
-from fastapi import FastAPI, Request, HTTPException, status
+from fastapi import FastAPI, Request, HTTPException, status, Depends
+from sqlalchemy.orm import Session
+from .database import SessionLocal, engine, User, create_db_and_tables, get_db
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -12,6 +14,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI()
+
+# Create database tables on startup
+@app.lifespan
+async def lifespan(app: FastAPI):
+    create_db_and_tables()
+    yield
+    
+def on_startup():
+    create_db_and_tables()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
@@ -54,7 +65,7 @@ async def root():
     return {"message": "Hello World - Backend is running!"}
 
 @app.post("/auth/telegram")
-async def auth_telegram(payload: TelegramInitData):
+async def auth_telegram(payload: TelegramInitData, db: Session = Depends(get_db)):
     if not BOT_TOKEN:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -73,9 +84,69 @@ async def auth_telegram(payload: TelegramInitData):
     # For example, to get user info:
     # init_data_params = parse_qs(unquote(payload.initData))
     # user_info_json = init_data_params.get('user', [None])[0]
-    # if user_info_json:
-    #     user_info = json.loads(user_info_json)
-    #     # Process user_info, e.g., create or update user in DB
-    #     return JSONResponse(content={"message": "Authentication successful", "user": user_info})
+    # If valid, parse user data from initData
+    try:
+        init_data_params = parse_qs(unquote(payload.initData))
+        user_info_json = init_data_params.get('user', [None])[0]
+        if not user_info_json:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="User data not found in Telegram initialization data."
+            )
+        user_info = json.loads(user_info_json)
+        telegram_id = str(user_info.get("id"))
 
-    return JSONResponse(content={"message": "Authentication successful"})
+        if not telegram_id:
+             raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Telegram user ID not found in user data."
+            )
+
+        # Check if user exists
+        db_user = db.query(User).filter(User.telegram_id == telegram_id).first()
+
+        if not db_user:
+            # Create new user
+            new_user = User(
+                telegram_id=telegram_id,
+                # onboarding_completed will default to False as per model
+            )
+            db.add(new_user)
+            db.commit()
+            db.refresh(new_user)
+            return JSONResponse(content={"message": "Authentication successful, new user created.", "user_id": new_user.id, "telegram_id": new_user.telegram_id})
+        else:
+            # User exists, update updated_at (SQLAlchemy handles this if onupdate is set)
+            # db.commit() # To trigger onupdate if there were other changes
+            return JSONResponse(content={"message": "Authentication successful, user exists.", "user_id": db_user.id, "telegram_id": db_user.telegram_id})
+
+    except json.JSONDecodeError:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid JSON in user data."
+        )
+    except Exception as e:
+        # Log the exception e for debugging
+        print(f"Error processing user data: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error processing user data."
+        )
+
+@app.put("/users/{telegram_id}/complete_onboarding")
+async def complete_onboarding(telegram_id: str, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.telegram_id == telegram_id).first()
+    if not db_user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"User with telegram_id {telegram_id} not found"
+        )
+    
+    if db_user.onboarding_completed:
+        return JSONResponse(content={"message": f"User {telegram_id} onboarding already completed.", "user_id": db_user.id, "telegram_id": db_user.telegram_id})
+
+    db_user.onboarding_completed = True
+    # updated_at should be handled by SQLAlchemy's onupdate
+    db.commit()
+    db.refresh(db_user)
+    return JSONResponse(content={"message": f"User {telegram_id} onboarding completed successfully.", "user_id": db_user.id, "telegram_id": db_user.telegram_id, "onboarding_completed": db_user.onboarding_completed})
