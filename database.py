@@ -2,7 +2,7 @@ import os
 from sqlalchemy import create_engine, Column, Integer, String, Boolean, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.ext.declarative import declarative_base
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,8 +20,12 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True, autoincrement=True) # user_id as per request, but 'id' is common convention
     telegram_id = Column(String, unique=True, index=True, nullable=False)
     onboarding_completed = Column(Boolean, default=False)
-    created_at = Column(DateTime, default=lambda: datetime.now(UTC))
-    updated_at = Column(DateTime, default=lambda: datetime.now(UTC), onupdate=lambda: datetime.now(UTC))
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    updated_at = Column(
+    DateTime(timezone=True),
+    default=lambda: datetime.now(timezone.utc),
+    onupdate=lambda: datetime.now(timezone.utc)
+)
 
     def __repr__(self):
         return f"<User(telegram_id='{self.telegram_id}', onboarding_completed={self.onboarding_completed})>"

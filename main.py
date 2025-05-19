@@ -3,26 +3,25 @@ import hmac
 import hashlib
 import json
 from urllib.parse import unquote, parse_qs
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request, HTTPException, status, Depends
 from sqlalchemy.orm import Session
-from .database import SessionLocal, engine, User, create_db_and_tables, get_db
+from database import SessionLocal, engine, User, create_db_and_tables, get_db
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI()
-
-# Create database tables on startup
-@app.lifespan
+@asynccontextmanager
 async def lifespan(app: FastAPI):
+    # Load the ML model
     create_db_and_tables()
     yield
-    
-def on_startup():
-    create_db_and_tables()
+    # Clean up the ML models and release the resources
+
+app = FastAPI(lifespan=lifespan)
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
