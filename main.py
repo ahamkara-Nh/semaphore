@@ -2,6 +2,7 @@ import os
 import hmac
 import hashlib
 import json
+import logging
 from urllib.parse import unquote, parse_qs
 from contextlib import asynccontextmanager
 
@@ -13,6 +14,10 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -56,7 +61,7 @@ def validate_telegram_data(init_data_str: str, bot_token: str) -> bool:
 
         return calculated_hash == hash_received
     except Exception as e:
-        print(f"Error validating Telegram data: {e}") # For debugging
+        logger.error(f"Error validating Telegram data: {e}") # For debugging
         return False
 
 @app.get("/")
@@ -65,6 +70,7 @@ async def root():
 
 @app.post("/auth/telegram")
 async def auth_telegram(payload: TelegramInitData, db: Session = Depends(get_db)):
+    logger.debug(f"Received payload: {payload}")
     if not BOT_TOKEN:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -126,7 +132,7 @@ async def auth_telegram(payload: TelegramInitData, db: Session = Depends(get_db)
         )
     except Exception as e:
         # Log the exception e for debugging
-        print(f"Error processing user data: {e}")
+        logger.error(f"Error processing user data: {e}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error processing user data."
