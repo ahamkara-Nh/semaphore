@@ -278,12 +278,16 @@ async def update_user_preferences(telegram_id: str, preferences_data: UserPrefer
         conn = get_db_connection()
         cursor = conn.cursor()
 
-        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        logger.info(f"update_user_preferences: Received telegram_id='{telegram_id}', type={type(telegram_id)}")
+        cleaned_telegram_id = telegram_id.strip()
+        logger.info(f"update_user_preferences: Querying with cleaned_telegram_id='{cleaned_telegram_id}'")
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (cleaned_telegram_id,))
         user_row = cursor.fetchone()
         if not user_row:
+            logger.warning(f"User with telegram_id '{cleaned_telegram_id}' not found in database.") # Log the specific ID not found
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"User with telegram_id {telegram_id} not found"
+                detail=f"User with telegram_id '{cleaned_telegram_id}' not found. Query was made with this ID."
             )
         user_id = user_row['id']
 
@@ -336,50 +340,3 @@ async def update_user_preferences(telegram_id: str, preferences_data: UserPrefer
     finally:
         if conn:
             conn.close()
-
-@app.get("/users/{telegram_id}/preferences")
-async def get_user_preferences(telegram_id: str):
-    conn = None
-    try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
-
-        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
-        user_row = cursor.fetchone()
-        if not user_row:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"User with telegram_id {telegram_id} not found"
-            )
-        user_id = user_row['id']
-
-        cursor.execute("SELECT * FROM user_preferences WHERE user_id = ?", (user_id,))
-        preferences_row = cursor.fetchone()
-
-        if not preferences_row: # Should ideally not happen if auth creates default prefs
-            # Consider creating default preferences here if they are missing, or return 404
-            # For now, returning 404 if preferences are explicitly requested but not found.
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"Preferences not found for user with telegram_id {telegram_id}"
-            )
-
-        return JSONResponse(content={"user_id": user_id, "preferences": row_to_dict(preferences_row)})
-    except sqlite3.Error as e:
-        logger.error(f"SQLite error: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Database error: {e}"
-        )
-    except Exception as e:
-        logger.error(f"Error fetching preferences: {e}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Error fetching preferences: {e}"
-        )
-    finally:
-        if conn:
-            conn.close()
-
-# Example of how to run with uvicorn:
-# uvicorn main:app --reload
