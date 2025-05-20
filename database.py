@@ -49,6 +49,33 @@ def create_tables():
     );
     """)
 
+
+    # FodmapGroup Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS fodmap_group (
+        fodmap_group_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL UNIQUE,
+        description TEXT
+    );
+    """)
+
+    # PhaseTracking Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS phase_tracking (
+        phase_tracking_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        current_phase INTEGER NOT NULL DEFAULT 1,
+        phase1_streak_days INTEGER DEFAULT 0,
+        phase2_reintroduction_days INTEGER DEFAULT 0,
+        phase2_break_days INTEGER DEFAULT 0,
+        phase2_current_fodmap_group_id INTEGER,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+        FOREIGN KEY (phase2_current_fodmap_group_id) REFERENCES fodmap_group(fodmap_group_id) ON DELETE SET NULL
+    );
+    """)
+
     # Triggers to update 'updated_at' timestamps
     cursor.execute("""
     CREATE TRIGGER IF NOT EXISTS update_users_updated_at
@@ -65,6 +92,15 @@ def create_tables():
     FOR EACH ROW
     BEGIN
         UPDATE user_preferences SET updated_at = CURRENT_TIMESTAMP WHERE preference_id = OLD.preference_id;
+    END;
+    """)
+
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_phase_tracking_updated_at
+    AFTER UPDATE ON phase_tracking
+    FOR EACH ROW
+    BEGIN
+        UPDATE phase_tracking SET updated_at = CURRENT_TIMESTAMP WHERE phase_tracking_id = OLD.phase_tracking_id;
     END;
     """)
 

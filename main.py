@@ -10,6 +10,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, HTTPException, status
 from typing import Optional, Dict, Any
 from database import get_db_connection, create_tables # Updated import
+from datetime import datetime
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -336,6 +337,99 @@ async def update_user_preferences(telegram_id: str, preferences_data: UserPrefer
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error updating preferences: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+
+class PhaseTrackingCreate(BaseModel):
+    current_phase: int
+
+class PhaseTrackingResponse(BaseModel):
+    phase_tracking_id: int
+    user_id: int
+    current_phase: int
+    phase1_streak_days: int
+    phase2_reintroduction_days: int
+    phase2_break_days: int
+    phase2_current_fodmap_group_id: Optional[int] = None
+    created_at: datetime
+    updated_at: datetime
+
+
+@app.post("/users/{telegram_id}/phase-tracking", response_model=PhaseTrackingResponse, status_code=status.HTTP_201_CREATED)
+async def create_user_phase_tracking(telegram_id: str, phase_data: PhaseTrackingCreate):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        cleaned_telegram_id = telegram_id.strip()
+        logger.info(f"Attempting to create phase tracking for telegram_id: {cleaned_telegram_id}")
+
+        # 1. Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (cleaned_telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            logger.warning(f"User with telegram_id '{cleaned_telegram_id}' not found.")
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id '{cleaned_telegram_id}' not found."
+            )
+        user_id = user_row['id']
+        logger.info(f"User found: user_id {user_id} for telegram_id {cleaned_telegram_id}.")
+
+        # 2. Check if phase_tracking record already exists for this user_id
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        existing_phase_tracking_row = cursor.fetchone()
+        if existing_phase_tracking_row:
+            logger.warning(f"Phase tracking record already exists for user_id {user_id}.")
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=f"Phase tracking record already exists for user_id {user_id}."
+            )
+
+        # 3. Insert new phase_tracking record with provided current_phase
+        logger.info(f"Inserting new phase tracking record for user_id {user_id} with current_phase {phase_data.current_phase}.")
+        cursor.execute(
+            "INSERT INTO phase_tracking (user_id, current_phase) VALUES (?, ?)",
+            (user_id, phase_data.current_phase)
+        )
+        conn.commit()
+        logger.info(f"Successfully inserted and committed phase tracking for user_id {user_id}.")
+
+        # 4. Fetch the newly created record to return it
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        new_phase_tracking_row = cursor.fetchone()
+
+        if not new_phase_tracking_row:
+            logger.error(f"Failed to retrieve phase tracking record for user_id {user_id} after insertion.")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Failed to retrieve phase tracking record after creation."
+            )
+        
+        created_record_dict = row_to_dict(new_phase_tracking_row)
+        logger.info(f"Successfully created and retrieved phase tracking for user_id {user_id}: {created_record_dict}")
+        
+        return PhaseTrackingResponse(**created_record_dict)
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in create_user_phase_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException: 
+        raise
+    except Exception as e:
+        logger.error(f"General error in create_user_phase_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error creating phase tracking: {e}"
         )
     finally:
         if conn:
