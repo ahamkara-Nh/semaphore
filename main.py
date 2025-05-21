@@ -320,6 +320,55 @@ async def complete_onboarding(telegram_id: str):
         if conn:
             conn.close()
 
+@app.get("/users/{telegram_id}/preferences/created-at")
+async def get_user_preferences_created_at(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get created_at from user_preferences
+        cursor.execute("SELECT created_at FROM user_preferences WHERE user_id = ?", (user_id,))
+        preferences_row = cursor.fetchone()
+        if not preferences_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Preferences not found for user with telegram_id {telegram_id}"
+            )
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "created_at": preferences_row['created_at']
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error getting preferences created_at: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting preferences created_at: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
 @app.put("/users/{telegram_id}/preferences")
 async def update_user_preferences(telegram_id: str, preferences_data: UserPreferencesUpdate):
     conn = None
