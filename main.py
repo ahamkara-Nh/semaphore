@@ -454,6 +454,55 @@ class PhaseTrackingResponse(BaseModel):
     created_at: datetime
     updated_at: datetime
 
+@app.get("/users/{telegram_id}/phase-tracking", response_model=PhaseTrackingResponse)
+async def get_user_phase_tracking(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get phase tracking information
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        phase_tracking_row = cursor.fetchone()
+        if not phase_tracking_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase tracking not found for user with telegram_id {telegram_id}"
+            )
+
+        phase_tracking_dict = row_to_dict(phase_tracking_row)
+        return PhaseTrackingResponse(**phase_tracking_dict)
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_user_phase_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"General error in get_user_phase_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting phase tracking: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
 
 @app.post("/users/{telegram_id}/phase-tracking", response_model=PhaseTrackingResponse, status_code=status.HTTP_201_CREATED)
 async def create_user_phase_tracking(telegram_id: str, phase_data: PhaseTrackingCreate):
