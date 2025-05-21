@@ -80,6 +80,54 @@ def row_to_dict(row: sqlite3.Row) -> Optional[Dict[str, Any]]:
 async def root():
     return {"message": "Hello World - Backend is running!"}
 
+@app.get("/users/{telegram_id}/onboarding_status")
+async def get_onboarding_status(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT * FROM users WHERE telegram_id = ?", (telegram_id,))
+        db_user_row = cursor.fetchone()
+
+        if not db_user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        
+        db_user = row_to_dict(db_user_row)
+        user_id = db_user['id']
+
+        # Get phase tracking information
+        cursor.execute("SELECT current_phase FROM phase_tracking WHERE user_id = ?", (user_id,))
+        phase_row = cursor.fetchone()
+        current_phase = phase_row['current_phase'] if phase_row else None
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": db_user['telegram_id'],
+            "onboarding_completed": db_user['onboarding_completed'],
+            "current_phase": current_phase
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error getting onboarding status: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting onboarding status: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
 @app.post("/auth/telegram")
 async def auth_telegram(payload: TelegramInitData):
     logger.debug(f"Received payload: {payload}")
