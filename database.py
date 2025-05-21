@@ -25,8 +25,8 @@ def create_tables():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         telegram_id TEXT UNIQUE NOT NULL,
         onboarding_completed BOOLEAN DEFAULT FALSE,
-        created_at TIMESTAMP DEFAULT (datetime('now', '+3 hours')),
-        updated_at TIMESTAMP DEFAULT (datetime('now', '+3 hours'))
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now'))
     );
     """)
 
@@ -43,8 +43,8 @@ def create_tables():
         allergy_soy BOOLEAN DEFAULT FALSE NOT NULL,
         daily_reminders BOOLEAN DEFAULT TRUE NOT NULL,
         update_notifications BOOLEAN DEFAULT TRUE NOT NULL,
-        created_at TIMESTAMP DEFAULT (datetime('now', '+3 hours')),
-        updated_at TIMESTAMP DEFAULT (datetime('now', '+3 hours')),
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
     );
     """)
@@ -69,8 +69,8 @@ def create_tables():
         phase2_reintroduction_days INTEGER DEFAULT 0,
         phase2_break_days INTEGER DEFAULT 0,
         phase2_current_fodmap_group_id INTEGER,
-        created_at TIMESTAMP DEFAULT (datetime('now', '+3 hours')),
-        updated_at TIMESTAMP DEFAULT (datetime('now', '+3 hours')),
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
         FOREIGN KEY (phase2_current_fodmap_group_id) REFERENCES fodmap_group(fodmap_group_id) ON DELETE SET NULL
     );
@@ -82,7 +82,7 @@ def create_tables():
     AFTER UPDATE ON users
     FOR EACH ROW
     BEGIN
-        UPDATE users SET updated_at = datetime('now', '+3 hours') WHERE id = OLD.id;
+        UPDATE users SET updated_at = datetime('now') WHERE id = OLD.id;
     END;
     """)
 
@@ -91,7 +91,7 @@ def create_tables():
     AFTER UPDATE ON user_preferences
     FOR EACH ROW
     BEGIN
-        UPDATE user_preferences SET updated_at = datetime('now', '+3 hours') WHERE preference_id = OLD.preference_id;
+        UPDATE user_preferences SET updated_at = datetime('now') WHERE preference_id = OLD.preference_id;
     END;
     """)
 
@@ -100,7 +100,7 @@ def create_tables():
     AFTER UPDATE ON phase_tracking
     FOR EACH ROW
     BEGIN
-        UPDATE phase_tracking SET updated_at = datetime('now', '+3 hours') WHERE phase_tracking_id = OLD.phase_tracking_id;
+        UPDATE phase_tracking SET updated_at = datetime('now') WHERE phase_tracking_id = OLD.phase_tracking_id;
     END;
     """)
 
