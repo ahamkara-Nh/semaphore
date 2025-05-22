@@ -23,7 +23,8 @@ def create_tables():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS product_category (
         category_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL UNIQUE
+        name TEXT NOT NULL UNIQUE,
+        image_name TEXT
     );
     """)
 

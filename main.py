@@ -80,6 +80,28 @@ def row_to_dict(row: sqlite3.Row) -> Optional[Dict[str, Any]]:
 async def root():
     return {"message": "Hello World - Backend is running!"}
 
+@app.get("/categories")
+async def get_categories():
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT name, image_name FROM product_category ORDER BY name")
+        categories = [{"name": row['name'], "image_name": row['image_name']} for row in cursor.fetchall()]
+        
+        return {"categories": categories}
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
 @app.get("/users/{telegram_id}/onboarding_status")
 async def get_onboarding_status(telegram_id: str):
     conn = None
