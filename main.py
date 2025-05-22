@@ -1043,3 +1043,73 @@ async def search_products_by_name(telegram_id: str, search_data: ProductSearch):
     finally:
         if conn:
             conn.close()
+
+class ProductNameRequest(BaseModel):
+    name: str
+
+@app.post("/products/get-by-name")
+async def get_products_by_exact_name(product_data: ProductNameRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Get all product rows that match the exact name
+        cursor.execute("""
+            SELECT 
+                product_id,
+                name,
+                category_id,
+                fructose_level,
+                lactose_level,
+                fructan_level,
+                mannitol_level,
+                sorbitol_level,
+                gos_level,
+                serving_title,
+                serving_amount_grams,
+                contains_nuts,
+                contains_peanut,
+                contains_gluten,
+                contains_eggs,
+                contains_fish,
+                contains_soy,
+                replacement_name
+            FROM product 
+            WHERE name = ?
+            ORDER BY serving_amount_grams DESC
+        """, (product_data.name,))
+        
+        products = [row_to_dict(row) for row in cursor.fetchall()]
+        
+        if not products:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"No products found with name: {product_data.name}"
+            )
+            
+        return {
+            "name": product_data.name,
+            "products": products,
+            "count": len(products)
+        }
+        
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_products_by_exact_name: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting products by name: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting products by name: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
