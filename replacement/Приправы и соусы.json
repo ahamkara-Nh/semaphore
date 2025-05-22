@@ -1,0 +1,5534 @@
+{
+    "food": [
+        {
+            "name": "Асафотида в порошке",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (¼ чайной ложки)"
+                }
+            ],
+            "food_id": 0,
+            "replacement": []
+        },
+        {
+            "name": "Бульон, курица, прозрачный, азиатский стиль",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": []
+        },
+        {
+            "name": "Каперсы, в уксусе, с отжатой жидкостью",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 2,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соленые каперсы",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 3,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Стебель сельдерея (только листья), сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        244
+                    ],
+                    "title": "Умеренная порция (1½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        369
+                    ],
+                    "title": "Большая порция (2½ чашки)"
+                }
+            ],
+            "food_id": 4,
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Китайский / Шаосинский алкогольный уксус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        130
+                    ],
+                    "title": "Умеренная порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        164
+                    ],
+                    "title": "Большая порция (⅔ чашки)"
+                }
+            ],
+            "food_id": 5,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Уксус, Чинцзян / Жень Цзянь / рисовый черный уксус",
+                    "food_id": 144
+                }
+            ]
+        },
+        {
+            "name": "Чатни, фрукты (содержат персик, яблоко, чеснок и лук)",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "Небольшая порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        26
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 6,
+            "replacement": [
+                {
+                    "name": "Чатни, манго (содержит чеснок и лук)",
+                    "food_id": 7
+                }
+            ]
+        },
+        {
+            "name": "Чатни, манго (содержит чеснок и лук)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        115
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        145
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 7,
+            "replacement": [
+                {
+                    "name": "Чатни, фрукты (содержат персик, яблоко, чеснок и лук)",
+                    "food_id": 6
+                }
+            ]
+        },
+        {
+            "name": "Чатни, томаты (содержат чеснок и лук)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        77
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        103
+                    ],
+                    "title": "Большая порция (4 столовые ложки)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": [
+                {
+                    "name": "Чатни, фрукты (содержат персик, яблоко, чеснок и лук)",
+                    "food_id": 6
+                }
+            ]
+        },
+        {
+            "name": "Кокосовый аминокислотный заменитель (содержит чеснок и лук)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        41
+                    ],
+                    "title": "Большая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 9,
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Кокосовый амinos (без чеснока и лука)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        53
+                    ],
+                    "title": "Умеренная порция (2½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        67
+                    ],
+                    "title": "Большая порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": [
+                {
+                    "name": "Асафотида в порошке",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Кокосовый крем, консервированный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                }
+            ],
+            "food_id": 11,
+            "replacement": []
+        },
+        {
+            "name": "Куркума",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": []
+        },
+        {
+            "name": "Смесь для карриверста",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "Умеренная порция (¾ чайной ложки или 1,5 г)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "Небольшая порция (½ чайной ложки или 1,1 г)"
+                }
+            ],
+            "food_id": 13,
+            "replacement": [
+                {
+                    "name": "Куркума",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Заморозки, икра",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (½ столовой ложки)"
+                }
+            ],
+            "food_id": 14,
+            "allergy": [
+                4
+            ],
+            "replacement": [
+                {
+                    "name": "Закуска, баклажан",
+                    "food_id": 15
+                }
+            ]
+        },
+        {
+            "name": "Закуска, баклажан",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": []
+        },
+        {
+            "name": "Дип, хумус / хумус",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        2,
+                        3,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        20
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 16,
+            "replacement": [
+                {
+                    "name": "Куркума",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Дзадзики",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        20
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 17,
+            "replacement": [
+                {
+                    "name": "Асафотида в порошке",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Гочугару / Корейская красная паста перца чили",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "Умеренная порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        6
+                    ],
+                    "title": "Высокая порция (3 чайные ложки)"
+                }
+            ],
+            "food_id": 18,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Специи, перец чили, перец Sichuan, китайская ягода, зеленый, сухой",
+                    "food_id": 97
+                }
+            ]
+        },
+        {
+            "name": "Сушёные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 средний кусок)"
+                }
+            ],
+            "food_id": 19,
+            "replacement": []
+        },
+        {
+            "name": "Трава, азиатская / чесночные луки, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 20,
+            "replacement": []
+        },
+        {
+            "name": "Травы, Травы де Прованс, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 21,
+            "replacement": []
+        },
+        {
+            "name": "Трава, базилик, тайский, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        160
+                    ],
+                    "title": "Небольшая порция (2 чашки)"
+                }
+            ],
+            "food_id": 22,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Трава, базилик, сушёный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        145
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        195
+                    ],
+                    "title": "Большая порция (1⅓ чашек)"
+                }
+            ],
+            "food_id": 23,
+            "replacement": [
+                {
+                    "name": "Трава, базилик, тайский, свежий",
+                    "food_id": 22
+                }
+            ]
+        },
+        {
+            "name": "Трава, базилик, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 24,
+            "replacement": []
+        },
+        {
+            "name": "Травы, лаванда, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (1 лист)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "Умеренное количество (2 листа)"
+                }
+            ],
+            "food_id": 25,
+            "replacement": []
+        },
+        {
+            "name": "Травы, лук-шалот, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (⅓ стакана)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 26,
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Трава, лук-шалот, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 27,
+            "replacement": []
+        },
+        {
+            "name": "Травы, кориандр / кинза, сушёная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Умеренная порция (2½ столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "Большая порция (3½ столовых ложки)"
+                }
+            ],
+            "food_id": 28,
+            "replacement": [
+                {
+                    "name": "Трава, кориандр / кинза, свежая",
+                    "food_id": 29
+                }
+            ]
+        },
+        {
+            "name": "Трава, кориандр / кинза, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 29,
+            "replacement": []
+        },
+        {
+            "name": "Трава, листья карри, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 30,
+            "replacement": []
+        },
+        {
+            "name": "Трава, укроп, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 31,
+            "replacement": []
+        },
+        {
+            "name": "Травы, листья фенхеля, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 32,
+            "replacement": []
+        },
+        {
+            "name": "Траву, гетукала / гету кола, свежую",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        26
+                    ],
+                    "title": "1 порция (½ упаковки)"
+                }
+            ],
+            "food_id": 33,
+            "replacement": []
+        },
+        {
+            "name": "Травы, листья каффир-лимона, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (3 листа)"
+                }
+            ],
+            "food_id": 34,
+            "replacement": []
+        },
+        {
+            "name": "Трава, лимонная трава, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (1 х стебель длиной 10 см)"
+                }
+            ],
+            "food_id": 35,
+            "replacement": []
+        },
+        {
+            "name": "Тимьян, майоран, сушёный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        32
+                    ],
+                    "title": "Высокая порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 36,
+            "replacement": []
+        },
+        {
+            "name": "Трава, мята, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        90
+                    ],
+                    "title": "1 порция (1 пучок)"
+                }
+            ],
+            "food_id": 37,
+            "replacement": []
+        },
+        {
+            "name": "Травы, орегано, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 38,
+            "replacement": []
+        },
+        {
+            "name": "Трава, орегано, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (1 пучок)"
+                }
+            ],
+            "food_id": 39,
+            "replacement": []
+        },
+        {
+            "name": "Трава, петрушка, сушёная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        24
+                    ],
+                    "title": "Большая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 40,
+            "replacement": [
+                {
+                    "name": "Трава, базилик, сушёный",
+                    "food_id": 23
+                }
+            ]
+        },
+        {
+            "name": "Трава, петрушка, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 41,
+            "replacement": []
+        },
+        {
+            "name": "Трава, перилла, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (1 пучок)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        1,
+                        193
+                    ],
+                    "title": "Умеренная порция (2½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "Большая порция (3 чашки)"
+                }
+            ],
+            "food_id": 42,
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Травы, розмарин, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        132
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        2,
+                        3,
+                        1,
+                        165
+                    ],
+                    "title": "Большая порция (1¼ чашки)"
+                }
+            ],
+            "food_id": 43,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Трава, розмарин, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 44,
+            "replacement": []
+        },
+        {
+            "name": "Трава, шалфей, сушёный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        97
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        130
+                    ],
+                    "title": "Большая порция (1½ чашки)"
+                }
+            ],
+            "food_id": 45,
+            "replacement": [
+                {
+                    "name": "Трава, базилик, сушёный",
+                    "food_id": 23
+                }
+            ]
+        },
+        {
+            "name": "Трава, шалфей, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (1 пучок)"
+                }
+            ],
+            "food_id": 46,
+            "replacement": []
+        },
+        {
+            "name": "Трава, тхиа, сушёная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        56
+                    ],
+                    "title": "Умеренное порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        70
+                    ],
+                    "title": "Большая порция (⅔ чашки)"
+                }
+            ],
+            "food_id": 47,
+            "replacement": [
+                {
+                    "name": "Трава, азиатская / чесночные луки, свежие",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Трава, тхиа, свежая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 48,
+            "replacement": []
+        },
+        {
+            "name": "Трава, тимьян, сушеный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        72
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        87
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 49,
+            "replacement": [
+                {
+                    "name": "Тимьян, майоран, сушёный",
+                    "food_id": 36
+                }
+            ]
+        },
+        {
+            "name": "Трава, тимьян, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 50,
+            "replacement": []
+        },
+        {
+            "name": "Сок, лимон, свежевыжатый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        178
+                    ],
+                    "title": "Умеренная порция (⅔ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        223
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 51,
+            "replacement": []
+        },
+        {
+            "name": "Ягоды юзу, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (¼ чайной ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        38
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "Большая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 52,
+            "replacement": [
+                {
+                    "name": "Сушёные",
+                    "food_id": 19
+                }
+            ]
+        },
+        {
+            "name": "Маринад, барбекю, кантонский стиль",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1½ столовые ложки)"
+                }
+            ],
+            "food_id": 53,
+            "replacement": [
+                {
+                    "name": "Соус, барбекю / BBQ, азиатский стиль",
+                    "food_id": 75
+                }
+            ]
+        },
+        {
+            "name": "Майонез, японский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 54,
+            "allergy": [
+                3,
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Майонез, обезжиренный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 55,
+            "allergy": [
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Майонез, жирный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 56,
+            "allergy": [
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Мятный джема",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 57,
+            "replacement": []
+        },
+        {
+            "name": "Мирин / аджи-мирин",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 58,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Пищевые дрожжи, хлопья",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "1 порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 59,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Пассата",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        97
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        72
+                    ],
+                    "title": "Небольшая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 60,
+            "replacement": []
+        },
+        {
+            "name": "Паста соус, на основе сливок, магазинный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        132
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        66
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                }
+            ],
+            "food_id": 61,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Паста, томатная паста / концентрат",
+                    "food_id": 69
+                }
+            ]
+        },
+        {
+            "name": "Паста соус, на основе томатов (содержит чеснок и лук), магазинный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3,
+                        1,
+                        132
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        2,
+                        3,
+                        1,
+                        66
+                    ],
+                    "title": "Большая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 62,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Томатный пюре",
+                    "food_id": 140
+                }
+            ]
+        },
+        {
+            "name": "Паста, хрен",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 63,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Паста, мисо",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        75
+                    ],
+                    "title": "Умеренная порция (6¼ столовых ложек)"
+                }
+            ],
+            "food_id": 64,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Паста, нектарин",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        27
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Небольшая порция (½ столовой ложки)"
+                }
+            ],
+            "food_id": 65,
+            "replacement": [
+                {
+                    "name": "Паста, хрен",
+                    "food_id": 63
+                }
+            ]
+        },
+        {
+            "name": "Паста, креветки",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "1 порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 66,
+            "allergy": [
+                2,
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Паста, тахини, очищенный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        1,
+                        184
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        217
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 67,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Паста, тахини, неочищенный",
+                    "food_id": 68
+                }
+            ]
+        },
+        {
+            "name": "Паста, тахини, неочищенный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        1,
+                        103
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        119
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 68,
+            "replacement": [
+                {
+                    "name": "Паста, тахини, очищенный",
+                    "food_id": 67
+                }
+            ]
+        },
+        {
+            "name": "Паста, томатная паста / концентрат",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        81
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        85
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 69,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Томатный пюре",
+                    "food_id": 140
+                }
+            ]
+        },
+        {
+            "name": "Свежие листья рампы / пандана",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 лист 2,5 см)"
+                }
+            ],
+            "food_id": 70,
+            "replacement": []
+        },
+        {
+            "name": "Сладкая сальса",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 71,
+            "replacement": []
+        },
+        {
+            "name": "Соус, Вестермистерширский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        105
+                    ],
+                    "title": "Умеренная порция (5 столовых ложек)"
+                }
+            ],
+            "food_id": 72,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (содержит чеснок)",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Соус, яблочное пюре",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        122
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "Умеренная порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "Небольшая порция (¾ чайной ложки)"
+                }
+            ],
+            "food_id": 73,
+            "replacement": [
+                {
+                    "name": "Чатни, фрукты (содержат персик, яблоко, чеснок и лук)",
+                    "food_id": 6
+                }
+            ]
+        },
+        {
+            "name": "Соус, барбекю / BBQ",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        46
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 74,
+            "replacement": []
+        },
+        {
+            "name": "Соус, барбекю / BBQ, азиатский стиль",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        12
+                    ],
+                    "title": "Умеренная порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. \n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Небольшая порция (1½ чайных ложек)"
+                }
+            ],
+            "food_id": 75,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, барбекю / BBQ",
+                    "food_id": 74
+                }
+            ]
+        },
+        {
+            "name": "Соус, черная фасоль (содержит чеснок)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        29
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        36
+                    ],
+                    "title": "Большая порция (1¾ столовых ложек)"
+                }
+            ],
+            "food_id": 76,
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (без чеснока)",
+                    "food_id": 77
+                }
+            ]
+        },
+        {
+            "name": "Соус, черная фасоль (без чеснока)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        140
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 77,
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (содержит чеснок)",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Соус, черный перец, азиатский стиль",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        15
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        22
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        27
+                    ],
+                    "title": "Большая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 78,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (содержит чеснок)",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Соус, рыба",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        122
+                    ],
+                    "title": "Умеренная порция (5½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        2,
+                        1,
+                        185
+                    ],
+                    "title": "Большая порция (⅔ чашки)"
+                }
+            ],
+            "food_id": 79,
+            "allergy": [
+                4
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, рыба, веганская пища",
+                    "food_id": 80
+                }
+            ]
+        },
+        {
+            "name": "Соус, рыба, веганская пища",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        39
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        52
+                    ],
+                    "title": "Большая порция (2½ столовых ложек)"
+                }
+            ],
+            "food_id": 80,
+            "allergy": [
+                4,
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, рыба",
+                    "food_id": 79
+                }
+            ]
+        },
+        {
+            "name": "Соус, хабанеро, зеленый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 81,
+            "replacement": []
+        },
+        {
+            "name": "Соус, хойсин",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        280
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        350
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 82,
+            "replacement": []
+        },
+        {
+            "name": "Соус, мята, густой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 83,
+            "replacement": []
+        },
+        {
+            "name": "Соус, мята, тонкий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 84,
+            "replacement": []
+        },
+        {
+            "name": "Соус, устричный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 85,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соус, устричный, веганский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        104
+                    ],
+                    "title": "Умеренная порция (5 столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 86,
+            "replacement": [
+                {
+                    "name": "Соус, устричный",
+                    "food_id": 85
+                }
+            ]
+        },
+        {
+            "name": "Соус, песто, базилик",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (½ столовой ложки)"
+                }
+            ],
+            "food_id": 87,
+            "replacement": [
+                {
+                    "name": "Трава, базилик, сушёный",
+                    "food_id": 23
+                }
+            ]
+        },
+        {
+            "name": "Соус, сатай (содержит чеснок)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        47
+                    ],
+                    "title": "Умеренная порция (2⅓ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        57
+                    ],
+                    "title": "Большая порция (2⅘ столовых ложек)"
+                }
+            ],
+            "food_id": 88,
+            "allergy": [
+                0,
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, сатай (без чеснока)",
+                    "food_id": 89
+                }
+            ]
+        },
+        {
+            "name": "Соус, сатай (без чеснока)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        43
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        50
+                    ],
+                    "title": "Большая порция (2¼ столовых ложки)"
+                }
+            ],
+            "food_id": 89,
+            "replacement": []
+        },
+        {
+            "name": "Соус, соевый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 90,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соус, соевый соус, сладкий/кетчап/кечоп мани́с",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        50
+                    ],
+                    "title": "Умеренная порция (2½ столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        60
+                    ],
+                    "title": "Высокая порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 91,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соус, чили-соус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food also contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        15
+                    ],
+                    "title": "Умеренная порция (3 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Большая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 92,
+            "replacement": [
+                {
+                    "name": "Гочугару / Корейская красная паста перца чили",
+                    "food_id": 18
+                }
+            ]
+        },
+        {
+            "name": "Соус, сладкий и кислый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 93,
+            "replacement": []
+        },
+        {
+            "name": "Соус, сладкий чили (содержит чеснок), азиатский стиль",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        109
+                    ],
+                    "title": "Умеренная порция (5½ ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        137
+                    ],
+                    "title": "Большая порция (6 ⅘ столовых ложек)"
+                }
+            ],
+            "food_id": 94,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (содержит чеснок)",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Соус, тамари",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 95,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соус, томатный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "1 порция (2 пакетика)"
+                }
+            ],
+            "food_id": 96,
+            "replacement": []
+        },
+        {
+            "name": "Специи, перец чили, перец Sichuan, китайская ягода, зеленый, сухой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 97,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, перец чили, перец Sichuan, китайская перечная мята, красный, сухой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 98,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, семена ачиоте / аннато, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        1,
+                        4
+                    ],
+                    "title": "Умеренная порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        5
+                    ],
+                    "title": "Высокий / Красный сервировка (2½ чайные ложки)"
+                }
+            ],
+            "food_id": 99,
+            "replacement": []
+        },
+        {
+            "name": "Специи, анис, сушеные, молотые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 100,
+            "replacement": []
+        },
+        {
+            "name": "Специя, кардамон, зеленый, сушеный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 101,
+            "replacement": []
+        },
+        {
+            "name": "Перец, кайенский перец, острый, сушеный, молотый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\\n\\nThis food also contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods. Please note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal.  Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        14
+                    ],
+                    "title": "Высокая/Красная порция (1½ столовые ложки)"
+                }
+            ],
+            "food_id": 102,
+            "replacement": [
+                {
+                    "name": "Специи, перец чили, перец Sichuan, китайская ягода, зеленый, сухой",
+                    "food_id": 97
+                }
+            ]
+        },
+        {
+            "name": "Специи, семена сельдерея, сушеные, целые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        39
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        59
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 103,
+            "replacement": []
+        },
+        {
+            "name": "Специи, перец / чили, сушеный, хлопья",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        17
+                    ],
+                    "title": "Большая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 104,
+            "replacement": [
+                {
+                    "name": "Специи, перец чили, перец Sichuan, китайская ягода, зеленый, сухой",
+                    "food_id": 97
+                }
+            ]
+        },
+        {
+            "name": "Специи, чили, красный, порошок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 105,
+            "replacement": []
+        },
+        {
+            "name": "Специи, чили, красный, цельный, сухой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (1 перец)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Умеренная порция (21 чили)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "Большая порция (28 чили)"
+                }
+            ],
+            "food_id": 106,
+            "replacement": [
+                {
+                    "name": "Специи, перец чили, перец Sichuan, китайская перечная мята, красный, сухой",
+                    "food_id": 98
+                }
+            ]
+        },
+        {
+            "name": "Специи, корица, сушеные, молотые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 107,
+            "replacement": []
+        },
+        {
+            "name": "Специи, корица, палочки / перья",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 палочка)"
+                }
+            ],
+            "food_id": 108,
+            "replacement": []
+        },
+        {
+            "name": "Специи, гвоздика, сушёные, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 109,
+            "replacement": []
+        },
+        {
+            "name": "Специи, семена кориандра, сухие, молотые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 110,
+            "replacement": []
+        },
+        {
+            "name": "Специи, семена кориандра, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 111,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, кумин / семена кумина, сушёные, молотые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 112,
+            "replacement": []
+        },
+        {
+            "name": "Специи, укроп, семена, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 113,
+            "replacement": []
+        },
+        {
+            "name": "Специи, фенхель семена, сушёные, целые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 114,
+            "replacement": []
+        },
+        {
+            "name": "Специи, семена фенхеля сухие, целые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 115,
+            "replacement": []
+        },
+        {
+            "name": "Специи, пять специй",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 116,
+            "replacement": []
+        },
+        {
+            "name": "Специи, чесночный порошок",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 117,
+            "replacement": [
+                {
+                    "name": "Специи, перец чили, перец Sichuan, китайская ягода, зеленый, сухой",
+                    "food_id": 97
+                }
+            ]
+        },
+        {
+            "name": "Специя, мускатный орех, сушеный, молотый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 118,
+            "allergy": [
+                0
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, горчица, семена, чёрный, сушёные, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 119,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, мускатный орех, сушеные, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "1 порция (2 семечка)"
+                }
+            ],
+            "food_id": 120,
+            "allergy": [
+                0
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, паприка, сушеная, молотая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 121,
+            "replacement": []
+        },
+        {
+            "name": "Специи, паприка, копчёная, сушёная, молотая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food contains capsaicin, a natural ingredient which gives its spicy flavour and can trigger heartburn and abdominal pain in some individuals with IBS. Limit intake if IBS symptoms occur after ingestion of spicy foods.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "Умеренная порция (2½ чайных ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        6
+                    ],
+                    "title": "Высокая / Красная порция (3 чайные ложки)"
+                }
+            ],
+            "food_id": 122,
+            "replacement": []
+        },
+        {
+            "name": "Специи, перец, черный, сушеные, цельные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 123,
+            "replacement": []
+        },
+        {
+            "name": "Специи, шафран, нити",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (1 упаковка)"
+                }
+            ],
+            "food_id": 124,
+            "allergy": [
+                0,
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Специи, звездчатый анис, сушеные, целые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (2 зубчика)"
+                }
+            ],
+            "food_id": 125,
+            "replacement": []
+        },
+        {
+            "name": "Специи, суммах, сушёный, молотый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "Умеренная порция (5½ ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        70
+                    ],
+                    "title": "Высокая порция (8 ¾ столовых ложек)"
+                }
+            ],
+            "food_id": 126,
+            "replacement": []
+        },
+        {
+            "name": "Специи, куркума, сушеная, молотая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 127,
+            "replacement": []
+        },
+        {
+            "name": "Спред, миндальное масло",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        1,
+                        32
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                }
+            ],
+            "food_id": 128,
+            "allergy": [
+                0
+            ],
+            "replacement": [
+                {
+                    "name": "Спред, арахисовое масло",
+                    "food_id": 129
+                }
+            ]
+        },
+        {
+            "name": "Спред, арахисовое масло",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        11
+                    ],
+                    "title": "Умеренная порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 129,
+            "allergy": [
+                0,
+                1
+            ],
+            "replacement": [
+                {
+                    "name": "Спред, миндальное масло",
+                    "food_id": 128
+                }
+            ]
+        },
+        {
+            "name": "Спред, каштамовое крем",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 130,
+            "allergy": [
+                0
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Спред, кукуружная маринада",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 131,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Спред, джем, ягодный микс",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        40
+                    ],
+                    "title": "Большая порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        20
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 132,
+            "replacement": []
+        },
+        {
+            "name": "Спред, джем, малиновый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        46
+                    ],
+                    "title": "Умеренная порция (2¼ столовых ложек)"
+                }
+            ],
+            "food_id": 133,
+            "replacement": [
+                {
+                    "name": "Чатни, фрукты (содержат персик, яблоко, чеснок и лук)",
+                    "food_id": 6
+                }
+            ]
+        },
+        {
+            "name": "Спред, джем, клубника",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 134,
+            "replacement": []
+        },
+        {
+            "name": "Спред, джем, цитрусовые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 135,
+            "replacement": []
+        },
+        {
+            "name": "Спред, горчица",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        11
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 136,
+            "replacement": []
+        },
+        {
+            "name": "Спред, горчица, дижонская",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        23
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 137,
+            "replacement": []
+        },
+        {
+            "name": "Спред, арахисовое масло",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 138,
+            "allergy": [
+                0,
+                1
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Спред, овощные соленья / маринованный соус",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        41
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        32
+                    ],
+                    "title": "Умеренная порция (1½ столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 139,
+            "replacement": [
+                {
+                    "name": "Соус, черная фасоль (содержит чеснок)",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Томатный пюре",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        48
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        36
+                    ],
+                    "title": "Небольшая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 140,
+            "replacement": [
+                {
+                    "name": "Паста, томатная паста / концентрат",
+                    "food_id": 69
+                }
+            ]
+        },
+        {
+            "name": "Ванильный стручок, стручки ванили",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (2 штуки)"
+                }
+            ],
+            "food_id": 141,
+            "replacement": []
+        },
+        {
+            "name": "Ванильный экстракт",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 142,
+            "replacement": []
+        },
+        {
+            "name": "Вержус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 143,
+            "replacement": []
+        },
+        {
+            "name": "Уксус, Чинцзян / Жень Цзянь / рисовый черный уксус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        279
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        350
+                    ],
+                    "title": "Большая порция (1½ чашки)"
+                }
+            ],
+            "food_id": 144,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Китайский / Шаосинский алкогольный уксус",
+                    "food_id": 5
+                }
+            ]
+        },
+        {
+            "name": "Уксус, яблочный уксус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 145,
+            "replacement": []
+        },
+        {
+            "name": "Уксус, бальзамический",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 146,
+            "replacement": [
+                {
+                    "name": "Уксус, Чинцзян / Жень Цзянь / рисовый черный уксус",
+                    "food_id": 144
+                }
+            ]
+        },
+        {
+            "name": "Уксус, ячменный солод",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 147,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Уксус, красное вино",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 148,
+            "replacement": []
+        },
+        {
+            "name": "Уксус, рисовый уксус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 149,
+            "replacement": []
+        },
+        {
+            "name": "Белый уксус",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 150,
+            "replacement": []
+        },
+        {
+            "name": "Васаби, паста (содержит сорбит)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (¼ чайной ложки или 1,5 г)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "Умеренная порция (1,3 г)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "Небольшая порция (0.8 г)"
+                }
+            ],
+            "food_id": 151,
+            "replacement": [
+                {
+                    "name": "Куркума",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Свежий спаржа",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 152,
+            "replacement": []
+        }
+    ]
+}

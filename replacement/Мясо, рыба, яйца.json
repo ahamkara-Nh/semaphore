@@ -1,0 +1,417 @@
+{
+    "food": [
+        {
+            "name": "Бекон, все куски, без добавления приправ, приготовленный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nThis food is high in protein and fat and contains minimal carbohydrate (FODMAPs). Fat can affect gut motility and when consumed in excess can be an additional symptom trigger. Do not add high FODMAP foods when cooking (eg. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (2 полоски)"
+                }
+            ],
+            "food_id": 0,
+            "replacement": []
+        },
+        {
+            "name": "Говядина, все куски, обычная, приготовленная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой отруб)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": []
+        },
+        {
+            "name": "Курица, все части, отварная, без кожи и костей",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой кусок)"
+                }
+            ],
+            "food_id": 2,
+            "replacement": []
+        },
+        {
+            "name": "Террин из разных стран, французский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        45
+                    ],
+                    "title": "1 порция (1 ломтик)"
+                }
+            ],
+            "food_id": 3,
+            "allergy": [
+                2,
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Яйца, курица, цельнозерновые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        117
+                    ],
+                    "title": "1 порция (2 штуки)"
+                }
+            ],
+            "food_id": 4,
+            "allergy": [
+                2,
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Рыба, все виды, без добавок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        115
+                    ],
+                    "title": "1 порция (115 г сырого, 100 г приготовленного)"
+                }
+            ],
+            "food_id": 5,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Кенгуру, все куски, приготовленное",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой кусок)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": []
+        },
+        {
+            "name": "Лямб, все куски, простой, приготовленный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой филе)"
+                }
+            ],
+            "food_id": 7,
+            "replacement": []
+        },
+        {
+            "name": "Свинина, все куски, отварная, без добавления жира",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой отруб)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": []
+        },
+        {
+            "name": "Краб, все виды, приготовленный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (10 средних)"
+                }
+            ],
+            "food_id": 9,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Лосось, консервированный в рассоле, слейшийся",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Check the ingredients list for added high FODMAP ingredients (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "1 порция (105 г)"
+                }
+            ],
+            "food_id": 10,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Сардины в масле, консервированные в рассоле, процеженные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Check the ingredients list for added high FODMAP ingredients (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (110 г)"
+                }
+            ],
+            "food_id": 11,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Сосиски, сосисоны (французская вяленая колбаса)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and fat and contains minimal carbohydrate (FODMAPs). Fat can affect gut motility and when consumed in excess can be an additional symptom trigger. Do not add high FODMAP foods when cooking (eg. garlic and onion).\n\nPlease note: Some of the brands tested for this product contained small amounts of garlic and or onion. If you are sensitive to fructans from onions/garlic we recommend you limit intake to the &#39;green&#39; serve size provided. Be cautious when using these types of products as the amount of garlic and or onion added can vary.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (1 сосиска)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        400
+                    ],
+                    "title": "Умеренное количество (8 сосисок)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        490
+                    ],
+                    "title": "Большая порция (10 сосисок)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": [
+                {
+                    "name": "Свинина, все куски, отварная, без добавления жира",
+                    "food_id": 8
+                }
+            ]
+        },
+        {
+            "name": "Тунец, консервированный в рассоле, слейте жидкость.",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Check the ingredients list for added high FODMAP ingredients (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "1 порция (1 банка)"
+                }
+            ],
+            "food_id": 13,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Тунец, консервированный в масле, без добавок, отцеженный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Check the ingredients list for added high FODMAP ingredients (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "1 порция (1 банка)"
+                }
+            ],
+            "food_id": 14,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Индейка, все куски, приготовленная, без добавок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in protein and does not contain carbohydrates (FODMAPs). Nutritional guidelines recommend that on average per day you should eat 2-3 serves of protein sources. Do not add high FODMAP foods when cooking (e.g. garlic and onion).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 небольшой кусок, приготовленный)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": []
+        }
+    ]
+}

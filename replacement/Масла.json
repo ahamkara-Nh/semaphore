@@ -1,0 +1,367 @@
+{
+    "food": [
+        {
+            "name": "Сливочное масло, несолёное",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 0,
+            "replacement": []
+        },
+        {
+            "name": "Смесь молочных продуктов, сливочное масло и масляная смесь",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": []
+        },
+        {
+            "name": "Маргарин, поли- или мононенасыщенный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 2,
+            "replacement": []
+        },
+        {
+            "name": "Майонез, жирный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 3,
+            "allergy": [
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Майонез, жирный майонез",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food may contain high FODMAP ingredients. Read the ingredients list carefully.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 4,
+            "allergy": [
+                3,
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Масло, авокадо",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 5,
+            "replacement": []
+        },
+        {
+            "name": "Масло, рапсовое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": []
+        },
+        {
+            "name": "Масло, кокосовое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 7,
+            "replacement": []
+        },
+        {
+            "name": "Масло, льняное семя",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": []
+        },
+        {
+            "name": "Оливковое масло",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 9,
+            "replacement": []
+        },
+        {
+            "name": "Оливковое масло, ароматизированное чесноком",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": []
+        },
+        {
+            "name": "Масло, арахисовое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 11,
+            "allergy": [
+                1,
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Масло, рисовая шелуха",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": []
+        },
+        {
+            "name": "Масло, семена подсолнечника",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 13,
+            "replacement": []
+        },
+        {
+            "name": "Подсолнечное масло",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 14,
+            "replacement": []
+        },
+        {
+            "name": "Растительное масло",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": []
+        }
+    ]
+}

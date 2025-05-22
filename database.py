@@ -19,6 +19,51 @@ def create_tables():
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Product Category Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS product_category (
+        category_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL UNIQUE
+    );
+    """)
+
+    # Product Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS product (
+        product_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        category_id INTEGER NOT NULL,
+        fructose_level INTEGER NOT NULL,
+        lactose_level INTEGER NOT NULL,
+        fructan_level INTEGER NOT NULL,
+        mannitol_level INTEGER NOT NULL,
+        sorbitol_level INTEGER NOT NULL,
+        gos_level INTEGER NOT NULL,
+        serving_title TEXT NOT NULL,
+        serving_amount_grams REAL NOT NULL,
+        contains_nuts BOOLEAN NOT NULL DEFAULT FALSE,
+        contains_peanut BOOLEAN NOT NULL DEFAULT FALSE,
+        contains_gluten BOOLEAN NOT NULL DEFAULT FALSE,
+        contains_eggs BOOLEAN NOT NULL DEFAULT FALSE,
+        contains_fish BOOLEAN NOT NULL DEFAULT FALSE,
+        contains_soy BOOLEAN NOT NULL DEFAULT FALSE,
+        replacement_name TEXT,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (category_id) REFERENCES product_category(category_id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for product updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_product_updated_at
+    AFTER UPDATE ON product
+    FOR EACH ROW
+    BEGIN
+        UPDATE product SET updated_at = datetime('now') WHERE product_id = OLD.product_id;
+    END;
+    """)
+
     # User Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (

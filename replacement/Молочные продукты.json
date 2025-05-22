@@ -1,0 +1,3048 @@
+{
+    "food": [
+        {
+            "name": "Сливочное масло, несолёное",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 0,
+            "replacement": []
+        },
+        {
+            "name": "Сметана",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        260
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        70
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Сыр, американский, оранжевый, деликатесный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (1 ломтик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        53
+                    ],
+                    "title": "Умеренная порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        2,
+                        3,
+                        1,
+                        84
+                    ],
+                    "title": "Большая порция (3 ломтика)"
+                }
+            ],
+            "food_id": 2,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, предварительно упакованные одиночные",
+                    "food_id": 3
+                }
+            ]
+        },
+        {
+            "name": "Сыр, американский, оранжевый, предварительно упакованные одиночные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "1 порция (1 ломтик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        79
+                    ],
+                    "title": "Большая порция (4 ломтика)"
+                }
+            ],
+            "food_id": 3,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, деликатесный",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Сыр, американский, белый, индивидуальные упаковки",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "1 порция (1 ломтик)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        16
+                    ],
+                    "title": "Небольшая порция (¾ ломтика)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        68
+                    ],
+                    "title": "Большая порция (3 ломтика)"
+                }
+            ],
+            "food_id": 4,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, предварительно упакованные одиночные",
+                    "food_id": 3
+                }
+            ]
+        },
+        {
+            "name": "Сыр, Камамбер",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 5,
+            "allergy": [
+                0
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Камэмбер, французский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Котте, французский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 7,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Грюйер, французский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Хаварти",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 9,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Манчего, испанский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Монтенеро Джек",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 11,
+            "replacement": []
+        },
+        {
+            "name": "Оахака, сыр",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Пармезан, итальянский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция"
+                }
+            ],
+            "food_id": 13,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, Кесо Фреско",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        120
+                    ],
+                    "title": "Умеренная порция (6 ломтиков)"
+                }
+            ],
+            "food_id": 14,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, деликатесный",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Швейцарский сыр",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, голубой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (8 ломтиков)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        195
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        245
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 16,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, деликатесный",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Сыр, бри, французский",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 17,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, чеддер, веганский (на основе кокосового масла)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        325
+                    ],
+                    "title": "Умеренная порция (16 ломтиков)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        409
+                    ],
+                    "title": "Большая порция (20 ломтиков)"
+                }
+            ],
+            "food_id": 18,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Сыр, чеддер, веганский (на основе сои)",
+                    "food_id": 19
+                }
+            ]
+        },
+        {
+            "name": "Сыр, чеддер, веганский (на основе сои)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "Умеренная порция (2 чашки)"
+                }
+            ],
+            "food_id": 19,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Сыр, чеддер, веганский (на основе кокосового масла)",
+                    "food_id": 18
+                }
+            ]
+        },
+        {
+            "name": "Сыр, чеддер, вкусный / колби, натуральный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                }
+            ],
+            "food_id": 20,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, творог",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 21,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, сливки, чеснок и травы, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        30
+                    ],
+                    "title": "Умеренная порция (1½ ломтиков)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 ломтик)"
+                }
+            ],
+            "food_id": 22,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Сыр, сливки, обычный, безлактозный, жирный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 23,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, сливки, обычные, жирные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "Умеренная порция (4 столовые ложки)"
+                }
+            ],
+            "food_id": 24,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Сыр, сливки, веганские (на основе кокосового масла)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        244
+                    ],
+                    "title": "Умеренная порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        307
+                    ],
+                    "title": "Большая порция (⅔ чашки)"
+                }
+            ],
+            "food_id": 25,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Сыр, сливочный сыр, по-французски",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 треугольных порции)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        22
+                    ],
+                    "title": "Небольшая порция (1 треугольник)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        92
+                    ],
+                    "title": "Высокая/Красная порция (4½ треугольных порций)"
+                }
+            ],
+            "food_id": 26,
+            "replacement": [
+                {
+                    "name": "Сыр, бри, французский",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Сыр, фета",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (3 столовые ложки)"
+                }
+            ],
+            "food_id": 27,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, козий (чеvre), мягкий, незрелый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "Умеренная порция (2 чашки)"
+                }
+            ],
+            "food_id": 28,
+            "replacement": [
+                {
+                    "name": "Сыр, Камамбер",
+                    "food_id": 5
+                }
+            ]
+        },
+        {
+            "name": "Сыр, халлуми",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 ломтика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (3 ломтика)"
+                }
+            ],
+            "food_id": 29,
+            "replacement": [
+                {
+                    "name": "Сыр, американский, оранжевый, деликатесный",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Сыр, моцарелла",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                }
+            ],
+            "food_id": 30,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, пармезан",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция"
+                }
+            ],
+            "food_id": 31,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, стиль пекорино",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (⅓ стакана)"
+                }
+            ],
+            "food_id": 32,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, творог",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция (1 тюбик)"
+                }
+            ],
+            "food_id": 33,
+            "replacement": []
+        },
+        {
+            "name": "Сыр, рикотта",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        105
+                    ],
+                    "title": "Умеренная порция (5 столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        421
+                    ],
+                    "title": "Высокая порция (1⅔ чашек)"
+                }
+            ],
+            "food_id": 34,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Кокосовый крем, консервированный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                }
+            ],
+            "food_id": 35,
+            "replacement": []
+        },
+        {
+            "name": "Концентрированное молоко, кокос, подслащенный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        85
+                    ],
+                    "title": "Умеренная порция (4 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        107
+                    ],
+                    "title": "Большая порция (½ чашки)"
+                }
+            ],
+            "food_id": 36,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Концентрированное молоко, коровье, подслащенное, обычное жирностью",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        160
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        26
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        7
+                    ],
+                    "title": "Небольшая порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 37,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Сливки, жирные, обычные",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        63
+                    ],
+                    "title": "Умеренная порция (¼ чашки или 60 мл)"
+                }
+            ],
+            "food_id": 38,
+            "replacement": []
+        },
+        {
+            "name": "Сливки, кислые, жирные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "Умеренная порция (¼ чашки или 60 мл)"
+                }
+            ],
+            "food_id": 39,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Сливки, загущенные, безлактозные, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 40,
+            "replacement": []
+        },
+        {
+            "name": "Сливки, загущенные, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "Небольшая порция (1½ столовых ложек)"
+                }
+            ],
+            "food_id": 41,
+            "replacement": [
+                {
+                    "name": "Сливки, загущенные, безлактозные, обычный жир",
+                    "food_id": 40
+                }
+            ]
+        },
+        {
+            "name": "Сливки, взбитые, свежие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (½ чашки или 125 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "Умеренная порция (2 чашки)"
+                }
+            ],
+            "food_id": 42,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Крем-фраши",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        65
+                    ],
+                    "title": "Умеренная порция (3½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 43,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Заварной крем, ванильный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "1 порция (⅓ чашки или 100 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "Умеренная порция (¼ чашки или 60 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "Небольшая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 44,
+            "allergy": [
+                3
+            ],
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Мороженое, ванильное, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        88
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "Небольшая порция (⅔ мерной ложки)"
+                }
+            ],
+            "food_id": 45,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Кефир, несладкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (200 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        64
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        23
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 46,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Молоко, миндаль",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        240
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 47,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, кокос (содержит инулин)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        240
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        120
+                    ],
+                    "title": "Большая порция (½ чашки или 125 мл)"
+                }
+            ],
+            "food_id": 48,
+            "replacement": [
+                {
+                    "name": "Кокосовый крем, консервированный, обычный жир",
+                    "food_id": 35
+                }
+            ]
+        },
+        {
+            "name": "Молоко, кокос, легкое, консервированное",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                }
+            ],
+            "food_id": 49,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, кокос, ультрапастеризованное (UHT), несладкое",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        240
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (¾ чашки)"
+                }
+            ],
+            "food_id": 50,
+            "replacement": [
+                {
+                    "name": "Молоко, кокос, легкое, консервированное",
+                    "food_id": 49
+                }
+            ]
+        },
+        {
+            "name": "Молоко, кокосовая пудра",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 51,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, кокос, обычный, консервированный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        120
+                    ],
+                    "title": "Умеренная порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        180
+                    ],
+                    "title": "Большая порция (¾ чашки)"
+                }
+            ],
+            "food_id": 52,
+            "replacement": [
+                {
+                    "name": "Молоко, кокос, ультрапастеризованное (UHT), несладкое",
+                    "food_id": 50
+                }
+            ]
+        },
+        {
+            "name": "Молоко, коровье, A2, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        35
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 53,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Молоко, коровье, выпаренное, обычное жирностью",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 54,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Молоко, коровье, безлактозное, обычное жирностью",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                }
+            ],
+            "food_id": 55,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, коровье, с пониженным содержанием жира",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "Один сервированный порции (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        15
+                    ],
+                    "title": "Небольшая порция (3 чайные ложки)"
+                }
+            ],
+            "food_id": 56,
+            "replacement": [
+                {
+                    "name": "Сливки, жирные, обычные",
+                    "food_id": 38
+                }
+            ]
+        },
+        {
+            "name": "Молоко, коровье, жирное обычное",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 57,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, коровье, обезжиренное",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 58,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, козье, жирное.",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "Небольшая порция (1¼ столовых ложек)"
+                }
+            ],
+            "food_id": 59,
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Молоко, макадами",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        240
+                    ],
+                    "title": "1 порция (1 стакан или 250 мл)"
+                }
+            ],
+            "food_id": 60,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, овсянка",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        1,
+                        121
+                    ],
+                    "title": "Умеренная порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        104
+                    ],
+                    "title": "Небольшая порция (6 столовых ложек)"
+                }
+            ],
+            "food_id": 61,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Сливочное масло, несолёное",
+                    "food_id": 0
+                }
+            ]
+        },
+        {
+            "name": "Молоко, киноа, без сахара",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        240
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                }
+            ],
+            "food_id": 62,
+            "replacement": []
+        },
+        {
+            "name": "Молоко, рис",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (¾ чашки или 200 мл)"
+                }
+            ],
+            "food_id": 63,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Молоко, соя (соевое зерно)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 чашка или 250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        1,
+                        44
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        35
+                    ],
+                    "title": "Небольшая порция (1½ столовых ложек)"
+                }
+            ],
+            "food_id": 64,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Молоко, соя (соевый белок)",
+                    "food_id": 65
+                }
+            ]
+        },
+        {
+            "name": "Молоко, соя (соевый белок)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        257
+                    ],
+                    "title": "1 порция (1 стакан)"
+                }
+            ],
+            "food_id": 65,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Йогурт, греческий, обычный, жирный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        170
+                    ],
+                    "title": "1 порция (⅔ стакана)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        93
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        23
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 66,
+            "replacement": [
+                {
+                    "name": "Йогурт, кокос",
+                    "food_id": 67
+                }
+            ]
+        },
+        {
+            "name": "Йогурт, кокос",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 тюбик)"
+                }
+            ],
+            "food_id": 67,
+            "replacement": []
+        },
+        {
+            "name": "Йогурт, козленое, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        129
+                    ],
+                    "title": "Умеренная порция (⅓ стакана)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        32
+                    ],
+                    "title": "Небольшая порция (2½ столовых ложек)"
+                }
+            ],
+            "food_id": 68,
+            "replacement": [
+                {
+                    "name": "Йогурт, кокос",
+                    "food_id": 67
+                }
+            ]
+        },
+        {
+            "name": "Натуральный йогурт, индийский",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 69,
+            "replacement": [
+                {
+                    "name": "Натуральный йогурт, безлактозный, обычный жир",
+                    "food_id": 70
+                }
+            ]
+        },
+        {
+            "name": "Натуральный йогурт, безлактозный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        170
+                    ],
+                    "title": "1 порция (1 тюбик)"
+                }
+            ],
+            "food_id": 70,
+            "replacement": []
+        },
+        {
+            "name": "Натуральный, нежирный йогурт",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        170
+                    ],
+                    "title": "1 порция (1 тюбик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 71,
+            "replacement": []
+        },
+        {
+            "name": "Йогурт, натуральный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        170
+                    ],
+                    "title": "1 порция (1 тюбик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 72,
+            "replacement": [
+                {
+                    "name": "Йогурт, греческий, обычный, жирный",
+                    "food_id": 66
+                }
+            ]
+        },
+        {
+            "name": "Йогурт, соевый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (1 тюбик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        49
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day. Please note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        38
+                    ],
+                    "title": "Небольшая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 73,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Йогурт, клубника, безлактозный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (¾ чашки)"
+                }
+            ],
+            "food_id": 74,
+            "replacement": []
+        },
+        {
+            "name": "Йогурт, ванильный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (¾ стакана)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNutritional guidelines recommend consuming 2-3 serves of dairy foods (cheese, yoghurt, milk or alternatives) per day.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        127
+                    ],
+                    "title": "Небольшая порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        490
+                    ],
+                    "title": "Большая порция (1¾ чашки)"
+                }
+            ],
+            "food_id": 75,
+            "replacement": [
+                {
+                    "name": "Йогурт, греческий, обычный, жирный",
+                    "food_id": 66
+                }
+            ]
+        }
+    ]
+}

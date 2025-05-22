@@ -1,0 +1,4849 @@
+{
+    "food": [
+        {
+            "name": "Аккей, консервированный в рассоле, слейте.",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        195
+                    ],
+                    "title": "1 порция (1 стакан)"
+                }
+            ],
+            "food_id": 0,
+            "allergy": [
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Яблоко, Гренни Смит, очищенное, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        165
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        39
+                    ],
+                    "title": "Умеренная порция (⅓ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        26
+                    ],
+                    "title": "Небольшая порция (⅕ от средней)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": [
+                {
+                    "name": "Яблоко, Гренни Смит, не очищенное, сырое",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Яблоко, Гренни Смит, не очищенное, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        200
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "Умеренное порция (¼ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        27
+                    ],
+                    "title": "Небольшая порция (⅓ средней)"
+                }
+            ],
+            "food_id": 2,
+            "replacement": [
+                {
+                    "name": "Яблоко, Гренни Смит, очищенное, сырое",
+                    "food_id": 1
+                }
+            ]
+        },
+        {
+            "name": "Сушёные яблоки",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        2,
+                        3,
+                        30
+                    ],
+                    "title": "1 порция (8 ломтиков)"
+                }
+            ],
+            "food_id": 3,
+            "replacement": [
+                {
+                    "name": "Изюм",
+                    "food_id": 90
+                }
+            ]
+        },
+        {
+            "name": "Яблоко, розовое, очищенное, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        165
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        31
+                    ],
+                    "title": "Умеренная порция (¼ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        23
+                    ],
+                    "title": "Небольшая порция (⅛ среднего)"
+                }
+            ],
+            "food_id": 4,
+            "replacement": [
+                {
+                    "name": "Яблоко, Гренни Смит, очищенное, сырое",
+                    "food_id": 1
+                }
+            ]
+        },
+        {
+            "name": "Яблоко, розовое, неочищенное, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        200
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        31
+                    ],
+                    "title": "Умеренная порция (⅓ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (⅛ среднего)"
+                }
+            ],
+            "food_id": 5,
+            "replacement": []
+        },
+        {
+            "name": "Консервированные абрикосы в соке, с отцеженным соком",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        230
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        27
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (1½ столовых ложек)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": []
+        },
+        {
+            "name": "Сушёный абрикос",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        30
+                    ],
+                    "title": "1 порция (4 штуки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "Умеренная порция (½ штуки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 7,
+            "replacement": [
+                {
+                    "name": "Сушеные клюквы",
+                    "food_id": 31
+                }
+            ]
+        },
+        {
+            "name": "Питтёные абрикосы, сырые",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        70
+                    ],
+                    "title": "1 порция (2 средние)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        67
+                    ],
+                    "title": "Небольшая порция (2 средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        102
+                    ],
+                    "title": "Большая порция (3 средних)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": []
+        },
+        {
+            "name": "Авокадо, Хасс, очищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\n*Avocados contain a unique sugar polyol called perseitol. Intake may trigger symptoms in individuals with IBS who are sensitive to other sugar polyols (such as sorbitol).",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        80
+                    ],
+                    "title": "1 порция (½ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\n *Avocados contain a unique sugar polyol called perseitol. Intake may trigger symptoms in individuals with IBS who are sensitive to other sugar polyols (such as sorbitol).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Низкое количество (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.\n\n *Avocados contain a unique sugar polyol called perseitol. Intake may trigger symptoms in individuals with IBS who are sensitive to other sugar polyols (such as sorbitol).",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        93
+                    ],
+                    "title": "Большая порция (4½ столовых ложек)"
+                }
+            ],
+            "food_id": 9,
+            "replacement": []
+        },
+        {
+            "name": "Сушеные банановые чипсы",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (15 чипсов)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        32
+                    ],
+                    "title": "Умеренная порция (16 чипсов)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        38
+                    ],
+                    "title": "Большая порция (19 чипсов)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": [
+                {
+                    "name": "Банан, обычный, спелый, очищенный, сырой",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Банан, обычный, плотный, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        95
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        100
+                    ],
+                    "title": "Умеренная порция (1 большая)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        123
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 11,
+            "replacement": [
+                {
+                    "name": "Банан, обычный, спелый, очищенный, сырой",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Банан, обычный, спелый, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        95
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        47
+                    ],
+                    "title": "Умеренная порция (½ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        37
+                    ],
+                    "title": "Небольшая порция (⅓ средней)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": []
+        },
+        {
+            "name": "Банан, сахар, твердый, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        112
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 13,
+            "replacement": []
+        },
+        {
+            "name": "Банан, сахар, спелый, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        112
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        191
+                    ],
+                    "title": "Умеренная порция (1¾ средней)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        285
+                    ],
+                    "title": "Большая порция (2½ средних)"
+                }
+            ],
+            "food_id": 14,
+            "replacement": [
+                {
+                    "name": "Банан, обычный, спелый, очищенный, сырой",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Ягоба, ежевика, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "Умеренное количество (9 ягод)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        32
+                    ],
+                    "title": "Небольшая порция (6 ягод)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": [
+                {
+                    "name": "Ягоба, черника, сырая",
+                    "food_id": 16
+                }
+            ]
+        },
+        {
+            "name": "Ягоба, черника, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        125
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 16,
+            "replacement": []
+        },
+        {
+            "name": "Ягода, боярышник, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        144
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        44
+                    ],
+                    "title": "Умеренное количество (9 ягод)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "Небольшая порция (6 ягод)"
+                }
+            ],
+            "food_id": 17,
+            "replacement": []
+        },
+        {
+            "name": "Ягоды, клюква, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        28
+                    ],
+                    "title": "Умеренная порция (2⅓ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        22
+                    ],
+                    "title": "Небольшая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 18,
+            "replacement": [
+                {
+                    "name": "Ягоды, клюква, сырая",
+                    "food_id": 19
+                }
+            ]
+        },
+        {
+            "name": "Ягоды, клюква, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        133
+                    ],
+                    "title": "Умеренная порция (1⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        161
+                    ],
+                    "title": "Большая порция (1⅔ чашек)"
+                }
+            ],
+            "food_id": 19,
+            "replacement": [
+                {
+                    "name": "Ягоды, клюква, сушеные",
+                    "food_id": 18
+                }
+            ]
+        },
+        {
+            "name": "Ягоба, малина, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        58
+                    ],
+                    "title": "Небольшая порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        88
+                    ],
+                    "title": "Большая порция (¾ чашки)"
+                }
+            ],
+            "food_id": 20,
+            "replacement": [
+                {
+                    "name": "Ягоба, ежевика, сырая",
+                    "food_id": 15
+                }
+            ]
+        },
+        {
+            "name": "Ягода, клубника, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (6 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        65
+                    ],
+                    "title": "Небольшая порция (5 средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "Большая порция (8 средних)"
+                }
+            ],
+            "food_id": 21,
+            "replacement": []
+        },
+        {
+            "name": "Фрукт банан, неочищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        192
+                    ],
+                    "title": "1 порция (½ среднего)"
+                }
+            ],
+            "food_id": 22,
+            "replacement": []
+        },
+        {
+            "name": "Карнбела / Звездюля, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        94
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 23,
+            "replacement": []
+        },
+        {
+            "name": "Замороженные вишни без косточек",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        75
+                    ],
+                    "title": "1 порция (12 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Умеренная порция (2 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "Небольшая порция (1⅓ среднего)"
+                }
+            ],
+            "food_id": 24,
+            "replacement": [
+                {
+                    "name": "Вишня, без косточек, сырая",
+                    "food_id": 25
+                }
+            ]
+        },
+        {
+            "name": "Вишня, без косточек, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        150
+                    ],
+                    "title": "1 порция (21 средний или 1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        31
+                    ],
+                    "title": "Умеренная порция (4½ средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (3 средних)"
+                }
+            ],
+            "food_id": 25,
+            "replacement": [
+                {
+                    "name": "Замороженные вишни без косточек",
+                    "food_id": 24
+                }
+            ]
+        },
+        {
+            "name": "Кокосовый крем, консервированный, обычный жир",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Один сервированный порция (¼ чашки)"
+                }
+            ],
+            "food_id": 26,
+            "replacement": []
+        },
+        {
+            "name": "Кокос, зрелый плод, мякоть, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        96
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        81
+                    ],
+                    "title": "Небольшая порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        123
+                    ],
+                    "title": "Большая порция (1⅓ чашки)"
+                }
+            ],
+            "food_id": 27,
+            "replacement": []
+        },
+        {
+            "name": "Шелуха кокоса, сушеная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        35
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        51
+                    ],
+                    "title": "Большая порция (1/4 чашки)"
+                }
+            ],
+            "food_id": 28,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, очищенные от косточек",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Кумквати, очищенные, сырые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        76
+                    ],
+                    "title": "1 порция (4 средние)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        175
+                    ],
+                    "title": "Умеренная порция (9 средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        225
+                    ],
+                    "title": "Большая порция (12 средних)"
+                }
+            ],
+            "food_id": 29,
+            "replacement": [
+                {
+                    "name": "Кумквати, неочищенные, сырые",
+                    "food_id": 30
+                }
+            ]
+        },
+        {
+            "name": "Кумквати, неочищенные, сырые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        88
+                    ],
+                    "title": "1 порция (4 средние)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        240
+                    ],
+                    "title": "Умеренная порция (11 средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        309
+                    ],
+                    "title": "Большая порция (14 средних)"
+                }
+            ],
+            "food_id": 30,
+            "replacement": [
+                {
+                    "name": "Кумквати, очищенные, сырые",
+                    "food_id": 29
+                }
+            ]
+        },
+        {
+            "name": "Сушеные клюквы",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        16
+                    ],
+                    "title": "Умеренная порция (1¼ столовой ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 31,
+            "replacement": [
+                {
+                    "name": "Ягоды, клюква, сушеные",
+                    "food_id": 18
+                }
+            ]
+        },
+        {
+            "name": "Мушмула, очищенная, без семян, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        100
+                    ],
+                    "title": "Один сервированный порция (2/5 чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        1,
+                        38
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "Небольшая порция (1½ столовых ложек)"
+                }
+            ],
+            "food_id": 32,
+            "replacement": [
+                {
+                    "name": "Яблоко, Гренни Смит, очищенное, сырое",
+                    "food_id": 1
+                }
+            ]
+        },
+        {
+            "name": "Сорт даты, меджуль, без косточек",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (1 финик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        40
+                    ],
+                    "title": "Умеренное количество (2 фиников)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        61
+                    ],
+                    "title": "Высокая порция (3 финика)"
+                }
+            ],
+            "food_id": 33,
+            "replacement": [
+                {
+                    "name": "Ягоба, ежевика, сырая",
+                    "food_id": 15
+                }
+            ]
+        },
+        {
+            "name": "Сушеные финики, очищенные от косточек",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (5 фиников)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        46
+                    ],
+                    "title": "Умеренная порция (7½ фиников)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        61
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 34,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, не очищенные",
+                    "food_id": 39
+                }
+            ]
+        },
+        {
+            "name": "Драконий фрукт, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        330
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 35,
+            "replacement": []
+        },
+        {
+            "name": "Дюриан, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 36,
+            "replacement": []
+        },
+        {
+            "name": "Фейхоа, неочищенная, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "1 порция (3 средние)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        39
+                    ],
+                    "title": "Умеренная порция (1½ средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "Небольшая порция (1 средний)"
+                }
+            ],
+            "food_id": 37,
+            "replacement": [
+                {
+                    "name": "Кумквати, неочищенные, сырые",
+                    "food_id": 30
+                }
+            ]
+        },
+        {
+            "name": "Сушёные финики",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 штука)"
+                }
+            ],
+            "food_id": 38,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, очищенные от косточек",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Сушеные финики, не очищенные",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (½ столовой ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        7
+                    ],
+                    "title": "Небольшая порция (1½ чайной ложки)"
+                }
+            ],
+            "food_id": 39,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, очищенные от косточек",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Сушеные ягоды годжи",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        24
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        14
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        11
+                    ],
+                    "title": "Небольшая порция (3 чайные ложки)"
+                }
+            ],
+            "food_id": 40,
+            "replacement": [
+                {
+                    "name": "Изюм",
+                    "food_id": 90
+                }
+            ]
+        },
+        {
+            "name": "Виноград, зеленый / белый, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (15 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        15
+                    ],
+                    "title": "Умеренная порция (3 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        11
+                    ],
+                    "title": "Небольшая порция (2 средних)"
+                }
+            ],
+            "food_id": 41,
+            "replacement": []
+        },
+        {
+            "name": "Красное виноградное зерносодержащее, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (15 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        14
+                    ],
+                    "title": "Умеренная порция (3 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (2 средних)"
+                }
+            ],
+            "food_id": 42,
+            "replacement": [
+                {
+                    "name": "Виноград, зеленый / белый, без косточек, сырой",
+                    "food_id": 41
+                }
+            ]
+        },
+        {
+            "name": "Грейпфрут, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        238
+                    ],
+                    "title": "1 порция (1 небольшая)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        121
+                    ],
+                    "title": "Умеренная порция (½ маленькой)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        90
+                    ],
+                    "title": "Небольшая порция (⅓ небольшого)"
+                }
+            ],
+            "food_id": 43,
+            "replacement": [
+                {
+                    "name": "Киви, Зеленый киви, Zespri™",
+                    "food_id": 52
+                }
+            ]
+        },
+        {
+            "name": "Гуава, консервированная в сиропе, с отжатой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        268
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        59
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        47
+                    ],
+                    "title": "Небольшая порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 44,
+            "replacement": [
+                {
+                    "name": "Гуава, твердая, очищенная, сырая",
+                    "food_id": 45
+                }
+            ]
+        },
+        {
+            "name": "Гуава, твердая, очищенная, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        90
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        15
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        11
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 45,
+            "replacement": [
+                {
+                    "name": "Гуава, консервированная в сиропе, с отжатой",
+                    "food_id": 44
+                }
+            ]
+        },
+        {
+            "name": "Созревшие, очищенные, свежие гуавы",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        90
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 46,
+            "replacement": []
+        },
+        {
+            "name": "Мангольд, желтый, консервированный, слить жидкость",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Умеренная порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        45
+                    ],
+                    "title": "Небольшая порция (⅓ чашки)"
+                }
+            ],
+            "food_id": 47,
+            "replacement": [
+                {
+                    "name": "Мангольд, консервированный в соке, ломтики, с отжатые",
+                    "food_id": 81
+                }
+            ]
+        },
+        {
+            "name": "Мангольд, молодой, консервированный, отцеженный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "1 порция (½ чашки)"
+                }
+            ],
+            "food_id": 48,
+            "replacement": []
+        },
+        {
+            "name": "Сок, лимон, свежевыжатый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        178
+                    ],
+                    "title": "Умеренная порция (⅔ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        223
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 49,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Сок, лайм, свежий",
+                    "food_id": 50
+                }
+            ]
+        },
+        {
+            "name": "Сок, лайм, свежий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        279
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        350
+                    ],
+                    "title": "Большая порция (1⅓ чашки)"
+                }
+            ],
+            "food_id": 50,
+            "replacement": [
+                {
+                    "name": "Сок, лимон, свежевыжатый",
+                    "food_id": 49
+                }
+            ]
+        },
+        {
+            "name": "Ягоды юзу, сушеные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "title": "1 порция (¼ чайной ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        38
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "Большая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 51,
+            "replacement": [
+                {
+                    "name": "Сушеные ягоды годжи",
+                    "food_id": 40
+                }
+            ]
+        },
+        {
+            "name": "Киви, Зеленый киви, Zespri™",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis product is Monash University Low FODMAP Certified™. Samples of the product were analysed and assessed to be low in FODMAP and can assist with following the Monash University Low FODMAP Diet™.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (2 средние, очищенные)"
+                }
+            ],
+            "food_id": 52,
+            "replacement": []
+        },
+        {
+            "name": "Киви, SunGold киви, Zespri™",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis product is Monash University Low FODMAP Certified™. Samples of the product were analysed and assessed to be low in FODMAP and can assist with following the Monash University Low FODMAP Diet™.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (2 средних, очищенных)"
+                }
+            ],
+            "food_id": 53,
+            "replacement": []
+        },
+        {
+            "name": "Кiwifruit, gold, peeled, raw",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (2 небольших)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        178
+                    ],
+                    "title": "Умеренное количество (2⅓ маленьких порций)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        223
+                    ],
+                    "title": "Большая порция (3 маленьких)"
+                }
+            ],
+            "food_id": 54,
+            "replacement": [
+                {
+                    "name": "Киви, Зеленый киви, Zespri™",
+                    "food_id": 52
+                }
+            ]
+        },
+        {
+            "name": "Зеленый киви, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (2 маленьких)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        275
+                    ],
+                    "title": "Умеренная порция (3⅔ маленьких)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        350
+                    ],
+                    "title": "Большая порция (4⅔ маленьких)"
+                }
+            ],
+            "food_id": 55,
+            "replacement": [
+                {
+                    "name": "Киви, Зеленый киви, Zespri™",
+                    "food_id": 52
+                }
+            ]
+        },
+        {
+            "name": "Сушеные долгоны",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 56,
+            "allergy": [
+                4
+            ],
+            "replacement": [
+                {
+                    "name": "Сушеные клюквы",
+                    "food_id": 31
+                }
+            ]
+        },
+        {
+            "name": "Домтат, очищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        140
+                    ],
+                    "title": "1 порция (14 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        43
+                    ],
+                    "title": "Умеренная порция (4 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "Небольшая порция (3 средних)"
+                }
+            ],
+            "food_id": 57,
+            "replacement": [
+                {
+                    "name": "Яблоко, Гренни Смит, очищенное, сырое",
+                    "food_id": 1
+                }
+            ]
+        },
+        {
+            "name": "Личи, консервированное в сиропе, с отжатой сиропной жидкостью",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (15 средних или ½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        182
+                    ],
+                    "title": "Умеренная порция (18 средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        244
+                    ],
+                    "title": "Большая порция (24½ средних)"
+                }
+            ],
+            "food_id": 58,
+            "replacement": [
+                {
+                    "name": "Личи, очищенное, без косточек, сырое",
+                    "food_id": 59
+                }
+            ]
+        },
+        {
+            "name": "Личи, очищенное, без косточек, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (15 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        130
+                    ],
+                    "title": "Умеренная порция (13 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        96
+                    ],
+                    "title": "Небольшая порция (9 средних)"
+                }
+            ],
+            "food_id": 59,
+            "replacement": [
+                {
+                    "name": "Личи, консервированное в сиропе, с отжатой сиропной жидкостью",
+                    "food_id": 58
+                }
+            ]
+        },
+        {
+            "name": "Мандарин, импортный, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        90
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        97
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        146
+                    ],
+                    "title": "Большая порция (1½ среднего)"
+                }
+            ],
+            "food_id": 60,
+            "replacement": [
+                {
+                    "name": "Мангольд, желтый, консервированный, слить жидкость",
+                    "food_id": 47
+                }
+            ]
+        },
+        {
+            "name": "Сушеные манго",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (4 полоски)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренное количество (2 полоски)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        7
+                    ],
+                    "title": "Небольшая порция (1⅔ полосок)"
+                }
+            ],
+            "food_id": 61,
+            "replacement": [
+                {
+                    "name": "Манго, очищенное, без косточек, сырое",
+                    "food_id": 62
+                }
+            ]
+        },
+        {
+            "name": "Манго, очищенное, без косточек, сырое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (½ среднего)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        7
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 62,
+            "replacement": []
+        },
+        {
+            "name": "Дыня, арбуз, очищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        121
+                    ],
+                    "title": "Небольшая порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        154
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 63,
+            "replacement": [
+                {
+                    "name": "Дыня, арбуз, белый цуккини, очищенный, без семян, сырой",
+                    "food_id": 64
+                }
+            ]
+        },
+        {
+            "name": "Дыня, арбуз, белый цуккини, очищенный, без семян, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 стакан или 1 большой ломтик)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        116
+                    ],
+                    "title": "Умеренное количество (1 небольшой ломтик)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        92
+                    ],
+                    "title": "Небольшая порция (½ чашки)"
+                }
+            ],
+            "food_id": 64,
+            "replacement": [
+                {
+                    "name": "Дыня, арбуз, очищенный, без косточек, сырой",
+                    "food_id": 63
+                }
+            ]
+        },
+        {
+            "name": "Смешанная кожура, цитрусовые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        98
+                    ],
+                    "title": "Умеренная порция (⅔ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        123
+                    ],
+                    "title": "Большая порция (¾ чашки)"
+                }
+            ],
+            "food_id": 65,
+            "replacement": [
+                {
+                    "name": "Грейпфрут, очищенный, сырой",
+                    "food_id": 43
+                }
+            ]
+        },
+        {
+            "name": "Белая нектарина, неочищенная, с косточкой, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        120
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        84
+                    ],
+                    "title": "Умеренная порция (⅔ средней)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        67
+                    ],
+                    "title": "Небольшая порция (½ среднего)"
+                }
+            ],
+            "food_id": 66,
+            "replacement": [
+                {
+                    "name": "Желтая незрелая, очищенная от косточек, сырая нектарина",
+                    "food_id": 67
+                }
+            ]
+        },
+        {
+            "name": "Желтая незрелая, очищенная от косточек, сырая нектарина",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        114
+                    ],
+                    "title": "Умеренная порция (¾ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        85
+                    ],
+                    "title": "Небольшая порция (½ среднего)"
+                }
+            ],
+            "food_id": 67,
+            "replacement": []
+        },
+        {
+            "name": "Апельсин, напельсин, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        130
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        152
+                    ],
+                    "title": "Умеренная порция (1¼ среднего)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        229
+                    ],
+                    "title": "Большая порция (1¾ среднего)"
+                }
+            ],
+            "food_id": 68,
+            "replacement": []
+        },
+        {
+            "name": "Зеленый папайя, очищенная, без косточек, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (1 стакан)"
+                }
+            ],
+            "food_id": 69,
+            "replacement": []
+        },
+        {
+            "name": "Пюревая груша, очищенная, без семян, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 70,
+            "replacement": []
+        },
+        {
+            "name": "Маракуй, мякоть, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        46
+                    ],
+                    "title": "1 порция (2 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        98
+                    ],
+                    "title": "Умеренная порция (4¼ среднего)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        123
+                    ],
+                    "title": "Большая порция (5⅓ средних)"
+                }
+            ],
+            "food_id": 71,
+            "replacement": [
+                {
+                    "name": "Ягода, боярышник, сырая",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Сушеный папайя",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        15
+                    ],
+                    "title": "1 порция (3 штуки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        10
+                    ],
+                    "title": "Умеренная порция (2 штуки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "Небольшая порция (1½ штуки)"
+                }
+            ],
+            "food_id": 72,
+            "replacement": []
+        },
+        {
+            "name": "Персик, консервированный в соке, слить сок",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        80
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 73,
+            "replacement": []
+        },
+        {
+            "name": "Персик, без косточек, не очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        145
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        32
+                    ],
+                    "title": "Умеренная порция (¼ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 74,
+            "replacement": [
+                {
+                    "name": "Персик, консервированный в соке, слить сок",
+                    "food_id": 73
+                }
+            ]
+        },
+        {
+            "name": "Сорт \"Белис\", белый, неочищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        145
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "Умеренная порция (¼ среднего)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        19
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 75,
+            "replacement": [
+                {
+                    "name": "Вишня, без косточек, сырая",
+                    "food_id": 25
+                }
+            ]
+        },
+        {
+            "name": "Персик, желтый, неочищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        145
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        45
+                    ],
+                    "title": "Умеренная порция (⅓ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 76,
+            "replacement": [
+                {
+                    "name": "Персик, консервированный в соке, слить сок",
+                    "food_id": 73
+                }
+            ]
+        },
+        {
+            "name": "Сушёный персик",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        30
+                    ],
+                    "title": "1 порция (6 штук)"
+                }
+            ],
+            "food_id": 77,
+            "replacement": []
+        },
+        {
+            "name": "Сладкий зеленый персик, спелый, неочищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        170
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        6
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 78,
+            "replacement": [
+                {
+                    "name": "Персик, желтый, неочищенный, без косточек, сырой",
+                    "food_id": 76
+                }
+            ]
+        },
+        {
+            "name": "Персик, нашья, неочищенные, без косточек, сырые",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        190
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (½ столовой ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        6
+                    ],
+                    "title": "Небольшая порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 79,
+            "replacement": []
+        },
+        {
+            "name": "Персики, неочищенные, сырые",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        75
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        65
+                    ],
+                    "title": "Умеренная порция (⅞ средней)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 80,
+            "replacement": [
+                {
+                    "name": "Персик, без косточек, не очищенный, сырой",
+                    "food_id": 74
+                }
+            ]
+        },
+        {
+            "name": "Мангольд, консервированный в соке, ломтики, с отжатые",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        107
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        97
+                    ],
+                    "title": "Небольшая порция"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        123
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 81,
+            "replacement": [
+                {
+                    "name": "Мангольд, консервированный в сиропе, ломтики, с отцеженным соком",
+                    "food_id": 82
+                }
+            ]
+        },
+        {
+            "name": "Мангольд, консервированный в сиропе, ломтики, с отцеженным соком",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        107
+                    ],
+                    "title": "1 порция (½ чашки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        84
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        67
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 82,
+            "replacement": [
+                {
+                    "name": "Мангольд, консервированный в соке, ломтики, с отжатые",
+                    "food_id": 81
+                }
+            ]
+        },
+        {
+            "name": "Сушеные ананасы",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (2 штуки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        26
+                    ],
+                    "title": "Умеренное количество (1 штука)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 83,
+            "replacement": [
+                {
+                    "name": "Ананас, очищенный, сырой",
+                    "food_id": 84
+                }
+            ]
+        },
+        {
+            "name": "Ананас, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        195
+                    ],
+                    "title": "Умеренная порция (1¼ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        245
+                    ],
+                    "title": "Большая порция (1¾ чашки)"
+                }
+            ],
+            "food_id": 84,
+            "replacement": []
+        },
+        {
+            "name": "Зелёный банан, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        144
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 85,
+            "replacement": []
+        },
+        {
+            "name": "Слива, черная алмазная, неочищенная, без косточек, сырая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        66
+                    ],
+                    "title": "1 порция (1 средняя)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Умеренная порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "Небольшая порция"
+                }
+            ],
+            "food_id": 86,
+            "replacement": [
+                {
+                    "name": "Мушмула, очищенная, без семян, сырая",
+                    "food_id": 32
+                }
+            ]
+        },
+        {
+            "name": "Свежие семена граната",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        2,
+                        3,
+                        1,
+                        3,
+                        1,
+                        87
+                    ],
+                    "title": "1 порция (½ стакана семян или 1 небольшой)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        53
+                    ],
+                    "title": "Умеренное количество (⅓ чашки семян)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        42
+                    ],
+                    "title": "Небольшая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 87,
+            "replacement": [
+                {
+                    "name": "Изюм",
+                    "food_id": 90
+                }
+            ]
+        },
+        {
+            "name": "Бархат ягодный / индийская финика, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        166
+                    ],
+                    "title": "1 порция (1 средняя)"
+                }
+            ],
+            "food_id": 88,
+            "replacement": []
+        },
+        {
+            "name": "Слива / Сухоплод",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        30
+                    ],
+                    "title": "1 порция (4 штуки)"
+                }
+            ],
+            "food_id": 89,
+            "replacement": []
+        },
+        {
+            "name": "Изюм",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "Небольшая порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 90,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, очищенные от косточек",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Рамбутан, очищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        96
+                    ],
+                    "title": "1 порция (6 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        68
+                    ],
+                    "title": "Умеренная порция (4 средних)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        54
+                    ],
+                    "title": "Небольшая порция (3½ средних)"
+                }
+            ],
+            "food_id": 91,
+            "replacement": [
+                {
+                    "name": "Кумквати, очищенные, сырые",
+                    "food_id": 29
+                }
+            ]
+        },
+        {
+            "name": "Ревень, стебель, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 92,
+            "replacement": []
+        },
+        {
+            "name": "Сухофрукты",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        7
+                    ],
+                    "title": "Небольшая порция (2 чайные ложки)"
+                }
+            ],
+            "food_id": 93,
+            "replacement": [
+                {
+                    "name": "Сушеные финики, очищенные от косточек",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Тамарилл, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        140
+                    ],
+                    "title": "1 порция (2 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        99
+                    ],
+                    "title": "Умеренная порция (1½ средней)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        65
+                    ],
+                    "title": "Небольшая порция (1 средний)"
+                }
+            ],
+            "food_id": 94,
+            "replacement": [
+                {
+                    "name": "Кiwifruit, gold, peeled, raw",
+                    "food_id": 54
+                }
+            ]
+        },
+        {
+            "name": "Тэмари, очищенный, без косточек, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (4 средних)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренное количество (4½ средних)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        11
+                    ],
+                    "title": "Большая порция (5½ средних)"
+                }
+            ],
+            "food_id": 95,
+            "allergy": [
+                4
+            ],
+            "replacement": [
+                {
+                    "name": "Вишня, без косточек, сырая",
+                    "food_id": 25
+                }
+            ]
+        },
+        {
+            "name": "Арбуз, без семян, очищенный, сырой",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        3,
+                        3,
+                        1,
+                        3,
+                        1,
+                        150
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        24
+                    ],
+                    "title": "Умеренная порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "Небольшая порция (3 чайные ложки)"
+                }
+            ],
+            "food_id": 96,
+            "replacement": []
+        },
+        {
+            "name": "Цедра / корка, лимона",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "1 порция (цедра 1 лимона)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        325
+                    ],
+                    "title": "Умеренная порция (1¼ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        413
+                    ],
+                    "title": "Большая порция (1⅔ чашек)"
+                }
+            ],
+            "food_id": 97,
+            "replacement": [
+                {
+                    "name": "Смешанная кожура, цитрусовые",
+                    "food_id": 65
+                }
+            ]
+        },
+        {
+            "name": "Цитрусная корка / цедра, апельсин",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (цедра 1 апельсина)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        275
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        350
+                    ],
+                    "title": "Большая порция (1⅓ чашки)"
+                }
+            ],
+            "food_id": 98,
+            "replacement": [
+                {
+                    "name": "Апельсин, напельсин, очищенный, сырой",
+                    "food_id": 68
+                }
+            ]
+        }
+    ]
+}

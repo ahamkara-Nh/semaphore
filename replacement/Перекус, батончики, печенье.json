@@ -1,0 +1,906 @@
+{
+    "food": [
+        {
+            "name": "Запечённый перекус, без глютена, Grissini семена кунжута, органический, Schnitzer",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis product is Monash University Low FODMAP Certified™. Samples of the product were analysed and assessed to be low in FODMAP and can assist with following the Monash University Low FODMAP Diet™.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция"
+                }
+            ],
+            "food_id": 0,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Запечённый перекус, без глютена, Морковный Шокомаффин, темный шоколад, органический, Шницель",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis product is Monash University Low FODMAP Certified™. Samples of the product were analysed and assessed to be low in FODMAP and can assist with following the Monash University Low FODMAP Diet™.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        70
+                    ],
+                    "title": "1 порция (1 кекс)"
+                }
+            ],
+            "food_id": 1,
+            "allergy": [
+                2,
+                3
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Бар, энергия, яблоко и ягоды",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        55
+                    ],
+                    "title": "1 порция (1 батончик)"
+                }
+            ],
+            "food_id": 2,
+            "replacement": []
+        },
+        {
+            "name": "Бар, энергия, фрукты и орехи",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        35
+                    ],
+                    "title": "1 порция (1 батончик)"
+                }
+            ],
+            "food_id": 3,
+            "allergy": [
+                0,
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Печенье / Кекс, миндальный печенье",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Бар, энергия, овсянка, изюм и грецкие орехи",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        3,
+                        3,
+                        3,
+                        2,
+                        68
+                    ],
+                    "title": "1 порция (1 батончик)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        34
+                    ],
+                    "title": "Высокая порция (½ плитки)"
+                }
+            ],
+            "food_id": 4,
+            "allergy": [
+                0,
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Цельнозерновой крекер",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Бар, энергия, арахисовое масло",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        3,
+                        3,
+                        1,
+                        68
+                    ],
+                    "title": "1 порция (1 батончик)"
+                }
+            ],
+            "food_id": 5,
+            "allergy": [
+                1,
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Крекеры, рис, простой",
+                    "food_id": 18
+                }
+            ]
+        },
+        {
+            "name": "Бар, мюсли, сушеные фрукты",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        32
+                    ],
+                    "title": "1 порция (1 батончик)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": [
+                {
+                    "name": "Цельнозерновой крекер",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Бар, закуска, на основе пшеницы",
+            "serves": [
+                {
+                    "comment": "This food is a concentrated source of FODMAPs. We recommend avoiding this food during the first step of the low FODMAP diet.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        35
+                    ],
+                    "title": "1 порция (1 батончик)"
+                }
+            ],
+            "food_id": 7,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Хлебные крекеры, пшеничные",
+                    "food_id": 19
+                }
+            ]
+        },
+        {
+            "name": "Бисквит / печенье, шоколадное",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        24
+                    ],
+                    "title": "1 порция (2 крекера)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        18
+                    ],
+                    "title": "Умеренная порция (1½ бисквитов)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Небольшой порция (1 печенье)"
+                }
+            ],
+            "food_id": 8,
+            "allergy": [
+                2,
+                3
+            ],
+            "replacement": [
+                {
+                    "name": "Печенье / Кекс, сэндвич, крем, шоколадно покрытый",
+                    "food_id": 11
+                }
+            ]
+        },
+        {
+            "name": "Печенье/бисквит, с начинкой из фруктов",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (2 крекерa)"
+                }
+            ],
+            "food_id": 9,
+            "allergy": [
+                2,
+                3
+            ],
+            "replacement": [
+                {
+                    "name": "Печенье / Кекс, миндальный печенье",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Печенье, обычное",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (2 крекера)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": []
+        },
+        {
+            "name": "Печенье / Кекс, сэндвич, крем, шоколадно покрытый",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        34
+                    ],
+                    "title": "1 порция (2 печенья)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        17
+                    ],
+                    "title": "Небольшой порция (1 печенье)"
+                }
+            ],
+            "food_id": 11,
+            "allergy": [
+                2,
+                3,
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Печенье / Кекс, миндальный печенье",
+                    "food_id": 12
+                }
+            ]
+        },
+        {
+            "name": "Печенье / Кекс, миндальный печенье",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        26
+                    ],
+                    "title": "1 порция (2 крекера)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        13
+                    ],
+                    "title": "Небольшой порция (1 печенье)"
+                }
+            ],
+            "food_id": 12,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Печенье / Кекс, сэндвич, крем, шоколадно покрытый",
+                    "food_id": 11
+                }
+            ]
+        },
+        {
+            "name": "Чипсы, кукуруза, обычная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        50
+                    ],
+                    "title": "1 порция (1 маленькая упаковка)"
+                }
+            ],
+            "food_id": 13,
+            "replacement": []
+        },
+        {
+            "name": "Чипсы, картофельные чипсы, простые",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 небольшая упаковка)"
+                }
+            ],
+            "food_id": 14,
+            "replacement": []
+        },
+        {
+            "name": "Чипсы, соломка из картофеля, соленая",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        22
+                    ],
+                    "title": "1 порция (1 небольшая упаковка)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": []
+        },
+        {
+            "name": "Кукурузный кекс, ароматизированный, со сметаной и луком-зельцем",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        24
+                    ],
+                    "title": "1 порция (4 блинчика)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        19
+                    ],
+                    "title": "Умеренная порция (1½ порций)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Небольшая порция (1 кекс)"
+                }
+            ],
+            "food_id": 16,
+            "replacement": [
+                {
+                    "name": "Рисовые крекеры, со вкусом, со сметаной и луком-зеленью",
+                    "food_id": 25
+                }
+            ]
+        },
+        {
+            "name": "Кукурузный кекс, простой",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        24
+                    ],
+                    "title": "1 порция (2 блинчика)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        12
+                    ],
+                    "title": "Небольшая порция (1 кекс)"
+                }
+            ],
+            "food_id": 17,
+            "replacement": [
+                {
+                    "name": "Кукурузный кекс, ароматизированный, со сметаной и луком-зельцем",
+                    "food_id": 16
+                }
+            ]
+        },
+        {
+            "name": "Крекеры, рис, простой",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        34
+                    ],
+                    "title": "1 порция (20 крекеров)"
+                }
+            ],
+            "food_id": 18,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Хлебные крекеры, пшеничные",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (2 крекера)"
+                }
+            ],
+            "food_id": 19,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Цельнозерновой крекер",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        18
+                    ],
+                    "title": "1 порция (2 крекеры)"
+                }
+            ],
+            "food_id": 20,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Хлебцы, ржаной",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (2 крекера)"
+                }
+            ],
+            "food_id": 21,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Цельнозерновой крекер",
+                    "food_id": 20
+                }
+            ]
+        },
+        {
+            "name": "Попкорн, обычный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        120
+                    ],
+                    "title": "1 порция (1 упаковка, 7 чашек)"
+                }
+            ],
+            "food_id": 22,
+            "replacement": []
+        },
+        {
+            "name": "Остывший крекер с креветками",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nPlease note that this food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (10 крекеров)"
+                }
+            ],
+            "food_id": 23,
+            "allergy": [
+                2,
+                4
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Соленые крекеры",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        24
+                    ],
+                    "title": "1 порция (½ стакана)"
+                }
+            ],
+            "food_id": 24,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Рисовые крекеры, со вкусом, со сметаной и луком-зеленью",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (4 кекса)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        21
+                    ],
+                    "title": "Умеренная порция (3 кексов)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        14
+                    ],
+                    "title": "Небольшая порция (1 торт)"
+                }
+            ],
+            "food_id": 25,
+            "allergy": [
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Рисовые крекеры, несладкие",
+                    "food_id": 26
+                }
+            ]
+        },
+        {
+            "name": "Рисовые крекеры, несладкие",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        28
+                    ],
+                    "title": "1 порция (4 кекса)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        35
+                    ],
+                    "title": "Умеренная порция (5 кексов)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        49
+                    ],
+                    "title": "Большая порция (7 порций)"
+                }
+            ],
+            "food_id": 26,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        }
+    ]
+}

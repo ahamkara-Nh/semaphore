@@ -1,0 +1,3160 @@
+{
+    "food": [
+        {
+            "name": "Пиво",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        377
+                    ],
+                    "title": "1 порция (1 банка или 375 мл)"
+                }
+            ],
+            "food_id": 0,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Бренди",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 шоты)"
+                }
+            ],
+            "food_id": 1,
+            "replacement": []
+        },
+        {
+            "name": "Какао-порошок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 2,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Порошок из вязки",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        12
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (1½ столовых ложек)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        6
+                    ],
+                    "title": "Небольшая порция (1 столовая ложка)"
+                }
+            ],
+            "food_id": 3,
+            "allergy": [
+                0,
+                2
+            ],
+            "replacement": [
+                {
+                    "name": "Порошок матча",
+                    "food_id": 35
+                }
+            ]
+        },
+        {
+            "name": "Розовая корень, обжаренный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        5
+                    ],
+                    "title": "1 порция (2 чайные ложки)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        4
+                    ],
+                    "title": "Умеренная порция (1½ чайных ложек)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "Небольшая порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 4,
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Какао-порошок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis food is high in fat. Fat can affect gut motility and when consumed in excess can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        8
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 5,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Кокосовая вода, магазинная",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        2,
+                        1,
+                        2,
+                        2,
+                        267
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        158
+                    ],
+                    "title": "Умеренная порция (150 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        105
+                    ],
+                    "title": "Небольшая порция (100 мл)"
+                }
+            ],
+            "food_id": 6,
+            "replacement": [
+                {
+                    "name": "Кокосовая вода, зрелая, свежевыжатый сок",
+                    "food_id": 7
+                }
+            ]
+        },
+        {
+            "name": "Кокосовая вода, зрелая, свежевыжатый сок",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        3,
+                        3,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        163
+                    ],
+                    "title": "Умеренная порция (177 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        100
+                    ],
+                    "title": "Небольшая порция (121 мл)"
+                }
+            ],
+            "food_id": 7,
+            "replacement": [
+                {
+                    "name": "Кокосовая вода, магазинная",
+                    "food_id": 6
+                }
+            ]
+        },
+        {
+            "name": "Кофе, эспрессо",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nIncludes both regular and decaffeinated coffee. No milk added. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 шоты или 30 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nIncludes both regular and decaffeinated coffee. No milk added. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        60
+                    ],
+                    "title": "2 порции (2 шота или 60 мл)"
+                }
+            ],
+            "food_id": 8,
+            "replacement": []
+        },
+        {
+            "name": "Кофе, растворимый, без кофеина, гранулы / порошок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        390
+                    ],
+                    "title": "Умеренная порция (2 чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        490
+                    ],
+                    "title": "Большая порция (2½ чашки)"
+                }
+            ],
+            "food_id": 9,
+            "replacement": [
+                {
+                    "name": "Какао-порошок",
+                    "food_id": 2
+                }
+            ]
+        },
+        {
+            "name": "Кофе, растворимый, обычный, гранулы / порошок",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nNote: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        4
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        150
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        189
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 10,
+            "replacement": [
+                {
+                    "name": "Кофе, растворимый, без кофеина, гранулы / порошок",
+                    "food_id": 9
+                }
+            ]
+        },
+        {
+            "name": "Кола, диетическая / без сахара / ноль сахара",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        204
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        162
+                    ],
+                    "title": "Небольшая порция (½ чашки)"
+                }
+            ],
+            "food_id": 11,
+            "replacement": [
+                {
+                    "name": "Лимонад, диетический / без сахара / без добавления сахара",
+                    "food_id": 32
+                }
+            ]
+        },
+        {
+            "name": "Кола, оригинальная (сладкая, с использованием сахарозы)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        189
+                    ],
+                    "title": "Умеренная порция (¾ чашки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "Небольшая порция (½ чашки)"
+                }
+            ],
+            "food_id": 12,
+            "replacement": [
+                {
+                    "name": "Кола, диетическая / без сахара / ноль сахара",
+                    "food_id": 11
+                }
+            ]
+        },
+        {
+            "name": "Сердечный, яблоко и малина, 50% натурального сока",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (25 мл разведенное в 225 мл воды)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Умеренная порция (8 мл разведенное в 70 мл воды)"
+                }
+            ],
+            "food_id": 13,
+            "replacement": [
+                {
+                    "name": "Оранжевый сок, 25-50% настоящего сока",
+                    "food_id": 14
+                }
+            ]
+        },
+        {
+            "name": "Оранжевый сок, 25-50% настоящего сока",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (25 мл разведенное в 225 мл воды)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        25
+                    ],
+                    "title": "Умеренная порция (20 мл разведенных в 180 мл воды)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "Небольшая порция (16 мл разведенных в 144 мл воды)"
+                }
+            ],
+            "food_id": 14,
+            "replacement": [
+                {
+                    "name": "Сок, апельсиновый, 99% восстановленный и свежевыжатый смузи",
+                    "food_id": 27
+                }
+            ]
+        },
+        {
+            "name": "Пейте, алоэ, несладкое",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        2,
+                        3,
+                        3,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        75
+                    ],
+                    "title": "Умеренная порция"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        64
+                    ],
+                    "title": "Небольшая порция (¼ чашки)"
+                }
+            ],
+            "food_id": 15,
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Пейте, клюквенный сок, 27% сока",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        162
+                    ],
+                    "title": "Небольшая порция (¾ стакана)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        205
+                    ],
+                    "title": "Большая порция"
+                }
+            ],
+            "food_id": 16,
+            "replacement": [
+                {
+                    "name": "Сок, яблочный, реконструированный 99%",
+                    "food_id": 21
+                }
+            ]
+        },
+        {
+            "name": "Пить готовый шоколадный порошок, 23% какао",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 17,
+            "replacement": []
+        },
+        {
+            "name": "Пить готовый шоколадный порошок, 60% какао",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 18,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Пить готовый шоколадный порошок, 70% какао",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "1 порция (2 столовые ложки)"
+                }
+            ],
+            "food_id": 19,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Джин",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "1 порция (1 шоты)"
+                }
+            ],
+            "food_id": 20,
+            "replacement": []
+        },
+        {
+            "name": "Сок, яблочный, реконструированный 99%",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        210
+                    ],
+                    "title": "1 порция (1 стакан или 200 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        105
+                    ],
+                    "title": "Большая порция (½ стакана или 100 мл)"
+                }
+            ],
+            "food_id": 21,
+            "replacement": [
+                {
+                    "name": "Основа для молочного напитка, шоколадный вкус",
+                    "food_id": 34
+                }
+            ]
+        },
+        {
+            "name": "Сок, яблочный, 99% восстановленный и свежевыжатый сок",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        210
+                    ],
+                    "title": "1 порция (1 стакан или 200 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        105
+                    ],
+                    "title": "Большая порция (½ стакана или 100 мл)"
+                }
+            ],
+            "food_id": 22,
+            "replacement": [
+                {
+                    "name": "Оранжевый сок, 25-50% настоящего сока",
+                    "food_id": 14
+                }
+            ]
+        },
+        {
+            "name": "Сок, смесь ягодного фруктового пюре (из сокового бара)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        650
+                    ],
+                    "title": "1 порция (650 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "Высокая порция (200 мл)"
+                }
+            ],
+            "food_id": 23,
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Сок, брусничный, 100%",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 шоты)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        140
+                    ],
+                    "title": "Умеренная порция (4½ порции)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        175
+                    ],
+                    "title": "Большая порция (6 шот)"
+                }
+            ],
+            "food_id": 24,
+            "replacement": [
+                {
+                    "name": "Пейте, клюквенный сок, 27% сока",
+                    "food_id": 16
+                }
+            ]
+        },
+        {
+            "name": "Сок, лимон, свежевыжатый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nPlease note that the &#39;green&#39; traffic light rating system allows you to eat multiple serves of ‘green’ foods per meal. Nutritional guidelines recommend that on average per day you should eat at least 5 serves of vegetables and 2 serves of fruits.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        21
+                    ],
+                    "title": "1 порция (1 столовая ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        178
+                    ],
+                    "title": "Умеренная порция (⅔ чашки)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        223
+                    ],
+                    "title": "Большая порция (1 чашка)"
+                }
+            ],
+            "food_id": 25,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Сок, яблочный, реконструированный 99%",
+                    "food_id": 21
+                }
+            ]
+        },
+        {
+            "name": "Сок, апельсиновый, 98% восстановленный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        210
+                    ],
+                    "title": "1 порция (1 стакан или 200 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        105
+                    ],
+                    "title": "Высокая порция (½ стакана или 105 мл)"
+                }
+            ],
+            "food_id": 26,
+            "replacement": [
+                {
+                    "name": "Сок, апельсиновый, 99% восстановленный и свежевыжатый смузи",
+                    "food_id": 27
+                }
+            ]
+        },
+        {
+            "name": "Сок, апельсиновый, 99% восстановленный и свежевыжатый смузи",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        210
+                    ],
+                    "title": "1 порция (1 стакан или 200 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        160
+                    ],
+                    "title": "Умеренная порция (¾ стакана или 160 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        120
+                    ],
+                    "title": "Небольшая порция (½ стакана или 120 мл)"
+                }
+            ],
+            "food_id": 27,
+            "replacement": [
+                {
+                    "name": "Сок, апельсиновый, свежевыжатый",
+                    "food_id": 28
+                }
+            ]
+        },
+        {
+            "name": "Сок, апельсиновый, свежевыжатый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        97
+                    ],
+                    "title": "Умеренная порция (½ стакана)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        72
+                    ],
+                    "title": "Небольшая порция (⅓ стакана)"
+                }
+            ],
+            "food_id": 28,
+            "replacement": [
+                {
+                    "name": "Сок, апельсиновый, 99% восстановленный и свежевыжатый смузи",
+                    "food_id": 27
+                }
+            ]
+        },
+        {
+            "name": "Сок, томат, 100%",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        200
+                    ],
+                    "title": "1 порция (1 стакан)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        129
+                    ],
+                    "title": "Умеренная порция (⅔ стакана)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        96
+                    ],
+                    "title": "Небольшая порция (½ стакана)"
+                }
+            ],
+            "food_id": 29,
+            "replacement": [
+                {
+                    "name": "Сок, брусничный, 100%",
+                    "food_id": 24
+                }
+            ]
+        },
+        {
+            "name": "Комбуча, несладкая",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 30,
+            "allergy": [
+                4
+            ],
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Квас, неразбавленный",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                }
+            ],
+            "food_id": 31,
+            "replacement": []
+        },
+        {
+            "name": "Лимонад, диетический / без сахара / без добавления сахара",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        244
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        194
+                    ],
+                    "title": "Небольшая порция (1/4 стакана)"
+                }
+            ],
+            "food_id": 32,
+            "replacement": [
+                {
+                    "name": "Кола, диетическая / без сахара / ноль сахара",
+                    "food_id": 11
+                }
+            ]
+        },
+        {
+            "name": "Лимонад, оригинальный",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        244
+                    ],
+                    "title": "Умеренная порция (1 чашка)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        194
+                    ],
+                    "title": "Небольшая порция (¾ чашки)"
+                }
+            ],
+            "food_id": 33,
+            "replacement": [
+                {
+                    "name": "Лимонад, диетический / без сахара / без добавления сахара",
+                    "food_id": 32
+                }
+            ]
+        },
+        {
+            "name": "Основа для молочного напитка, шоколадный вкус",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        20
+                    ],
+                    "title": "1 порция (3 столовые ложки)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis is a snack or discretionary food which tends to be high in saturated fat and/or added sugars, added salt or alcohol and low in fibre and/or protein. We recommend moderating intake according to nutritional guidelines.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Небольшая порция (1½ столовые ложки)"
+                }
+            ],
+            "food_id": 34,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Порошок матча",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        9
+                    ],
+                    "title": "Умеренная порция (4½ чайных ложек)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        12
+                    ],
+                    "title": "Большая порция (6 чайных ложек)"
+                }
+            ],
+            "food_id": 35,
+            "replacement": [
+                {
+                    "name": "Пить готовый шоколадный порошок, 23% какао",
+                    "food_id": 17
+                }
+            ]
+        },
+        {
+            "name": "Темный ром",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "1 порция (1 шоты)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        10
+                    ],
+                    "title": "Умеренная порция (10 мл)"
+                }
+            ],
+            "food_id": 36,
+            "replacement": []
+        },
+        {
+            "name": "Чай черный, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 37,
+            "replacement": []
+        },
+        {
+            "name": "Чёрный чай, крепкий, коровье молоко",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 38,
+            "replacement": []
+        },
+        {
+            "name": "Чёрный чай, крепкий, с низким содержанием FODMAP-компонентов заменители молока",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        260
+                    ],
+                    "title": "Умеренная порция (260 мл)"
+                }
+            ],
+            "food_id": 39,
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый, с низким содержанием FODMAP, альтернативные молочные продукты",
+                    "food_id": 43
+                }
+            ]
+        },
+        {
+            "name": "Чёрный чай, крепкий, соевое молоко (соевые бобы)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 40,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый, соевое молоко (соевые бобы)",
+                    "food_id": 44
+                }
+            ]
+        },
+        {
+            "name": "Чёрный чай, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 41,
+            "replacement": []
+        },
+        {
+            "name": "Чёрный чай, слабый, коровье молоко",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 42,
+            "replacement": []
+        },
+        {
+            "name": "Чёрный чай, слабый, с низким содержанием FODMAP, альтернативные молочные продукты",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 43,
+            "replacement": []
+        },
+        {
+            "name": "Чёрный чай, слабый, соевое молоко (соевые бобы)",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 44,
+            "allergy": [
+                5
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Чай, чаи, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 45,
+            "replacement": [
+                {
+                    "name": "Чай черный, крепкий",
+                    "food_id": 37
+                }
+            ]
+        },
+        {
+            "name": "Чай, чаай, крепкий, коровье молоко",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 46,
+            "replacement": [
+                {
+                    "name": "Чай черный, крепкий",
+                    "food_id": 37
+                }
+            ]
+        },
+        {
+            "name": "Чай, чаай, крепкий, низкосодержащие альтернативы молока с низким содержанием FODMAP.",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 47,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый, с низким содержанием FODMAP, альтернативные молочные продукты",
+                    "food_id": 43
+                }
+            ]
+        },
+        {
+            "name": "Чай, чай масала, крепкий, соевое молоко (соевые бобы)",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция (180 мл)"
+                }
+            ],
+            "food_id": 48,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый, соевое молоко (соевые бобы)",
+                    "food_id": 44
+                }
+            ]
+        },
+        {
+            "name": "Чай, чаай, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 49,
+            "replacement": []
+        },
+        {
+            "name": "Чай, чаай, слабый, коровье молоко",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 50,
+            "replacement": []
+        },
+        {
+            "name": "Чай, чаи, слабый, низко FODMAP молоко.",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 51,
+            "replacement": []
+        },
+        {
+            "name": "Чай, чай масала, слабый, соевое молоко (соевые бобы)",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes), with 1 tablespoon of milk or milk alternative. Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 52,
+            "allergy": [
+                5
+            ],
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый, соевое молоко (соевые бобы)",
+                    "food_id": 44
+                }
+            ]
+        },
+        {
+            "name": "Чай, ромашка, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция (180 мл)"
+                }
+            ],
+            "food_id": 53,
+            "replacement": [
+                {
+                    "name": "Чай черный, крепкий",
+                    "food_id": 37
+                }
+            ]
+        },
+        {
+            "name": "Чай, ромашка, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 54,
+            "replacement": []
+        },
+        {
+            "name": "Чай, хризантема, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 55,
+            "replacement": []
+        },
+        {
+            "name": "Чай, хризантема, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 56,
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый",
+                    "food_id": 41
+                }
+            ]
+        },
+        {
+            "name": "Чай, осот, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 57,
+            "replacement": [
+                {
+                    "name": "Чай, чаай, слабый",
+                    "food_id": 49
+                }
+            ]
+        },
+        {
+            "name": "Чай, осот, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 58,
+            "replacement": []
+        },
+        {
+            "name": "Чай, эпазот",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 59,
+            "replacement": []
+        },
+        {
+            "name": "Чай, фенхель, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        2,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция (180 мл)"
+                }
+            ],
+            "food_id": 60,
+            "replacement": [
+                {
+                    "name": "Чай черный, крепкий",
+                    "food_id": 37
+                }
+            ]
+        },
+        {
+            "name": "Чай, фенхель, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Высокая порция (180 мл)"
+                }
+            ],
+            "food_id": 61,
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый",
+                    "food_id": 41
+                }
+            ]
+        },
+        {
+            "name": "Чай, зеленый, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 62,
+            "replacement": []
+        },
+        {
+            "name": "Чай, травяной (содержит корень хиноля), крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Большая порция (180 мл)"
+                }
+            ],
+            "food_id": 63,
+            "replacement": [
+                {
+                    "name": "Чай, хризантема, крепкий",
+                    "food_id": 55
+                }
+            ]
+        },
+        {
+            "name": "Чай, травяной (содержит корень хинозии), слабый",
+            "serves": [
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 64,
+            "replacement": []
+        },
+        {
+            "name": "Чай, лимонная мята / лисий корень, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS. This food remains low in FODMAPs in a serving size of up to 500 grams.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                }
+            ],
+            "food_id": 65,
+            "replacement": []
+        },
+        {
+            "name": "Чай, улун, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        180
+                    ],
+                    "title": "Высокая порция (180 мл)"
+                }
+            ],
+            "food_id": 66,
+            "replacement": [
+                {
+                    "name": "Чай черный, крепкий",
+                    "food_id": 37
+                }
+            ]
+        },
+        {
+            "name": "Чай, улун, слабый",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        3,
+                        1,
+                        3,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nThis serving is made from 1 teabag infused to a weak strength (1-2 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
+                        1,
+                        180
+                    ],
+                    "title": "Умеренная порция (180 мл)"
+                }
+            ],
+            "food_id": 67,
+            "replacement": [
+                {
+                    "name": "Чёрный чай, слабый",
+                    "food_id": 41
+                }
+            ]
+        },
+        {
+            "name": "Чай, мята, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes).",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 68,
+            "replacement": []
+        },
+        {
+            "name": "Чай, белый, крепкий",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "1 порция (250 мл)"
+                },
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nThis serving is made from 1 teabag infused to a strong strength (3-5 minutes). Note: caffeine, when consumed in excess, can be an additional symptom trigger.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        180
+                    ],
+                    "title": "Небольшая порция (180 мл)"
+                }
+            ],
+            "food_id": 69,
+            "replacement": []
+        },
+        {
+            "name": "Текила, золото",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 шоты)"
+                }
+            ],
+            "food_id": 70,
+            "replacement": []
+        },
+        {
+            "name": "Текила, серебряная",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        30
+                    ],
+                    "title": "1 порция (1 шоты)"
+                }
+            ],
+            "food_id": 71,
+            "replacement": []
+        },
+        {
+            "name": "Водка",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "1 порция (1 шоты)"
+                }
+            ],
+            "food_id": 72,
+            "replacement": []
+        },
+        {
+            "name": "порошок из овсяного сена",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        3
+                    ],
+                    "title": "1 порция (1 чайная ложка)"
+                }
+            ],
+            "food_id": 73,
+            "allergy": [
+                2
+            ],
+            "replacement": []
+        },
+        {
+            "name": "Виски / Бурбон / Шотландский виски",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        29
+                    ],
+                    "title": "1 порция (1 шот)"
+                }
+            ],
+            "food_id": 74,
+            "replacement": []
+        },
+        {
+            "name": "Красное вино",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                },
+                {
+                    "comment": "This serving size contains moderate amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        250
+                    ],
+                    "title": "Умеренная порция (1⅔ стаканов или 250 мл)"
+                }
+            ],
+            "food_id": 75,
+            "replacement": [
+                {
+                    "name": "Вино, белое",
+                    "food_id": 78
+                }
+            ]
+        },
+        {
+            "name": "Вино, игристое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                }
+            ],
+            "food_id": 76,
+            "replacement": []
+        },
+        {
+            "name": "Вино, липкое / десертное / алкогольное",
+            "serves": [
+                {
+                    "comment": "This serving size contains high amounts of FODMAPs. Intake may trigger symptoms if you malabsorb any of the indicated FODMAPs.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                }
+            ],
+            "food_id": 77,
+            "allergy": [
+                3
+            ],
+            "replacement": [
+                {
+                    "name": "Красное вино",
+                    "food_id": 75
+                }
+            ]
+        },
+        {
+            "name": "Вино, белое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                }
+            ],
+            "food_id": 78,
+            "replacement": []
+        },
+        {
+            "name": "Вино, белое, сухое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                }
+            ],
+            "food_id": 79,
+            "replacement": []
+        },
+        {
+            "name": "Вино, белое, сладкое",
+            "serves": [
+                {
+                    "comment": "This serving size is low in FODMAPs and should be tolerated by most individuals with IBS.\n\nAlcohol is an irritant to the gut and a limited intake is advised.",
+                    "fodmap": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        149
+                    ],
+                    "title": "1 порция (1 стакан или 150 мл)"
+                }
+            ],
+            "food_id": 80,
+            "replacement": []
+        }
+    ]
+}
