@@ -32,12 +32,18 @@ app = FastAPI(lifespan=lifespan)
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 class UserPreferencesUpdate(BaseModel):
-    allergy_nuts: Optional[bool] = None
-    allergy_peanut: Optional[bool] = None
-    allergy_gluten: Optional[bool] = None
-    allergy_eggs: Optional[bool] = None
-    allergy_fish: Optional[bool] = None
-    allergy_soy: Optional[bool] = None
+    allergy_nuts: Optional[bool] = False
+    allergy_peanut: Optional[bool] = False
+    allergy_gluten: Optional[bool] = False
+    allergy_eggs: Optional[bool] = False
+    allergy_fish: Optional[bool] = False
+    allergy_soy: Optional[bool] = False
+    fructose_filter_level: Optional[int] = 0
+    lactose_filter_level: Optional[int] = 0
+    fructan_filter_level: Optional[int] = 0
+    mannitol_filter_level: Optional[int] = 0
+    sorbitol_filter_level: Optional[int] = 0
+    gos_filter_level: Optional[int] = 0
     # daily_reminders and update_notifications are not updated via this endpoint directly
 
 class TelegramInitData(BaseModel):

@@ -89,6 +89,12 @@ def create_tables():
         allergy_soy BOOLEAN DEFAULT FALSE NOT NULL,
         daily_reminders BOOLEAN DEFAULT TRUE NOT NULL,
         update_notifications BOOLEAN DEFAULT TRUE NOT NULL,
+        fructose_filter_level INTEGER DEFAULT 0 NOT NULL,
+        lactose_filter_level INTEGER DEFAULT 0 NOT NULL,
+        fructan_filter_level INTEGER DEFAULT 0 NOT NULL,
+        mannitol_filter_level INTEGER DEFAULT 0 NOT NULL,
+        sorbitol_filter_level INTEGER DEFAULT 0 NOT NULL,
+        gos_filter_level INTEGER DEFAULT 0 NOT NULL,
         created_at TIMESTAMP DEFAULT (datetime('now')),
         updated_at TIMESTAMP DEFAULT (datetime('now')),
         FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
