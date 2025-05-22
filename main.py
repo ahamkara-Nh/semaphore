@@ -108,6 +108,8 @@ async def get_categories():
         if conn:
             conn.close()
 
+
+
 @app.get("/users/{telegram_id}/onboarding_status")
 async def get_onboarding_status(telegram_id: str):
     conn = None
@@ -347,6 +349,9 @@ async def complete_onboarding(telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+
+
 
 @app.get("/users/{telegram_id}/preferences")
 async def get_user_preferences(telegram_id: str):
@@ -717,6 +722,165 @@ async def create_user_phase_tracking(telegram_id: str, phase_data: PhaseTracking
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error creating phase tracking: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.get("/categories/{category_id}/products/{telegram_id}")
+async def get_filtered_products_by_category(category_id: int, telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # First, verify the category exists
+        cursor.execute("SELECT category_id FROM product_category WHERE category_id = ?", (category_id,))
+        if not cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Category with id {category_id} not found"
+            )
+
+        # Get user preferences
+        cursor.execute("""
+            SELECT up.* 
+            FROM user_preferences up
+            JOIN users u ON u.id = up.user_id
+            WHERE u.telegram_id = ?
+        """, (telegram_id,))
+        user_prefs = cursor.fetchone()
+        if not user_prefs:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Preferences not found for user with telegram_id {telegram_id}"
+            )
+
+        # Build the WHERE clause based on allergies and FODMAP levels
+        where_conditions = ["category_id = ?"]
+        params = [category_id]
+
+        # Add allergy conditions
+        if user_prefs['allergy_nuts']:
+            where_conditions.append("contains_nuts = FALSE")
+        if user_prefs['allergy_peanut']:
+            where_conditions.append("contains_peanut = FALSE")
+        if user_prefs['allergy_gluten']:
+            where_conditions.append("contains_gluten = FALSE")
+        if user_prefs['allergy_eggs']:
+            where_conditions.append("contains_eggs = FALSE")
+        if user_prefs['allergy_fish']:
+            where_conditions.append("contains_fish = FALSE")
+        if user_prefs['allergy_soy']:
+            where_conditions.append("contains_soy = FALSE")
+
+        # Add FODMAP level conditions only if the filter level is greater than 0
+        fodmap_conditions = []
+        if user_prefs['fructose_filter_level'] > 0:
+            fodmap_conditions.append(f"fructose_level = {user_prefs['fructose_filter_level']}")
+        if user_prefs['lactose_filter_level'] > 0:
+            fodmap_conditions.append(f"lactose_level = {user_prefs['lactose_filter_level']}")
+        if user_prefs['fructan_filter_level'] > 0:
+            fodmap_conditions.append(f"fructan_level = {user_prefs['fructan_filter_level']}")
+        if user_prefs['mannitol_filter_level'] > 0:
+            fodmap_conditions.append(f"mannitol_level = {user_prefs['mannitol_filter_level']}")
+        if user_prefs['sorbitol_filter_level'] > 0:
+            fodmap_conditions.append(f"sorbitol_level = {user_prefs['sorbitol_filter_level']}")
+        if user_prefs['gos_filter_level'] > 0:
+            fodmap_conditions.append(f"gos_level = {user_prefs['gos_filter_level']}")
+
+        # Add FODMAP conditions to WHERE clause if any exist
+        if fodmap_conditions:
+            where_conditions.extend(fodmap_conditions)
+
+        # Build and execute the query using a subquery that selects the product with the highest
+        # serving_amount_grams for each unique product name
+        query = f"""
+            WITH RankedProducts AS (
+                SELECT 
+                    product_id,
+                    name,
+                    fructose_level,
+                    lactose_level,
+                    fructan_level,
+                    mannitol_level,
+                    sorbitol_level,
+                    gos_level,
+                    serving_title,
+                    serving_amount_grams,
+                    contains_nuts,
+                    contains_peanut,
+                    contains_gluten,
+                    contains_eggs,
+                    contains_fish,
+                    contains_soy,
+                    replacement_name,
+                    ROW_NUMBER() OVER (PARTITION BY name ORDER BY serving_amount_grams DESC) as rn
+                FROM product 
+                WHERE {' AND '.join(where_conditions)}
+            )
+            SELECT 
+                product_id,
+                name,
+                fructose_level,
+                lactose_level,
+                fructan_level,
+                mannitol_level,
+                sorbitol_level,
+                gos_level,
+                serving_title,
+                serving_amount_grams,
+                contains_nuts,
+                contains_peanut,
+                contains_gluten,
+                contains_eggs,
+                contains_fish,
+                contains_soy,
+                replacement_name
+            FROM RankedProducts 
+            WHERE rn = 1
+            ORDER BY name
+        """
+        
+        cursor.execute(query, tuple(params))
+        products = [row_to_dict(row) for row in cursor.fetchall()]
+
+        return {
+            "category_id": category_id,
+            "products": products,
+            "filters_applied": {
+                "allergies": {
+                    "nuts": user_prefs['allergy_nuts'],
+                    "peanut": user_prefs['allergy_peanut'],
+                    "gluten": user_prefs['allergy_gluten'],
+                    "eggs": user_prefs['allergy_eggs'],
+                    "fish": user_prefs['allergy_fish'],
+                    "soy": user_prefs['allergy_soy']
+                },
+                "fodmap_levels": {
+                    "fructose": user_prefs['fructose_filter_level'],
+                    "lactose": user_prefs['lactose_filter_level'],
+                    "fructan": user_prefs['fructan_filter_level'],
+                    "mannitol": user_prefs['mannitol_filter_level'],
+                    "sorbitol": user_prefs['sorbitol_filter_level'],
+                    "gos": user_prefs['gos_filter_level']
+                }
+            }
+        }
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error getting filtered products: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting filtered products: {e}"
         )
     finally:
         if conn:
