@@ -885,3 +885,161 @@ async def get_filtered_products_by_category(category_id: int, telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+class ProductSearch(BaseModel):
+    search_term: str
+
+@app.post("/products/search/{telegram_id}")
+async def search_products_by_name(telegram_id: str, search_data: ProductSearch):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user preferences
+        cursor.execute("""
+            SELECT up.* 
+            FROM user_preferences up
+            JOIN users u ON u.id = up.user_id
+            WHERE u.telegram_id = ?
+        """, (telegram_id,))
+        user_prefs = cursor.fetchone()
+        if not user_prefs:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Preferences not found for user with telegram_id {telegram_id}"
+            )
+
+        # Build the WHERE clause based on allergies
+        where_conditions = ["name LIKE ?"]
+        params = [f"%{search_data.search_term}%"]
+
+        # Add allergy conditions
+        if user_prefs['allergy_nuts']:
+            where_conditions.append("contains_nuts = FALSE")
+        if user_prefs['allergy_peanut']:
+            where_conditions.append("contains_peanut = FALSE")
+        if user_prefs['allergy_gluten']:
+            where_conditions.append("contains_gluten = FALSE")
+        if user_prefs['allergy_eggs']:
+            where_conditions.append("contains_eggs = FALSE")
+        if user_prefs['allergy_fish']:
+            where_conditions.append("contains_fish = FALSE")
+        if user_prefs['allergy_soy']:
+            where_conditions.append("contains_soy = FALSE")
+            
+        # Add FODMAP level conditions only if the filter level is greater than 0
+        fodmap_conditions = []
+        if user_prefs['fructose_filter_level'] > 0:
+            fodmap_conditions.append(f"fructose_level = {user_prefs['fructose_filter_level']}")
+        if user_prefs['lactose_filter_level'] > 0:
+            fodmap_conditions.append(f"lactose_level = {user_prefs['lactose_filter_level']}")
+        if user_prefs['fructan_filter_level'] > 0:
+            fodmap_conditions.append(f"fructan_level = {user_prefs['fructan_filter_level']}")
+        if user_prefs['mannitol_filter_level'] > 0:
+            fodmap_conditions.append(f"mannitol_level = {user_prefs['mannitol_filter_level']}")
+        if user_prefs['sorbitol_filter_level'] > 0:
+            fodmap_conditions.append(f"sorbitol_level = {user_prefs['sorbitol_filter_level']}")
+        if user_prefs['gos_filter_level'] > 0:
+            fodmap_conditions.append(f"gos_level = {user_prefs['gos_filter_level']}")
+
+        # Add FODMAP conditions to WHERE clause if any exist
+        if fodmap_conditions:
+            where_conditions.extend(fodmap_conditions)
+
+        # Build and execute the query
+        query = f"""
+            WITH RankedProducts AS (
+                SELECT 
+                    product_id,
+                    name,
+                    category_id,
+                    fructose_level,
+                    lactose_level,
+                    fructan_level,
+                    mannitol_level,
+                    sorbitol_level,
+                    gos_level,
+                    serving_title,
+                    serving_amount_grams,
+                    contains_nuts,
+                    contains_peanut,
+                    contains_gluten,
+                    contains_eggs,
+                    contains_fish,
+                    contains_soy,
+                    replacement_name,
+                    ROW_NUMBER() OVER (PARTITION BY name ORDER BY serving_amount_grams DESC) as rn
+                FROM product 
+                WHERE {' AND '.join(where_conditions)}
+            )
+            SELECT 
+                p.product_id,
+                p.name,
+                p.category_id,
+                pc.name as category_name,
+                p.fructose_level,
+                p.lactose_level,
+                p.fructan_level,
+                p.mannitol_level,
+                p.sorbitol_level,
+                p.gos_level,
+                p.serving_title,
+                p.serving_amount_grams,
+                p.contains_nuts,
+                p.contains_peanut,
+                p.contains_gluten,
+                p.contains_eggs,
+                p.contains_fish,
+                p.contains_soy,
+                p.replacement_name
+            FROM RankedProducts p
+            JOIN product_category pc ON p.category_id = pc.category_id
+            WHERE rn = 1
+            ORDER BY p.name
+            LIMIT 10
+        """
+        
+        cursor.execute(query, tuple(params))
+        products = [row_to_dict(row) for row in cursor.fetchall()]
+
+        return {
+            "search_term": search_data.search_term,
+            "products": products,
+            "filters_applied": {
+                "allergies": {
+                    "nuts": user_prefs['allergy_nuts'],
+                    "peanut": user_prefs['allergy_peanut'],
+                    "gluten": user_prefs['allergy_gluten'],
+                    "eggs": user_prefs['allergy_eggs'],
+                    "fish": user_prefs['allergy_fish'],
+                    "soy": user_prefs['allergy_soy']
+                },
+                "fodmap_levels": {
+                    "fructose": user_prefs['fructose_filter_level'],
+                    "lactose": user_prefs['lactose_filter_level'],
+                    "fructan": user_prefs['fructan_filter_level'],
+                    "mannitol": user_prefs['mannitol_filter_level'],
+                    "sorbitol": user_prefs['sorbitol_filter_level'],
+                    "gos": user_prefs['gos_filter_level']
+                }
+            }
+        }
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in search_products_by_name: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error searching products: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error searching products: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
