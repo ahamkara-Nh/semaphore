@@ -348,6 +348,119 @@ async def complete_onboarding(telegram_id: str):
         if conn:
             conn.close()
 
+@app.get("/users/{telegram_id}/preferences")
+async def get_user_preferences(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get all preferences
+        cursor.execute("SELECT * FROM user_preferences WHERE user_id = ?", (user_id,))
+        preferences_row = cursor.fetchone()
+        if not preferences_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Preferences not found for user with telegram_id {telegram_id}"
+            )
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "preferences": row_to_dict(preferences_row)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error getting preferences: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting preferences: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.put("/users/{telegram_id}/preferences/fodmap")
+async def update_user_fodmap_preferences(telegram_id: str, preferences_data: UserPreferencesUpdate):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Extract only FODMAP-related fields
+        fodmap_fields = {
+            key: value for key, value in preferences_data.model_dump(exclude_unset=True).items()
+            if key.endswith('_filter_level')
+        }
+
+        if not fodmap_fields:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="No FODMAP filter levels provided for update"
+            )
+
+        # Update FODMAP filter levels
+        set_clauses = [f"{key} = ?" for key in fodmap_fields.keys()]
+        sql = f"UPDATE user_preferences SET {', '.join(set_clauses)} WHERE user_id = ?"
+        values = list(fodmap_fields.values()) + [user_id]
+        cursor.execute(sql, tuple(values))
+        conn.commit()
+
+        # Get updated preferences
+        cursor.execute("SELECT * FROM user_preferences WHERE user_id = ?", (user_id,))
+        updated_prefs = cursor.fetchone()
+
+        return JSONResponse(content={
+            "message": "FODMAP filter levels updated successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "preferences": row_to_dict(updated_prefs)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error updating FODMAP preferences: {e}")
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating FODMAP preferences: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
 @app.get("/users/{telegram_id}/preferences/created-at")
 async def get_user_preferences_created_at(telegram_id: str):
     conn = None
