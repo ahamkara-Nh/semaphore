@@ -1139,3 +1139,94 @@ async def get_products_by_exact_name(product_data: ProductNameRequest):
     finally:
         if conn:
             conn.close()
+
+@app.get("/users/{telegram_id}/lists/{list_type}/items")
+async def get_user_list_items(telegram_id: str, list_type: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get list_id for the specified list_type
+        cursor.execute("""
+            SELECT list_id 
+            FROM user_list 
+            WHERE user_id = ? AND list_type = ?
+        """, (user_id, list_type))
+        list_row = cursor.fetchone()
+        if not list_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"List of type {list_type} not found for user with telegram_id {telegram_id}"
+            )
+        list_id = list_row['list_id']
+
+        # Get all list items with product information
+        cursor.execute("""
+            SELECT 
+                uli.list_item_id,
+                uli.created_at as added_at,
+                p.product_id,
+                p.name,
+                p.category_id,
+                pc.name as category_name,
+                p.fructose_level,
+                p.lactose_level,
+                p.fructan_level,
+                p.mannitol_level,
+                p.sorbitol_level,
+                p.gos_level,
+                p.serving_title,
+                p.serving_amount_grams,
+                p.contains_nuts,
+                p.contains_peanut,
+                p.contains_gluten,
+                p.contains_eggs,
+                p.contains_fish,
+                p.contains_soy,
+                p.replacement_name
+            FROM user_list_item uli
+            JOIN product p ON uli.food_id = p.product_id
+            JOIN product_category pc ON p.category_id = pc.category_id
+            WHERE uli.list_id = ?
+            ORDER BY uli.created_at DESC
+        """, (list_id,))
+        
+        list_items = [row_to_dict(row) for row in cursor.fetchall()]
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "list_type": list_type,
+            "list_id": list_id,
+            "items": list_items
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_user_list_items: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting user list items: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting user list items: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
