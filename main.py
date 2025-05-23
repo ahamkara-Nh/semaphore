@@ -223,6 +223,7 @@ async def auth_telegram(payload: TelegramInitData):
             user_id = new_user_data['id']
             logger.info(f"Retrieved new user ID: {user_id} for telegram_id {telegram_id}.")
 
+            # Create default preferences
             logger.info(f"Attempting to insert default preferences for user_id {user_id}.")
             cursor.execute(
                 """INSERT INTO user_preferences (
@@ -233,11 +234,27 @@ async def auth_telegram(payload: TelegramInitData):
                 (user_id,)
             )
             logger.info(f"Default preferences insertion executed for user_id {user_id}.")
-            conn.commit()
-            logger.info(f"Successfully committed new user {user_id} and default preferences.")
 
+            # Create the four required lists for the new user
+            list_types = ['favourites', 'phase1', 'phase2', 'phase3', 'user_created']
+            for list_type in list_types:
+                logger.info(f"Creating {list_type} list for user_id {user_id}")
+                cursor.execute(
+                    "INSERT INTO user_list (user_id, list_type) VALUES (?, ?)",
+                    (user_id, list_type)
+                )
+
+            conn.commit()
+            logger.info(f"Successfully committed new user {user_id}, default preferences, and user lists.")
+
+            # Fetch all created data
             cursor.execute("SELECT * FROM user_preferences WHERE user_id = ?", (user_id,))
             prefs_row = cursor.fetchone()
+            
+            cursor.execute("SELECT * FROM user_list WHERE user_id = ?", (user_id,))
+            lists_rows = cursor.fetchall()
+            user_lists = [row_to_dict(row) for row in lists_rows]
+
             if prefs_row:
                 fetched_prefs = row_to_dict(prefs_row)
                 logger.info(f"Successfully fetched preferences for new user {user_id}: {fetched_prefs}")
@@ -245,7 +262,8 @@ async def auth_telegram(payload: TelegramInitData):
                     "message": "Authentication successful, new user and default preferences created.",
                     "user_id": user_id,
                     "telegram_id": telegram_id,
-                    "preferences": fetched_prefs
+                    "preferences": fetched_prefs,
+                    "lists": user_lists
                 })
             else:
                 logger.error(f"Failed to fetch preferences for new user {user_id} immediately after creation.")
@@ -253,15 +271,21 @@ async def auth_telegram(payload: TelegramInitData):
                     "message": "Authentication successful, new user created but failed to retrieve preferences.",
                     "user_id": user_id,
                     "telegram_id": telegram_id,
-                    "preference_retrieval_status": "failed_after_creation"
+                    "preference_retrieval_status": "failed_after_creation",
+                    "lists": user_lists
                 }, status_code=status.HTTP_200_OK)
         else:
             db_user = row_to_dict(db_user_row)
             user_id = db_user['id']
-            logger.info(f"User {telegram_id} (ID: {user_id}) already exists. Fetching preferences.")
+            logger.info(f"User {telegram_id} (ID: {user_id}) already exists. Fetching preferences and lists.")
 
             cursor.execute("SELECT * FROM user_preferences WHERE user_id = ?", (user_id,))
             prefs_row = cursor.fetchone()
+            
+            cursor.execute("SELECT * FROM user_list WHERE user_id = ?", (user_id,))
+            lists_rows = cursor.fetchall()
+            user_lists = [row_to_dict(row) for row in lists_rows]
+
             if prefs_row:
                 fetched_prefs = row_to_dict(prefs_row)
                 logger.info(f"Successfully fetched preferences for existing user {user_id}: {fetched_prefs}")
@@ -269,7 +293,8 @@ async def auth_telegram(payload: TelegramInitData):
                     "message": "Authentication successful, user exists.",
                     "user_id": user_id,
                     "telegram_id": db_user['telegram_id'],
-                    "preferences": fetched_prefs
+                    "preferences": fetched_prefs,
+                    "lists": user_lists
                 })
             else:
                 logger.warning(f"Preferences not found for existing user {user_id}. This might indicate a data inconsistency or an issue during initial preference creation.")
@@ -277,7 +302,8 @@ async def auth_telegram(payload: TelegramInitData):
                     "message": "Authentication successful, user exists but preferences not found.",
                     "user_id": user_id,
                     "telegram_id": db_user['telegram_id'],
-                    "preferences_status": "not_found_for_existing_user"
+                    "preferences_status": "not_found_for_existing_user",
+                    "lists": user_lists
                 }, status_code=status.HTTP_200_OK)
 
     except json.JSONDecodeError as e:

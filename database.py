@@ -128,6 +128,31 @@ def create_tables():
     );
     """)
 
+    # UserList Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS user_list (
+        list_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        list_type TEXT NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+    """)
+
+    # UserListItem Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS user_list_item (
+        list_item_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        list_id INTEGER NOT NULL,
+        food_id INTEGER NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (list_id) REFERENCES user_list(list_id) ON DELETE CASCADE,
+        FOREIGN KEY (food_id) REFERENCES product(product_id) ON DELETE CASCADE
+    );
+    """)
+
     # Triggers to update 'updated_at' timestamps
     cursor.execute("""
     CREATE TRIGGER IF NOT EXISTS update_users_updated_at
@@ -153,6 +178,24 @@ def create_tables():
     FOR EACH ROW
     BEGIN
         UPDATE phase_tracking SET updated_at = datetime('now') WHERE phase_tracking_id = OLD.phase_tracking_id;
+    END;
+    """)
+
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_user_list_updated_at
+    AFTER UPDATE ON user_list
+    FOR EACH ROW
+    BEGIN
+        UPDATE user_list SET updated_at = datetime('now') WHERE list_id = OLD.list_id;
+    END;
+    """)
+
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_user_list_item_updated_at
+    AFTER UPDATE ON user_list_item
+    FOR EACH ROW
+    BEGIN
+        UPDATE user_list_item SET updated_at = datetime('now') WHERE list_item_id = OLD.list_item_id;
     END;
     """)
 
