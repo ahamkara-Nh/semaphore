@@ -153,6 +153,35 @@ def create_tables():
     );
     """)
 
+    # UserProducts Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS user_products (
+        user_product_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        creator_id INTEGER NOT NULL,
+        name TEXT NOT NULL,
+        fructose_level INTEGER NOT NULL,
+        lactose_level INTEGER NOT NULL,
+        fructan_level INTEGER NOT NULL,
+        mannitol_level INTEGER NOT NULL,
+        sorbitol_level INTEGER NOT NULL,
+        gos_level INTEGER NOT NULL,
+        serving_title TEXT NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (creator_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for user_products updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_user_products_updated_at
+    AFTER UPDATE ON user_products
+    FOR EACH ROW
+    BEGIN
+        UPDATE user_products SET updated_at = datetime('now') WHERE user_product_id = OLD.user_product_id;
+    END;
+    """)
+
     # Triggers to update 'updated_at' timestamps
     cursor.execute("""
     CREATE TRIGGER IF NOT EXISTS update_users_updated_at

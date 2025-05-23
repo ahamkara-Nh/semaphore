@@ -1475,3 +1475,160 @@ async def remove_product_from_list(telegram_id: str, request: RemoveProductFromL
     finally:
         if conn:
             conn.close()
+
+class CreateUserProductRequest(BaseModel):
+    name: str
+    fructose_level: int
+    lactose_level: int
+    fructan_level: int
+    mannitol_level: int
+    sorbitol_level: int
+    gos_level: int
+    serving_title: str
+
+@app.post("/users/{telegram_id}/products", status_code=status.HTTP_201_CREATED)
+async def create_user_product(telegram_id: str, product_data: CreateUserProductRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if a product with this name already exists for this user
+        cursor.execute("""
+            SELECT user_product_id 
+            FROM user_products 
+            WHERE creator_id = ? AND name = ?
+        """, (user_id, product_data.name))
+        if cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=f"A product with name '{product_data.name}' already exists for this user"
+            )
+
+        # Insert the new user product
+        cursor.execute("""
+            INSERT INTO user_products (
+                creator_id, name, fructose_level, lactose_level,
+                fructan_level, mannitol_level, sorbitol_level, gos_level,
+                serving_title
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            user_id,
+            product_data.name,
+            product_data.fructose_level,
+            product_data.lactose_level,
+            product_data.fructan_level,
+            product_data.mannitol_level,
+            product_data.sorbitol_level,
+            product_data.gos_level,
+            product_data.serving_title
+        ))
+        
+        conn.commit()
+
+        # Get the newly created product
+        cursor.execute("""
+            SELECT * FROM user_products 
+            WHERE user_product_id = last_insert_rowid()
+        """)
+        new_product = cursor.fetchone()
+
+        return JSONResponse(content={
+            "message": "User product created successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "product": row_to_dict(new_product)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in create_user_product: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error creating user product: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error creating user product: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.get("/users/{telegram_id}/products")
+async def get_user_products(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get all products created by this user
+        cursor.execute("""
+            SELECT 
+                user_product_id,
+                name,
+                fructose_level,
+                lactose_level,
+                fructan_level,
+                mannitol_level,
+                sorbitol_level,
+                gos_level,
+                serving_title,
+                created_at,
+                updated_at
+            FROM user_products 
+            WHERE creator_id = ?
+            ORDER BY created_at DESC
+        """, (user_id,))
+        
+        products = [row_to_dict(row) for row in cursor.fetchall()]
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "products": products,
+            "total_count": len(products)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_user_products: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting user products: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting user products: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
