@@ -1632,3 +1632,68 @@ async def get_user_products(telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+@app.delete("/users/{telegram_id}/products/{product_name}")
+async def delete_user_product(telegram_id: str, product_name: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if the product exists and belongs to the user
+        cursor.execute("""
+            SELECT user_product_id, name
+            FROM user_products 
+            WHERE name = ? AND creator_id = ?
+        """, (product_name, user_id))
+        product = cursor.fetchone()
+        
+        if not product:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Product with name '{product_name}' not found or doesn't belong to this user"
+            )
+
+        # Delete the product
+        cursor.execute("""
+            DELETE FROM user_products 
+            WHERE name = ? AND creator_id = ?
+        """, (product_name, user_id))
+        
+        conn.commit()
+
+        return JSONResponse(content={
+            "message": f"Product '{product_name}' deleted successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "product_name": product_name
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in delete_user_product: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error deleting user product: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error deleting user product: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
