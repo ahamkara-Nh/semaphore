@@ -182,6 +182,32 @@ def create_tables():
     END;
     """)
 
+    # Symptoms Diary Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS symptoms_diary (
+        diary_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        wind_level INTEGER NOT NULL CHECK (wind_level BETWEEN 0 AND 10),
+        bloat_level INTEGER NOT NULL CHECK (bloat_level BETWEEN 0 AND 10),
+        pain_level INTEGER NOT NULL CHECK (pain_level BETWEEN 0 AND 10),
+        stool_level INTEGER NOT NULL CHECK (stool_level BETWEEN 0 AND 10),
+        notes TEXT,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for symptoms_diary updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_symptoms_diary_updated_at
+    AFTER UPDATE ON symptoms_diary
+    FOR EACH ROW
+    BEGIN
+        UPDATE symptoms_diary SET updated_at = datetime('now') WHERE diary_id = OLD.diary_id;
+    END;
+    """)
+
     # Recipes Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS recipes (

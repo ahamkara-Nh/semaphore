@@ -12,7 +12,7 @@ from typing import Optional, Dict, Any
 from database import get_db_connection, create_tables # Updated import
 from datetime import datetime
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -1744,6 +1744,80 @@ async def get_all_recipes():
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error getting recipes: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+class SymptomsDiaryCreate(BaseModel):
+    wind_level: int = Field(..., ge=0, le=10, description="Wind level from 0-10")
+    bloat_level: int = Field(..., ge=0, le=10, description="Bloating level from 0-10")
+    pain_level: int = Field(..., ge=0, le=10, description="Pain level from 0-10")
+    stool_level: int = Field(..., ge=0, le=10, description="Stool consistency level from 0-10")
+    notes: Optional[str] = Field(None, description="Optional notes about symptoms")
+
+@app.post("/users/{telegram_id}/symptoms-diary", status_code=status.HTTP_201_CREATED)
+async def create_symptoms_diary_entry(telegram_id: str, diary_data: SymptomsDiaryCreate):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Insert the new diary entry
+        cursor.execute("""
+            INSERT INTO symptoms_diary (
+                user_id, wind_level, bloat_level,
+                pain_level, stool_level, notes
+            ) VALUES (?, ?, ?, ?, ?, ?)
+        """, (
+            user_id,
+            diary_data.wind_level,
+            diary_data.bloat_level,
+            diary_data.pain_level,
+            diary_data.stool_level,
+            diary_data.notes
+        ))
+        
+        conn.commit()
+
+        # Get the newly created diary entry
+        cursor.execute("""
+            SELECT * FROM symptoms_diary 
+            WHERE diary_id = last_insert_rowid()
+        """)
+        new_entry = cursor.fetchone()
+
+        return JSONResponse(content={
+            "message": "Symptoms diary entry created successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "diary_entry": row_to_dict(new_entry)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in create_symptoms_diary_entry: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error creating symptoms diary entry: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error creating symptoms diary entry: {e}"
         )
     finally:
         if conn:
