@@ -231,6 +231,30 @@ def create_tables():
     END;
     """)
 
+    # User Food Notes Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS user_food_notes (
+        food_note_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        user_list_id INTEGER NOT NULL,
+        note_text TEXT NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+        FOREIGN KEY (user_list_id) REFERENCES user_list(list_id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for user_food_notes updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_user_food_notes_updated_at
+    AFTER UPDATE ON user_food_notes
+    FOR EACH ROW
+    BEGIN
+        UPDATE user_food_notes SET updated_at = datetime('now') WHERE food_note_id = OLD.food_note_id;
+    END;
+    """)
+
     # Triggers to update 'updated_at' timestamps
     cursor.execute("""
     CREATE TRIGGER IF NOT EXISTS update_users_updated_at

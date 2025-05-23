@@ -236,7 +236,7 @@ async def auth_telegram(payload: TelegramInitData):
             logger.info(f"Default preferences insertion executed for user_id {user_id}.")
 
             # Create the four required lists for the new user
-            list_types = ['favourites', 'phase1', 'phase2', 'phase3', 'user_created']
+            list_types = ['favourites', 'phase1', 'phase2', 'phase3', 'user_created', 'temp']
             for list_type in list_types:
                 logger.info(f"Creating {list_type} list for user_id {user_id}")
                 cursor.execute(
