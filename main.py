@@ -1320,3 +1320,68 @@ async def add_product_to_list(telegram_id: str, request: AddProductToListRequest
     finally:
         if conn:
             conn.close()
+
+class ProductCheckRequest(BaseModel):
+    product_id: int
+
+@app.post("/users/{telegram_id}/lists/check-product")
+async def check_product_in_lists(telegram_id: str, request: ProductCheckRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Verify product exists
+        cursor.execute("SELECT product_id FROM product WHERE product_id = ?", (request.product_id,))
+        if not cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Product with id {request.product_id} not found"
+            )
+
+        # Check if product exists in any of the user's lists
+        cursor.execute("""
+            SELECT ul.list_type
+            FROM user_list ul
+            JOIN user_list_item uli ON ul.list_id = uli.list_id
+            WHERE ul.user_id = ? AND uli.food_id = ?
+        """, (user_id, request.product_id))
+        
+        lists_containing_product = [row['list_type'] for row in cursor.fetchall()]
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "product_id": request.product_id,
+            "exists_in_lists": lists_containing_product,
+            "is_in_any_list": len(lists_containing_product) > 0
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in check_product_in_lists: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error checking product in lists: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error checking product in lists: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
