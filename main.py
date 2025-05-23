@@ -1385,3 +1385,93 @@ async def check_product_in_lists(telegram_id: str, request: ProductCheckRequest)
     finally:
         if conn:
             conn.close()
+
+class RemoveProductFromListRequest(BaseModel):
+    product_id: int
+    list_type: str
+
+@app.delete("/users/{telegram_id}/lists/remove-product")
+async def remove_product_from_list(telegram_id: str, request: RemoveProductFromListRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get list_id for the specified list_type
+        cursor.execute("""
+            SELECT list_id 
+            FROM user_list 
+            WHERE user_id = ? AND list_type = ?
+        """, (user_id, request.list_type))
+        list_row = cursor.fetchone()
+        if not list_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"List of type {request.list_type} not found for user with telegram_id {telegram_id}"
+            )
+        list_id = list_row['list_id']
+
+        # Verify product exists
+        cursor.execute("SELECT product_id FROM product WHERE product_id = ?", (request.product_id,))
+        if not cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Product with id {request.product_id} not found"
+            )
+
+        # Check if product exists in the list before attempting to remove
+        cursor.execute("""
+            SELECT list_item_id 
+            FROM user_list_item 
+            WHERE list_id = ? AND food_id = ?
+        """, (list_id, request.product_id))
+        if not cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Product {request.product_id} not found in list {request.list_type}"
+            )
+
+        # Remove product from list
+        cursor.execute("""
+            DELETE FROM user_list_item 
+            WHERE list_id = ? AND food_id = ?
+        """, (list_id, request.product_id))
+        
+        conn.commit()
+
+        return JSONResponse(content={
+            "message": "Product removed successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "list_type": request.list_type,
+            "product_id": request.product_id
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in remove_product_from_list: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error removing product from list: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error removing product from list: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
