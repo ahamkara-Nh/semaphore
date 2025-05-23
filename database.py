@@ -182,6 +182,29 @@ def create_tables():
     END;
     """)
 
+    # Recipes Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS recipes (
+        recipe_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        image_name TEXT,
+        ingredients TEXT NOT NULL,
+        preparation TEXT NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now'))
+    );
+    """)
+
+    # Trigger for recipes updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_recipes_updated_at
+    AFTER UPDATE ON recipes
+    FOR EACH ROW
+    BEGIN
+        UPDATE recipes SET updated_at = datetime('now') WHERE recipe_id = OLD.recipe_id;
+    END;
+    """)
+
     # Triggers to update 'updated_at' timestamps
     cursor.execute("""
     CREATE TRIGGER IF NOT EXISTS update_users_updated_at

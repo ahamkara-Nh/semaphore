@@ -1697,3 +1697,54 @@ async def delete_user_product(telegram_id: str, product_name: str):
     finally:
         if conn:
             conn.close()
+
+@app.get("/recipes")
+async def get_all_recipes():
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get all recipes ordered by creation date (newest first)
+        cursor.execute("""
+            SELECT 
+                recipe_id,
+                name,
+                image_name,
+                ingredients,
+                preparation,
+                created_at,
+                updated_at
+            FROM recipes 
+            ORDER BY created_at DESC
+        """)
+        
+        recipes = []
+        for row in cursor.fetchall():
+            recipe = row_to_dict(row)
+            # Convert ingredients and preparation from newline-separated strings to lists
+            recipe['ingredients'] = recipe['ingredients'].split('\n') if recipe['ingredients'] else []
+            recipe['preparation'] = recipe['preparation'].split('\n') if recipe['preparation'] else []
+            recipes.append(recipe)
+
+        return JSONResponse(content={
+            "recipes": recipes,
+            "total_count": len(recipes)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_all_recipes: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except Exception as e:
+        logger.error(f"Error getting recipes: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting recipes: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
