@@ -1230,3 +1230,93 @@ async def get_user_list_items(telegram_id: str, list_type: str):
     finally:
         if conn:
             conn.close()
+
+class AddProductToListRequest(BaseModel):
+    product_id: int
+    list_type: str
+
+@app.post("/users/{telegram_id}/lists/add-product")
+async def add_product_to_list(telegram_id: str, request: AddProductToListRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get list_id for the specified list_type
+        cursor.execute("""
+            SELECT list_id 
+            FROM user_list 
+            WHERE user_id = ? AND list_type = ?
+        """, (user_id, request.list_type))
+        list_row = cursor.fetchone()
+        if not list_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"List of type {request.list_type} not found for user with telegram_id {telegram_id}"
+            )
+        list_id = list_row['list_id']
+
+        # Verify product exists
+        cursor.execute("SELECT product_id FROM product WHERE product_id = ?", (request.product_id,))
+        if not cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Product with id {request.product_id} not found"
+            )
+
+        # Check if product already exists in the list
+        cursor.execute("""
+            SELECT list_item_id 
+            FROM user_list_item 
+            WHERE list_id = ? AND food_id = ?
+        """, (list_id, request.product_id))
+        if cursor.fetchone():
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail=f"Product {request.product_id} already exists in list {request.list_type}"
+            )
+
+        # Add product to list
+        cursor.execute("""
+            INSERT INTO user_list_item (list_id, food_id)
+            VALUES (?, ?)
+        """, (list_id, request.product_id))
+        
+        conn.commit()
+
+        return JSONResponse(content={
+            "message": "Product added successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "list_type": request.list_type,
+            "product_id": request.product_id
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in add_product_to_list: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error adding product to list: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error adding product to list: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
