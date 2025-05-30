@@ -146,10 +146,12 @@ def create_tables():
         list_item_id INTEGER PRIMARY KEY AUTOINCREMENT,
         list_id INTEGER NOT NULL,
         food_id INTEGER NOT NULL,
+        user_created_id INTEGER,
         created_at TIMESTAMP DEFAULT (datetime('now')),
         updated_at TIMESTAMP DEFAULT (datetime('now')),
         FOREIGN KEY (list_id) REFERENCES user_list(list_id) ON DELETE CASCADE,
-        FOREIGN KEY (food_id) REFERENCES product(product_id) ON DELETE CASCADE
+        FOREIGN KEY (food_id) REFERENCES product(product_id) ON DELETE SET NULL,
+        FOREIGN KEY (user_created_id) REFERENCES users(id) ON DELETE SET NULL
     );
     """)
 
@@ -179,6 +181,31 @@ def create_tables():
     FOR EACH ROW
     BEGIN
         UPDATE user_products SET updated_at = datetime('now') WHERE user_product_id = OLD.user_product_id;
+    END;
+    """)
+
+
+    # Food Notes Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS food_notes (
+        note_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        food_list_id INTEGER NOT NULL,
+        memo TEXT,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+        FOREIGN KEY (food_list_id) REFERENCES user_list(list_id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for food_notes updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_food_notes_updated_at
+    AFTER UPDATE ON food_notes
+    FOR EACH ROW
+    BEGIN
+        UPDATE food_notes SET updated_at = datetime('now') WHERE note_id = OLD.note_id;
     END;
     """)
 

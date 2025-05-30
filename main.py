@@ -8,7 +8,7 @@ from urllib.parse import unquote, parse_qs
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request, HTTPException, status
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from database import get_db_connection, create_tables # Updated import
 from datetime import datetime
 from fastapi.responses import JSONResponse
@@ -1818,6 +1818,140 @@ async def create_symptoms_diary_entry(telegram_id: str, diary_data: SymptomsDiar
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error creating symptoms diary entry: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+
+class FoodItem(BaseModel):
+    id: int
+    is_user_product: bool = False
+
+class CreateFoodNoteRequest(BaseModel):
+    memo: str
+    foods: List[FoodItem]
+
+@app.post("/users/{telegram_id}/food-notes", status_code=status.HTTP_201_CREATED)
+async def create_food_note(telegram_id: str, note_data: CreateFoodNoteRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Create a new food note list
+        list_type = f"food_note_{datetime.now().strftime('%Y%m%d%H%M%S')}"
+        cursor.execute(
+            "INSERT INTO user_list (user_id, list_type) VALUES (?, ?)",
+            (user_id, list_type)
+        )
+        
+        # Get the newly created list ID
+        cursor.execute("SELECT last_insert_rowid()")
+        list_id = cursor.fetchone()[0]
+        
+        # Add each food item to the list
+        for food in note_data.foods:
+            if food.is_user_product:
+                # Verify user product exists
+                cursor.execute(
+                    "SELECT user_product_id FROM user_products WHERE user_product_id = ? AND creator_id = ?",
+                    (food.id, user_id)
+                )
+                if not cursor.fetchone():
+                    raise HTTPException(
+                        status_code=status.HTTP_404_NOT_FOUND,
+                        detail=f"User product with id {food.id} not found"
+                    )
+                
+                # For user-created products, we need to store differently
+                # Modifying this to match the schema - user_created_id references users(id)
+                cursor.execute(
+                    """
+                    INSERT INTO user_list_item (list_id, food_id, user_created_id) 
+                    SELECT ?, up.user_product_id, up.creator_id
+                    FROM user_products up
+                    WHERE up.user_product_id = ?
+                    """,
+                    (list_id, food.id)
+                )
+            else:
+                # Verify product exists
+                cursor.execute("SELECT product_id FROM product WHERE product_id = ?", (food.id,))
+                if not cursor.fetchone():
+                    raise HTTPException(
+                        status_code=status.HTTP_404_NOT_FOUND,
+                        detail=f"Product with id {food.id} not found"
+                    )
+                
+                # Add product to list
+                cursor.execute(
+                    "INSERT INTO user_list_item (list_id, food_id) VALUES (?, ?)",
+                    (list_id, food.id)
+                )
+        
+        # Create food note
+        cursor.execute(
+            "INSERT INTO food_notes (user_id, food_list_id, memo) VALUES (?, ?, ?)",
+            (user_id, list_id, note_data.memo)
+        )
+        
+        conn.commit()
+        
+        # Get the newly created note
+        cursor.execute("SELECT * FROM food_notes WHERE note_id = last_insert_rowid()")
+        new_note = cursor.fetchone()
+        
+        # Get the food items in the note
+        cursor.execute("""
+            SELECT 
+                uli.list_item_id,
+                uli.food_id,
+                uli.user_created_id,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT name FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT name FROM product WHERE product_id = uli.food_id)
+                END as name
+            FROM user_list_item uli
+            WHERE uli.list_id = ?
+        """, (list_id,))
+        
+        food_items = [row_to_dict(row) for row in cursor.fetchall()]
+
+        return JSONResponse(content={
+            "message": "Food note created successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "note": row_to_dict(new_note),
+            "food_items": food_items
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in create_food_note: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error creating food note: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error creating food note: {e}"
         )
     finally:
         if conn:
