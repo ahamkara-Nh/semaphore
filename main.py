@@ -10,10 +10,11 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, HTTPException, status, Depends
 from typing import Optional, Dict, Any, List
 from database import get_db_connection, create_tables # Updated import
-from datetime import datetime
+from datetime import datetime, timedelta
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+import pytz
 
 load_dotenv()
 
@@ -2205,6 +2206,145 @@ async def get_user_diary_history(telegram_id: str, page_params: DiaryHistoryPage
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error getting user diary history: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+class UpdatePhaseTrackingRequest(BaseModel):
+    timezone: str = Field(..., description="User's timezone in IANA format, e.g. 'Europe/London'")
+
+@app.put("/users/{telegram_id}/phase-tracking/update-streak")
+async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTrackingRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if phase_tracking exists for this user
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        phase_tracking_row = cursor.fetchone()
+        if not phase_tracking_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase tracking not found for user with telegram_id {telegram_id}"
+            )
+
+        # Get the user's timezone
+        try:
+            user_timezone = pytz.timezone(request.timezone)
+        except pytz.exceptions.UnknownTimeZoneError:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Invalid timezone: {request.timezone}"
+            )
+
+        # Get current time in user's timezone
+        now = datetime.now(user_timezone)
+        today_date = now.date()
+        
+        # Get symptoms diary entries ordered by date (descending)
+        cursor.execute("""
+            SELECT 
+                diary_id,
+                wind_level,
+                bloat_level,
+                pain_level,
+                stool_level,
+                created_at
+            FROM symptoms_diary 
+            WHERE user_id = ?
+            ORDER BY created_at DESC
+        """, (user_id,))
+        
+        diary_entries = [row_to_dict(row) for row in cursor.fetchall()]
+        
+        # Group entries by date in user's timezone
+        entries_by_date = {}
+        for entry in diary_entries:
+            # Convert entry timestamp to user's timezone
+            entry_dt = datetime.fromisoformat(entry['created_at'].replace('Z', '+00:00'))
+            entry_dt = entry_dt.astimezone(user_timezone)
+            entry_date = entry_dt.date()
+            
+            if entry_date not in entries_by_date:
+                entries_by_date[entry_date] = []
+            entries_by_date[entry_date].append(entry)
+        
+        # Calculate streak days
+        streak_days = 0
+        current_date = today_date
+        
+        while True:
+            # Check if we have entries for this date
+            if current_date in entries_by_date:
+                day_entries = entries_by_date[current_date]
+                
+                # Check if all symptoms are low (1 or 2) for all entries on this day
+                all_symptoms_low = True
+                for entry in day_entries:
+                    if (entry['wind_level'] > 2 or 
+                        entry['bloat_level'] > 2 or 
+                        entry['pain_level'] > 2 or 
+                        entry['stool_level'] > 2):
+                        all_symptoms_low = False
+                        break
+                
+                if all_symptoms_low:
+                    streak_days += 1
+                    current_date -= timedelta(days=1)
+                else:
+                    # If any symptom is high, streak ends
+                    break
+            else:
+                # If no entries for a day, streak ends
+                break
+        
+        # Update phase_tracking with new streak days
+        cursor.execute("""
+            UPDATE phase_tracking 
+            SET phase1_streak_days = ?, updated_at = CURRENT_TIMESTAMP
+            WHERE user_id = ?
+        """, (streak_days, user_id))
+        
+        conn.commit()
+        
+        # Get updated phase tracking
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        updated_phase_tracking = cursor.fetchone()
+
+        return JSONResponse(content={
+            "message": "Phase 1 streak days updated successfully",
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "phase_tracking": row_to_dict(updated_phase_tracking),
+            "current_streak_days": streak_days
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_phase1_streak_days: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase 1 streak days: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase 1 streak days: {e}"
         )
     finally:
         if conn:
