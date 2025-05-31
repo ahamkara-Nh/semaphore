@@ -7,7 +7,7 @@ import sqlite3
 from urllib.parse import unquote, parse_qs
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, Request, HTTPException, status
+from fastapi import FastAPI, Request, HTTPException, status, Depends
 from typing import Optional, Dict, Any, List
 from database import get_db_connection, create_tables # Updated import
 from datetime import datetime
@@ -1918,23 +1918,93 @@ async def create_food_note(telegram_id: str, note_data: CreateFoodNoteRequest):
                 uli.list_item_id,
                 uli.food_id,
                 uli.user_created_id,
+                uli.created_at,
                 CASE 
                     WHEN uli.user_created_id IS NOT NULL THEN 
                         (SELECT name FROM user_products WHERE user_product_id = uli.food_id)
                     ELSE 
                         (SELECT name FROM product WHERE product_id = uli.food_id)
-                END as name
+                END as name,
+                CASE
+                    WHEN uli.user_created_id IS NOT NULL THEN TRUE
+                    ELSE FALSE
+                END as is_user_product,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT fructose_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT fructose_level FROM product WHERE product_id = uli.food_id)
+                END as fructose_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT lactose_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT lactose_level FROM product WHERE product_id = uli.food_id)
+                END as lactose_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT fructan_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT fructan_level FROM product WHERE product_id = uli.food_id)
+                END as fructan_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT mannitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT mannitol_level FROM product WHERE product_id = uli.food_id)
+                END as mannitol_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT sorbitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT sorbitol_level FROM product WHERE product_id = uli.food_id)
+                END as sorbitol_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT gos_level FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT gos_level FROM product WHERE product_id = uli.food_id)
+                END as gos_level,
+                CASE 
+                    WHEN uli.user_created_id IS NOT NULL THEN 
+                        (SELECT serving_title FROM user_products WHERE user_product_id = uli.food_id)
+                    ELSE 
+                        (SELECT serving_title FROM product WHERE product_id = uli.food_id)
+                END as serving_title
             FROM user_list_item uli
             WHERE uli.list_id = ?
         """, (list_id,))
         
-        food_items = [row_to_dict(row) for row in cursor.fetchall()]
+        food_items = []
+        for item in cursor.fetchall():
+            item_dict = row_to_dict(item)
+            # For user-created products, we need to map FODMAP levels differently
+            # User products: 0 = high (3), 1 = medium (2), 2 = low (1)
+            # Standard products: values are already correct
+            if item_dict['is_user_product']:
+                fodmap_fields = ['fructose_level', 'lactose_level', 'fructan_level', 
+                                'mannitol_level', 'sorbitol_level', 'gos_level']
+                for field in fodmap_fields:
+                    # Map user product values: 0->3 (high), 1->2 (medium), 2->1 (low)
+                    if item_dict[field] == 0:
+                        item_dict[field] = 3  # high
+                    elif item_dict[field] == 1:
+                        item_dict[field] = 2  # medium
+                    elif item_dict[field] == 2:
+                        item_dict[field] = 1  # low
+            
+            food_items.append(item_dict)
+        
+        note = row_to_dict(new_note)
+        note['food_items'] = food_items
+        note['entry_type'] = 'food_note'
+        note['entry_id'] = note['note_id']
 
         return JSONResponse(content={
             "message": "Food note created successfully",
             "user_id": user_id,
             "telegram_id": telegram_id,
-            "note": row_to_dict(new_note),
+            "note": note,
             "food_items": food_items
         })
     except sqlite3.Error as e:
@@ -1952,6 +2022,189 @@ async def create_food_note(telegram_id: str, note_data: CreateFoodNoteRequest):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error creating food note: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+class DiaryHistoryPage(BaseModel):
+    page: int = Field(1, description="Page number to retrieve, starting from 1")
+    items_per_page: int = Field(3, description="Number of items per page")
+
+@app.get("/users/{telegram_id}/diary-history")
+async def get_user_diary_history(telegram_id: str, page_params: DiaryHistoryPage = Depends()):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Calculate pagination parameters
+        page = max(1, page_params.page)  # Ensure page is at least 1
+        items_per_page = page_params.items_per_page
+        offset = (page - 1) * items_per_page
+
+        # Get symptoms diary entries
+        cursor.execute("""
+            SELECT 
+                'symptoms_diary' as entry_type,
+                diary_id as entry_id,
+                created_at,
+                wind_level,
+                bloat_level,
+                pain_level,
+                stool_level,
+                notes,
+                NULL as memo,
+                NULL as food_list_id
+            FROM symptoms_diary 
+            WHERE user_id = ?
+        """, (user_id,))
+        symptoms_entries = [row_to_dict(row) for row in cursor.fetchall()]
+
+        # Get food notes with their items
+        cursor.execute("""
+            SELECT 
+                fn.note_id,
+                fn.created_at,
+                fn.memo,
+                fn.food_list_id
+            FROM food_notes fn
+            WHERE fn.user_id = ?
+        """, (user_id,))
+        food_notes = [row_to_dict(row) for row in cursor.fetchall()]
+
+        # For each food note, get its items
+        for note in food_notes:
+            cursor.execute("""
+                SELECT 
+                    uli.list_item_id,
+                    uli.food_id,
+                    uli.user_created_id,
+                    uli.created_at,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT name FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT name FROM product WHERE product_id = uli.food_id)
+                    END as name,
+                    CASE
+                        WHEN uli.user_created_id IS NOT NULL THEN TRUE
+                        ELSE FALSE
+                    END as is_user_product,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT fructose_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT fructose_level FROM product WHERE product_id = uli.food_id)
+                    END as fructose_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT lactose_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT lactose_level FROM product WHERE product_id = uli.food_id)
+                    END as lactose_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT fructan_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT fructan_level FROM product WHERE product_id = uli.food_id)
+                    END as fructan_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT mannitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT mannitol_level FROM product WHERE product_id = uli.food_id)
+                    END as mannitol_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT sorbitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT sorbitol_level FROM product WHERE product_id = uli.food_id)
+                    END as sorbitol_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT gos_level FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT gos_level FROM product WHERE product_id = uli.food_id)
+                    END as gos_level,
+                    CASE 
+                        WHEN uli.user_created_id IS NOT NULL THEN 
+                            (SELECT serving_title FROM user_products WHERE user_product_id = uli.food_id)
+                        ELSE 
+                            (SELECT serving_title FROM product WHERE product_id = uli.food_id)
+                    END as serving_title
+                FROM user_list_item uli
+                WHERE uli.list_id = ?
+            """, (note['food_list_id'],))
+            food_items = []
+            for item in cursor.fetchall():
+                item_dict = row_to_dict(item)
+                # For user-created products, we need to map FODMAP levels differently
+                # User products: 0 = high (3), 1 = medium (2), 2 = low (1)
+                # Standard products: values are already correct
+                if item_dict['is_user_product']:
+                    fodmap_fields = ['fructose_level', 'lactose_level', 'fructan_level', 
+                                    'mannitol_level', 'sorbitol_level', 'gos_level']
+                    for field in fodmap_fields:
+                        # Map user product values: 0->3 (high), 1->2 (medium), 2->1 (low)
+                        if item_dict[field] == 0:
+                            item_dict[field] = 3  # high
+                        elif item_dict[field] == 1:
+                            item_dict[field] = 2  # medium
+                        elif item_dict[field] == 2:
+                            item_dict[field] = 1  # low
+                
+                food_items.append(item_dict)
+            
+            note['food_items'] = food_items
+            note['entry_type'] = 'food_note'
+            note['entry_id'] = note['note_id']
+
+        # Combine the two types of entries
+        all_entries = symptoms_entries + food_notes
+
+        # Sort by created_at in descending order
+        all_entries.sort(key=lambda x: x['created_at'], reverse=True)
+
+        # Apply pagination
+        total_entries = len(all_entries)
+        total_pages = (total_entries + items_per_page - 1) // items_per_page  # Ceiling division
+        paginated_entries = all_entries[offset:offset + items_per_page]
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "page": page,
+            "items_per_page": items_per_page,
+            "total_entries": total_entries,
+            "total_pages": total_pages,
+            "entries": paginated_entries
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_user_diary_history: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting user diary history: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting user diary history: {e}"
         )
     finally:
         if conn:

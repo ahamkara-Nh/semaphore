@@ -150,7 +150,7 @@ def create_tables():
         created_at TIMESTAMP DEFAULT (datetime('now')),
         updated_at TIMESTAMP DEFAULT (datetime('now')),
         FOREIGN KEY (list_id) REFERENCES user_list(list_id) ON DELETE CASCADE,
-        FOREIGN KEY (food_id) REFERENCES product(product_id) ON DELETE SET NULL,
+        FOREIGN KEY (food_id) REFERENCES product(product_id) ON DELETE CASCADE,
         FOREIGN KEY (user_created_id) REFERENCES users(id) ON DELETE SET NULL
     );
     """)
