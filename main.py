@@ -2521,3 +2521,165 @@ async def get_user_phases_timings(telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+@app.put("/users/{telegram_id}/phases-timings/update-phase1-date")
+async def update_phase1_date(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if phases_timings record exists for this user
+        cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+        phases_timings_row = cursor.fetchone()
+        
+        current_time = datetime.now().isoformat()
+        
+        if not phases_timings_row:
+            # Create new phases_timings record with current phase1_date
+            logger.info(f"Creating new phases_timings record for user_id {user_id}")
+            cursor.execute(
+                "INSERT INTO phases_timings (user_id, phase1_date) VALUES (?, ?)",
+                (user_id, current_time)
+            )
+            conn.commit()
+            
+            # Get the newly created record
+            cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+            updated_phases_timings = cursor.fetchone()
+            
+            return JSONResponse(content={
+                "message": "Phases timings created with phase1_date set to current time",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phases_timings": row_to_dict(updated_phases_timings)
+            })
+        else:
+            # Update existing phases_timings record with current phase1_date
+            logger.info(f"Updating phase1_date for user_id {user_id}")
+            cursor.execute(
+                "UPDATE phases_timings SET phase1_date = ? WHERE user_id = ?",
+                (current_time, user_id)
+            )
+            conn.commit()
+            
+            # Get the updated record
+            cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+            updated_phases_timings = cursor.fetchone()
+            
+            return JSONResponse(content={
+                "message": "Phase1_date updated successfully",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phases_timings": row_to_dict(updated_phases_timings)
+            })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_phase1_date: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase1_date: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase1_date: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.put("/users/{telegram_id}/phases-timings/update-phase2-date")
+async def update_phase2_date(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if phases_timings record exists for this user
+        cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+        phases_timings_row = cursor.fetchone()
+        
+        current_time = datetime.now().isoformat()
+        
+        if not phases_timings_row:
+            # Create new phases_timings record with current phase2_date
+            logger.info(f"Creating new phases_timings record for user_id {user_id}")
+            cursor.execute(
+                "INSERT INTO phases_timings (user_id, phase2_date) VALUES (?, ?)",
+                (user_id, current_time)
+            )
+            conn.commit()
+            
+            # Get the newly created record
+            cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+            updated_phases_timings = cursor.fetchone()
+            
+            return JSONResponse(content={
+                "message": "Phases timings created with phase2_date set to current time",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phases_timings": row_to_dict(updated_phases_timings)
+            })
+        else:
+            # Update existing phases_timings record with current phase2_date
+            logger.info(f"Updating phase2_date for user_id {user_id}")
+            cursor.execute(
+                "UPDATE phases_timings SET phase2_date = ? WHERE user_id = ?",
+                (current_time, user_id)
+            )
+            conn.commit()
+            
+            # Get the updated record
+            cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+            updated_phases_timings = cursor.fetchone()
+            
+            return JSONResponse(content={
+                "message": "Phase2_date updated successfully",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phases_timings": row_to_dict(updated_phases_timings)
+            })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_phase2_date: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase2_date: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase2_date: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
