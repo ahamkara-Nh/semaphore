@@ -2253,19 +2253,55 @@ async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTracki
         now = datetime.now(user_timezone)
         today_date = now.date()
         
-        # Get symptoms diary entries ordered by date (descending)
+        # Check if there's a phase1_date in phases_timings
         cursor.execute("""
-            SELECT 
-                diary_id,
-                wind_level,
-                bloat_level,
-                pain_level,
-                stool_level,
-                created_at
-            FROM symptoms_diary 
+            SELECT phase1_date 
+            FROM phases_timings 
             WHERE user_id = ?
-            ORDER BY created_at DESC
         """, (user_id,))
+        phase_timing_row = cursor.fetchone()
+        phase1_date = None
+        
+        if phase_timing_row and phase_timing_row['phase1_date']:
+            # Convert phase1_date to user's timezone
+            phase1_date_str = phase_timing_row['phase1_date']
+            phase1_dt = datetime.fromisoformat(phase1_date_str.replace('Z', '+00:00'))
+            phase1_dt = phase1_dt.astimezone(user_timezone)
+            phase1_date = phase1_dt.date()
+            logger.info(f"Found phase1_date: {phase1_date} for user_id {user_id}")
+        
+        # Get symptoms diary entries ordered by date (descending)
+        if phase1_date:
+            # If we have a phase1_date, only consider entries from that date onwards
+            phase1_date_iso = phase1_date.isoformat()
+            cursor.execute("""
+                SELECT 
+                    diary_id,
+                    wind_level,
+                    bloat_level,
+                    pain_level,
+                    stool_level,
+                    created_at
+                FROM symptoms_diary 
+                WHERE user_id = ? AND date(created_at) >= date(?)
+                ORDER BY created_at DESC
+            """, (user_id, phase1_date_iso))
+            logger.info(f"Filtering diary entries from phase1_date: {phase1_date_iso}")
+        else:
+            # Otherwise, get all entries
+            cursor.execute("""
+                SELECT 
+                    diary_id,
+                    wind_level,
+                    bloat_level,
+                    pain_level,
+                    stool_level,
+                    created_at
+                FROM symptoms_diary 
+                WHERE user_id = ?
+                ORDER BY created_at DESC
+            """, (user_id,))
+            logger.info("No phase1_date found, using all diary entries")
         
         diary_entries = [row_to_dict(row) for row in cursor.fetchall()]
         
@@ -2284,11 +2320,17 @@ async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTracki
         # Calculate streak days
         streak_days = 0
         current_date = today_date
+        days_without_entries = 0
         
         while True:
+            # If we have a phase1_date and we've gone before it, break
+            if phase1_date and current_date < phase1_date:
+                break
+                
             # Check if we have entries for this date
             if current_date in entries_by_date:
                 day_entries = entries_by_date[current_date]
+                days_without_entries = 0  # Reset counter when we find entries
                 
                 # Check if all symptoms are low (1 or 2) for all entries on this day
                 all_symptoms_low = True
@@ -2307,8 +2349,15 @@ async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTracki
                     # If any symptom is high, streak ends
                     break
             else:
-                # If no entries for a day, streak ends
-                break
+                # Count days without entries
+                days_without_entries += 1
+                
+                # If no entries for two consecutive days, streak ends
+                if days_without_entries >= 2:
+                    break
+                    
+                # Otherwise continue checking the next day
+                current_date -= timedelta(days=1)
         
         # Update phase_tracking with new streak days
         cursor.execute("""
@@ -2328,7 +2377,8 @@ async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTracki
             "user_id": user_id,
             "telegram_id": telegram_id,
             "phase_tracking": row_to_dict(updated_phase_tracking),
-            "current_streak_days": streak_days
+            "current_streak_days": streak_days,
+            "phase1_date_used": phase1_date.isoformat() if phase1_date else None
         })
     except sqlite3.Error as e:
         logger.error(f"SQLite error in update_phase1_streak_days: {e}", exc_info=True)
@@ -2345,6 +2395,57 @@ async def update_phase1_streak_days(telegram_id: str, request: UpdatePhaseTracki
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error updating phase 1 streak days: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.get("/users/{telegram_id}/phases-timings")
+async def get_user_phases_timings(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get phases_timings for the user
+        cursor.execute("SELECT * FROM phases_timings WHERE user_id = ?", (user_id,))
+        phases_timings_row = cursor.fetchone()
+        if not phases_timings_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phases timings not found for user with telegram_id {telegram_id}"
+            )
+
+        return JSONResponse(content={
+            "user_id": user_id,
+            "telegram_id": telegram_id,
+            "phases_timings": row_to_dict(phases_timings_row)
+        })
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_user_phases_timings: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting phases timings: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting phases timings: {e}"
         )
     finally:
         if conn:

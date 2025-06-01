@@ -128,6 +128,29 @@ def create_tables():
     );
     """)
 
+    # Phases Timings Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS phases_timings (
+        timing_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        phase1_date TIMESTAMP,
+        phase2_date TIMESTAMP,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for phases_timings updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_phases_timings_updated_at
+    AFTER UPDATE ON phases_timings
+    FOR EACH ROW
+    BEGIN
+        UPDATE phases_timings SET updated_at = datetime('now') WHERE timing_id = OLD.timing_id;
+    END;
+    """)
+
     # UserList Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS user_list (
