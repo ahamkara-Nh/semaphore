@@ -616,6 +616,13 @@ async def update_user_preferences(telegram_id: str, preferences_data: UserPrefer
 class PhaseTrackingCreate(BaseModel):
     current_phase: int
 
+class PhaseTrackingUpdate(BaseModel):
+    current_phase: Optional[int] = None
+    phase1_streak_days: Optional[int] = None
+    phase2_reintroduction_days: Optional[int] = None
+    phase2_break_days: Optional[int] = None
+    phase2_current_fodmap_group_id: Optional[int] = None
+
 class PhaseTrackingResponse(BaseModel):
     phase_tracking_id: int
     user_id: int
@@ -675,7 +682,6 @@ async def get_user_phase_tracking(telegram_id: str):
     finally:
         if conn:
             conn.close()
-
 
 @app.post("/users/{telegram_id}/phase-tracking", response_model=PhaseTrackingResponse, status_code=status.HTTP_201_CREATED)
 async def create_user_phase_tracking(telegram_id: str, phase_data: PhaseTrackingCreate):
@@ -749,6 +755,71 @@ async def create_user_phase_tracking(telegram_id: str, phase_data: PhaseTracking
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Error creating phase tracking: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.put("/users/{telegram_id}/phase-tracking", response_model=PhaseTrackingResponse)
+async def update_phase_tracking(telegram_id: str, update_data: PhaseTrackingUpdate):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if phase_tracking exists for this user
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        phase_tracking_row = cursor.fetchone()
+        if not phase_tracking_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase tracking not found for user with telegram_id {telegram_id}"
+            )
+
+        # Prepare update data
+        update_fields = update_data.model_dump(exclude_unset=True)
+        if not update_fields:
+            # If no update fields provided, just return current data
+            return PhaseTrackingResponse(**row_to_dict(phase_tracking_row))
+
+        # Build and execute update query
+        set_clauses = [f"{key} = ?" for key in update_fields.keys()]
+        sql = f"UPDATE phase_tracking SET {', '.join(set_clauses)} WHERE user_id = ?"
+        values = list(update_fields.values()) + [user_id]
+        cursor.execute(sql, tuple(values))
+        conn.commit()
+
+        # Get updated phase tracking
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        updated_phase_tracking_row = cursor.fetchone()
+        
+        return PhaseTrackingResponse(**row_to_dict(updated_phase_tracking_row))
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_phase_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase tracking: {e}"
         )
     finally:
         if conn:
