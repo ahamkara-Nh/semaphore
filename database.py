@@ -128,6 +128,34 @@ def create_tables():
     );
     """)
 
+    # Phase2 Tracking Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS phase2_tracking (
+        phase2_tracking_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        fructose INTEGER NOT NULL DEFAULT 0,
+        lactose INTEGER NOT NULL DEFAULT 0,
+        mannitol INTEGER NOT NULL DEFAULT 0,
+        sorbitol INTEGER NOT NULL DEFAULT 0,
+        gos INTEGER NOT NULL DEFAULT 0,
+        fructan INTEGER NOT NULL DEFAULT 0,
+        current_group TEXT,
+        created_at TIMESTAMP DEFAULT (datetime('now')),
+        updated_at TIMESTAMP DEFAULT (datetime('now')),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+    );
+    """)
+
+    # Trigger for phase2_tracking updated_at
+    cursor.execute("""
+    CREATE TRIGGER IF NOT EXISTS update_phase2_tracking_updated_at
+    AFTER UPDATE ON phase2_tracking
+    FOR EACH ROW
+    BEGIN
+        UPDATE phase2_tracking SET updated_at = datetime('now') WHERE phase2_tracking_id = OLD.phase2_tracking_id;
+    END;
+    """)
+
     # Phases Timings Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS phases_timings (

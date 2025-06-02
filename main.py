@@ -2683,3 +2683,172 @@ async def update_phase2_date(telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+class Phase2TrackingUpdate(BaseModel):
+    fructose: Optional[int] = Field(None, ge=0, description="Fructose tracking status")
+    lactose: Optional[int] = Field(None, ge=0, description="Lactose tracking status")
+    mannitol: Optional[int] = Field(None, ge=0, description="Mannitol tracking status")
+    sorbitol: Optional[int] = Field(None, ge=0, description="Sorbitol tracking status")
+    gos: Optional[int] = Field(None, ge=0, description="GOS tracking status")
+    fructan: Optional[int] = Field(None, ge=0, description="Fructan tracking status")
+    current_group: Optional[str] = Field(None, description="Current FODMAP group being tested")
+
+class Phase2TrackingResponse(BaseModel):
+    phase2_tracking_id: int
+    user_id: int
+    fructose: int
+    lactose: int
+    mannitol: int
+    sorbitol: int
+    gos: int
+    fructan: int
+    current_group: Optional[str]
+    created_at: datetime
+    updated_at: datetime
+
+@app.put("/users/{telegram_id}/phase2-tracking", response_model=Phase2TrackingResponse)
+async def update_or_create_phase2_tracking(telegram_id: str, update_data: Phase2TrackingUpdate):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Check if phase2_tracking exists for this user
+        cursor.execute("SELECT * FROM phase2_tracking WHERE user_id = ?", (user_id,))
+        phase2_tracking_row = cursor.fetchone()
+        
+        update_fields = update_data.model_dump(exclude_unset=True)
+        
+        if not phase2_tracking_row:
+            # Create new phase2_tracking record
+            logger.info(f"Creating new phase2_tracking record for user_id {user_id}")
+            
+            # Prepare columns and values for INSERT
+            columns = ["user_id"]
+            values = [user_id]
+            placeholders = ["?"]
+            
+            for key, value in update_fields.items():
+                columns.append(key)
+                values.append(value)
+                placeholders.append("?")
+            
+            sql = f"INSERT INTO phase2_tracking ({', '.join(columns)}) VALUES ({', '.join(placeholders)})"
+            cursor.execute(sql, tuple(values))
+            conn.commit()
+            
+            # Get the newly created record
+            cursor.execute("SELECT * FROM phase2_tracking WHERE user_id = ?", (user_id,))
+            new_phase2_tracking_row = cursor.fetchone()
+            
+            if not new_phase2_tracking_row:
+                logger.error(f"Failed to retrieve phase2_tracking record for user_id {user_id} after insertion.")
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail="Failed to retrieve phase2_tracking record after creation."
+                )
+            
+            created_record_dict = row_to_dict(new_phase2_tracking_row)
+            logger.info(f"Successfully created phase2_tracking for user_id {user_id}: {created_record_dict}")
+            
+            return Phase2TrackingResponse(**created_record_dict)
+        else:
+            # Update existing phase2_tracking record
+            if not update_fields:
+                # If no update fields provided, just return current data
+                return Phase2TrackingResponse(**row_to_dict(phase2_tracking_row))
+            
+            # Build and execute update query
+            set_clauses = [f"{key} = ?" for key in update_fields.keys()]
+            sql = f"UPDATE phase2_tracking SET {', '.join(set_clauses)} WHERE user_id = ?"
+            values = list(update_fields.values()) + [user_id]
+            cursor.execute(sql, tuple(values))
+            conn.commit()
+            
+            # Get updated phase2_tracking
+            cursor.execute("SELECT * FROM phase2_tracking WHERE user_id = ?", (user_id,))
+            updated_phase2_tracking_row = cursor.fetchone()
+            
+            updated_record_dict = row_to_dict(updated_phase2_tracking_row)
+            logger.info(f"Successfully updated phase2_tracking for user_id {user_id}: {updated_record_dict}")
+            
+            return Phase2TrackingResponse(**updated_record_dict)
+    
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_or_create_phase2_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase2_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase2_tracking: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
+
+@app.get("/users/{telegram_id}/phase2-tracking", response_model=Phase2TrackingResponse)
+async def get_phase2_tracking(telegram_id: str):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get phase2_tracking information
+        cursor.execute("SELECT * FROM phase2_tracking WHERE user_id = ?", (user_id,))
+        phase2_tracking_row = cursor.fetchone()
+        if not phase2_tracking_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase2 tracking not found for user with telegram_id {telegram_id}"
+            )
+
+        phase2_tracking_dict = row_to_dict(phase2_tracking_row)
+        return Phase2TrackingResponse(**phase2_tracking_dict)
+
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in get_phase2_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error getting phase2_tracking: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error getting phase2_tracking: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
