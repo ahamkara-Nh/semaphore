@@ -2852,3 +2852,377 @@ async def get_phase2_tracking(telegram_id: str):
     finally:
         if conn:
             conn.close()
+
+class UpdatePhase2StreakRequest(BaseModel):
+    timezone: str = Field(..., description="User's timezone in IANA format, e.g. 'Europe/London'")
+
+@app.put("/users/{telegram_id}/phase-tracking/update-phase2-streak")
+async def update_phase2_streak_days(telegram_id: str, request: UpdatePhase2StreakRequest):
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Get user_id from telegram_id
+        cursor.execute("SELECT id FROM users WHERE telegram_id = ?", (telegram_id,))
+        user_row = cursor.fetchone()
+        if not user_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"User with telegram_id {telegram_id} not found"
+            )
+        user_id = user_row['id']
+
+        # Get the user's timezone
+        try:
+            user_timezone = pytz.timezone(request.timezone)
+        except pytz.exceptions.UnknownTimeZoneError:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=f"Invalid timezone: {request.timezone}"
+            )
+
+        # Get current date in user's timezone
+        now = datetime.now(user_timezone)
+        current_date = now.date()
+        
+        # Get phase2_date as our absolute starting point
+        cursor.execute("SELECT phase2_date FROM phases_timings WHERE user_id = ?", (user_id,))
+        phase_timing_row = cursor.fetchone()
+        
+        if not phase_timing_row or not phase_timing_row['phase2_date']:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase2 date not found for user with telegram_id {telegram_id}. Please set phase2_date first."
+            )
+            
+        # Convert phase2_date to user's timezone
+        phase2_date_str = phase_timing_row['phase2_date']
+        phase2_dt = datetime.fromisoformat(phase2_date_str.replace('Z', '+00:00'))
+        phase2_dt = phase2_dt.astimezone(user_timezone)
+        phase2_date = phase2_dt.date()
+        
+        # Calculate total days since phase2 started
+        total_days_since_phase2 = (current_date - phase2_date).days
+        if total_days_since_phase2 < 0:
+            total_days_since_phase2 = 0
+        
+        # Get phase_tracking data
+        cursor.execute("SELECT * FROM phase_tracking WHERE user_id = ?", (user_id,))
+        phase_tracking_row = cursor.fetchone()
+        if not phase_tracking_row:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Phase tracking not found for user with telegram_id {telegram_id}"
+            )
+        
+        phase_tracking = row_to_dict(phase_tracking_row)
+        current_phase2_reintroduction_days = phase_tracking['phase2_reintroduction_days'] or 0
+        phase2_break_days = phase_tracking['phase2_break_days'] or 0
+        
+        # Calculate new reintroduction days (maximum 3)
+        new_reintroduction_days = min(3, total_days_since_phase2)
+        
+        # 2. Check if phase2_reintroduction_days should be 3 or more
+        if new_reintroduction_days >= 3:
+            # If already 3, set to 3
+            if current_phase2_reintroduction_days != 3:
+                cursor.execute("""
+                    UPDATE phase_tracking 
+                    SET phase2_reintroduction_days = 3, updated_at = CURRENT_TIMESTAMP
+                    WHERE user_id = ?
+                """, (user_id,))
+                conn.commit()
+            
+            # NEW STEP: Check symptoms during the reintroduction period
+            # Get phase2_tracking data to check current_group and last update
+            cursor.execute("SELECT * FROM phase2_tracking WHERE user_id = ?", (user_id,))
+            phase2_tracking_row = cursor.fetchone()
+            
+            if phase2_tracking_row:
+                phase2_tracking_data = row_to_dict(phase2_tracking_row)
+                current_group = phase2_tracking_data.get('current_group')
+                
+                # Only proceed if we have a current_group being tested
+                if current_group:
+                    # Get the updated_at time from phase2_tracking
+                    updated_at_str = phase2_tracking_data['updated_at']
+                    updated_at = datetime.fromisoformat(updated_at_str.replace('Z', '+00:00'))
+                    updated_at = updated_at.astimezone(user_timezone)
+                    reintro_start_date = updated_at.date()
+                    
+                    # Calculate end date for 3-day reintroduction period
+                    reintro_end_date = reintro_start_date + timedelta(days=3)
+                    
+                    # Get symptoms diary entries during the reintroduction period
+                    reintro_start_iso = reintro_start_date.isoformat()
+                    reintro_end_iso = reintro_end_date.isoformat()
+                    
+                    cursor.execute("""
+                        SELECT 
+                            diary_id,
+                            wind_level,
+                            bloat_level,
+                            pain_level,
+                            stool_level,
+                            created_at
+                        FROM symptoms_diary 
+                        WHERE user_id = ? 
+                        AND date(created_at) >= date(?) 
+                        AND date(created_at) <= date(?)
+                    """, (user_id, reintro_start_iso, reintro_end_iso))
+                    
+                    symptom_entries = [row_to_dict(row) for row in cursor.fetchall()]
+                    
+                    # Check if any symptom is greater than 2
+                    high_symptoms_found = False
+                    for entry in symptom_entries:
+                        if (entry['wind_level'] > 2 or 
+                            entry['bloat_level'] > 2 or 
+                            entry['pain_level'] > 2 or 
+                            entry['stool_level'] > 2):
+                            high_symptoms_found = True
+                            break
+                    
+                    # Update the current FODMAP group in phase2_tracking
+                    fodmap_value = 3 if high_symptoms_found else 2
+                    
+                    # Build the SQL update based on which group is being tested
+                    if current_group in ['fructose', 'lactose', 'mannitol', 'sorbitol', 'gos', 'fructan']:
+                        cursor.execute(f"""
+                            UPDATE phase2_tracking 
+                            SET {current_group} = ?, current_group = NULL, updated_at = CURRENT_TIMESTAMP
+                            WHERE user_id = ?
+                        """, (fodmap_value, user_id))
+                        conn.commit()
+                        
+                        logger.info(f"Updated phase2_tracking for {current_group} with value {fodmap_value} based on symptoms check and cleared current_group")
+            
+            # 3.2 Check phase2_break_days
+            if phase2_break_days == 3:
+                # Break is already complete, no need to update
+                return JSONResponse(content={
+                    "message": "Phase 2 break already complete (3 days)",
+                    "user_id": user_id,
+                    "telegram_id": telegram_id,
+                    "phase2_reintroduction_days": 3,
+                    "phase2_break_days": phase2_break_days,
+                    "days_since_phase2": total_days_since_phase2
+                })
+            
+            # For break days, get the last day we updated phase2_tracking
+            cursor.execute("SELECT updated_at FROM phase2_tracking WHERE user_id = ?", (user_id,))
+            phase2_tracking_row = cursor.fetchone()
+            
+            if not phase2_tracking_row:
+                # If no phase2_tracking record, create one
+                cursor.execute("""
+                    INSERT INTO phase2_tracking (user_id)
+                    VALUES (?)
+                """, (user_id,))
+                conn.commit()
+                
+                # Set starting_date to phase2_date
+                starting_date = phase2_date
+            else:
+                # Convert updated_at to user's timezone for food note checks
+                updated_at_str = phase2_tracking_row['updated_at']
+                updated_at = datetime.fromisoformat(updated_at_str.replace('Z', '+00:00'))
+                updated_at = updated_at.astimezone(user_timezone)
+                starting_date = updated_at.date()
+            
+            # Check food notes since starting point
+            starting_date_iso = starting_date.isoformat()
+            cursor.execute("""
+                SELECT fn.note_id, fn.created_at, fn.food_list_id
+                FROM food_notes fn
+                WHERE fn.user_id = ? AND date(fn.created_at) >= date(?)
+                ORDER BY fn.created_at ASC
+            """, (user_id, starting_date_iso))
+            
+            food_notes = [row_to_dict(row) for row in cursor.fetchall()]
+            
+            # Group notes by date
+            notes_by_date = {}
+            for note in food_notes:
+                note_dt = datetime.fromisoformat(note['created_at'].replace('Z', '+00:00'))
+                note_dt = note_dt.astimezone(user_timezone)
+                note_date = note_dt.date()
+                
+                if note_date not in notes_by_date:
+                    notes_by_date[note_date] = []
+                notes_by_date[note_date].append(note)
+            
+            # Check consecutive days with only low FODMAP foods
+            consecutive_days = 0
+            max_consecutive_days = 0
+            date_to_check = starting_date
+            
+            while date_to_check <= current_date:
+                if date_to_check in notes_by_date:
+                    day_notes = notes_by_date[date_to_check]
+                    high_fodmap_found = False
+                    
+                    # Check all food items in all notes for this day
+                    for note in day_notes:
+                        cursor.execute("""
+                            SELECT 
+                                uli.food_id,
+                                uli.user_created_id,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT fructose_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT fructose_level FROM product WHERE product_id = uli.food_id)
+                                END as fructose_level,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT lactose_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT lactose_level FROM product WHERE product_id = uli.food_id)
+                                END as lactose_level,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT fructan_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT fructan_level FROM product WHERE product_id = uli.food_id)
+                                END as fructan_level,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT mannitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT mannitol_level FROM product WHERE product_id = uli.food_id)
+                                END as mannitol_level,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT sorbitol_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT sorbitol_level FROM product WHERE product_id = uli.food_id)
+                                END as sorbitol_level,
+                                CASE 
+                                    WHEN uli.user_created_id IS NOT NULL THEN 
+                                        (SELECT gos_level FROM user_products WHERE user_product_id = uli.food_id)
+                                    ELSE 
+                                        (SELECT gos_level FROM product WHERE product_id = uli.food_id)
+                                END as gos_level
+                            FROM user_list_item uli
+                            WHERE uli.list_id = ?
+                        """, (note['food_list_id'],))
+                        
+                        food_items = cursor.fetchall()
+                        
+                        for item in food_items:
+                            is_user_created = item['user_created_id'] is not None
+                            
+                            # For each food item, check if it has high FODMAP levels
+                            # For standard products: level > 1 means high FODMAP
+                            # For user products: level < 2 means high FODMAP (0=high, 1=medium, 2=low)
+                            if is_user_created:
+                                if (item['fructose_level'] < 2 or 
+                                    item['lactose_level'] < 2 or
+                                    item['fructan_level'] < 2 or
+                                    item['mannitol_level'] < 2 or
+                                    item['sorbitol_level'] < 2 or
+                                    item['gos_level'] < 2):
+                                    high_fodmap_found = True
+                                    break
+                            else:
+                                if (item['fructose_level'] > 1 or 
+                                    item['lactose_level'] > 1 or
+                                    item['fructan_level'] > 1 or
+                                    item['mannitol_level'] > 1 or
+                                    item['sorbitol_level'] > 1 or
+                                    item['gos_level'] > 1):
+                                    high_fodmap_found = True
+                                    break
+                        
+                        if high_fodmap_found:
+                            break
+                    
+                    if high_fodmap_found:
+                        # Reset streak if high FODMAP food found
+                        consecutive_days = 0
+                    else:
+                        # Increment streak for day with only low FODMAP foods
+                        consecutive_days += 1
+                        max_consecutive_days = max(max_consecutive_days, consecutive_days)
+                else:
+                    # No food notes for this day, can't determine, reset streak
+                    consecutive_days = 0
+                
+                date_to_check += timedelta(days=1)
+            
+            # Update phase2_break_days in phase_tracking
+            new_break_days = min(3, max_consecutive_days)
+            
+            if new_break_days != phase2_break_days:
+                cursor.execute("""
+                    UPDATE phase_tracking 
+                    SET phase2_break_days = ?, updated_at = CURRENT_TIMESTAMP
+                    WHERE user_id = ?
+                """, (new_break_days, user_id))
+                conn.commit()
+            
+            # Update phase2_tracking updated_at to current time
+            cursor.execute("""
+                UPDATE phase2_tracking
+                SET updated_at = CURRENT_TIMESTAMP
+                WHERE user_id = ?
+            """, (user_id,))
+            conn.commit()
+            
+            return JSONResponse(content={
+                "message": f"Phase 2 break days updated to {new_break_days}",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phase2_reintroduction_days": 3,
+                "phase2_break_days": new_break_days,
+                "days_since_phase2": total_days_since_phase2,
+                "max_consecutive_days": max_consecutive_days
+            })
+        else:
+            # 3.1 Update phase2_reintroduction_days based on absolute days since phase2 started
+            if new_reintroduction_days != current_phase2_reintroduction_days:
+                cursor.execute("""
+                    UPDATE phase_tracking 
+                    SET phase2_reintroduction_days = ?, updated_at = CURRENT_TIMESTAMP
+                    WHERE user_id = ?
+                """, (new_reintroduction_days, user_id))
+                conn.commit()
+            
+            # Update phase2_tracking updated_at to current time
+            cursor.execute("""
+                UPDATE phase2_tracking
+                SET updated_at = CURRENT_TIMESTAMP
+                WHERE user_id = ?
+            """, (user_id,))
+            conn.commit()
+            
+            return JSONResponse(content={
+                "message": f"Phase 2 reintroduction days updated to {new_reintroduction_days}",
+                "user_id": user_id,
+                "telegram_id": telegram_id,
+                "phase2_reintroduction_days": new_reintroduction_days,
+                "phase2_break_days": phase2_break_days,
+                "days_since_phase2": total_days_since_phase2
+            })
+        
+    except sqlite3.Error as e:
+        logger.error(f"SQLite error in update_phase2_streak_days: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Database error: {e}"
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error updating phase 2 streak days: {e}", exc_info=True)
+        if conn: conn.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error updating phase 2 streak days: {e}"
+        )
+    finally:
+        if conn:
+            conn.close()
