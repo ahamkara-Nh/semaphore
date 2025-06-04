@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Semaphore - Low-FODMAP Diet Tracker Backend
 
 ## Deployment Instructions
@@ -131,6 +132,8 @@ timestamp=$(date +%Y%m%d_%H%M%S)
 cp test.db "/path/to/backups/test_${timestamp}.db"
 ```
 =======
+=======
+>>>>>>> Stashed changes
 # Semaphore
 Semaphore - low-FODMAP diet tracker
 
@@ -250,4 +253,7 @@ Semaphore - low-FODMAP diet tracker
   ```bash
   docker-compose restart
   ```
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
