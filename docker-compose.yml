@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  semaphore:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./test.db:/app/test.db
+      - ./.env:/app/.env
+    restart: always
