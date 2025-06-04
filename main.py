@@ -45,7 +45,8 @@ class UserPreferencesUpdate(BaseModel):
     mannitol_filter_level: Optional[int] = 0
     sorbitol_filter_level: Optional[int] = 0
     gos_filter_level: Optional[int] = 0
-    # daily_reminders and update_notifications are not updated via this endpoint directly
+    daily_reminders: Optional[bool] = None
+    update_notifications: Optional[bool] = None
 
 class TelegramInitData(BaseModel):
     initData: str

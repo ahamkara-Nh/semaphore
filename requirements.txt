@@ -1,5 +1,4 @@
-python-telegram-bot
-fastapi
-uvicorn[standard]
-python-dotenv
-sqlalchemy
+python-telegram-bot==20.8
+python-dotenv==1.0.1
+fastapi==0.109.2
+uvicorn==0.27.1 
